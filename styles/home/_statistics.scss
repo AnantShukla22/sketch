@@ -1,0 +1,97 @@
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.statistics_container {
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  color: rgb(0, 142, 95);
+  width: 90%;
+  margin: auto;
+  .statistics_content {
+    @include center();
+    align-items: flex-start;
+    flex-direction: column;
+    h1 {
+      font-size: 4.5rem;
+      margin-bottom: 5rem;
+    }
+    hr {
+      width: 4rem;
+      margin-bottom: 2rem;
+      background-color:rgb(214, 188, 157) ;
+      
+    }
+    p {
+      font-size: 1.3rem;
+      padding-right: 2rem;
+    }
+  }
+
+  .statistics_detail {
+    @include center();
+    flex-direction: column;
+    gap: 4.4rem;
+
+    
+
+    .detail_1 {
+      @include center();
+      flex-direction: row;
+      gap: 2rem;
+      
+      .detail_category {
+        h1 {
+          @include center();
+          font-size: 3.5rem;
+          span {
+            font-size: 2.5rem;
+          }
+        }
+        h6 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .detail_2 {
+      @include center();
+      flex-direction: row;
+      gap: 2rem;
+      margin-left: 6rem;
+      .detail_icon {
+      }
+      .detail_category {
+        h1 {
+            @include center();
+            justify-content: flex-start;
+            font-size: 3.5rem;
+            span {
+              font-size: 2.5rem;
+            }
+          }
+        h6 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .detail_3 {
+      @include center();
+      flex-direction: row;
+      gap: 2rem;
+      .detail_icon {
+      }
+      .detail_category {
+        h1 {
+          font-size: 3.5rem;
+        }
+        h6 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

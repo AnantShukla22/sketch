@@ -1,0 +1,110 @@
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper_container {
+  @include center();
+  // width: 76%;
+  margin: auto;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  position: relative;
+  overflow: hidden;
+  // border: 4px solid rgb(56, 56, 56);
+  border-radius: 20px;
+  // background-color: beige;
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   width: 25rem;
+  //   height: 100rem;
+  //   // top:  40;
+  //   left: 30rem;
+  //   background: linear-gradient(cyan, rgb(246, 0, 197));
+  //   animation: animate 6s infinite linear;
+  //   z-index: -1;
+  // }
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   inset: 4px;
+  //   background: black;
+  //   z-index: -1;
+  // }
+  // @keyframes animate {
+  //   0% {
+  //     transform: rotate(0deg);
+  //   }
+  //   100% {
+  //     transform: rotate(360deg);
+  //   }
+  // }
+ 
+  .swiper_wrapper {
+    @include center();
+    flex-direction: column;
+    margin: 2rem 7rem;
+    margin-bottom: 5rem;
+    .swiper {
+      height: 25rem;
+      width: 650px;
+      padding: 2.7rem;
+      .team_name {
+        opacity: 0;
+        @include center();
+        justify-content: space-around;
+        width: 100%;
+        position: absolute;
+        top: -.7rem;
+        font-size: 1.1rem;
+      }
+  
+      // it is a pre given class of swiperjs
+      .swiper-slide {
+        filter: blur(3px);
+      }
+  
+      .swiper-slide-active {
+        filter: blur(0);
+        &:hover {
+          box-shadow: 0px 0px 30px red inset;
+        }
+        .team_name {
+          opacity: 1;
+          transform: translateY(-2rem);
+          transition: all 1s ease;
+        }
+      }
+    }
+  
+    // swiper class ends
+    .swiper_id {
+      margin-bottom: 0.7rem;
+    }
+  
+    .swiper_control_btns {
+      @include center();
+      gap: 4rem;
+      position: relative;
+      & > span {
+        background-color: bisque;
+        border-radius: 100%;
+        height: 10px;
+        width: 10px;
+        position: absolute;
+      }
+      & > button {
+        @include center();
+        font-size: larger;
+        padding: 1rem 1rem;
+        border-radius: 10rem;
+        cursor: pointer;
+        background-color: cadetblue;
+      }
+    }
+  }
+  
+ 
+  
+}

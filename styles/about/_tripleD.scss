@@ -1,0 +1,78 @@
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.triple_container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1.3fr 2fr;
+  color: aliceblue;
+  .triple_content {
+    @include center();
+    height: 100%;
+    .triple_wrapper {
+      height: 20rem;
+      & > h1 {
+        width: 100%;
+        font-size: 3.8rem;
+        margin-bottom: 4rem;
+      }
+
+      .triple_accordian {
+        width: 80%;
+        margin: auto;
+        & > .topic {
+          width: 100%;
+          margin: 0.6rem 0;
+          font-size: 1.4rem;
+          margin-bottom: 3rem;
+          cursor: pointer;
+          & > .heading {
+            font-size: 1.7rem;
+            animation: pulse 1.7s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+            @keyframes pulse {
+              0%,
+              100% {
+                opacity: 1;
+              }
+              50% {
+                opacity: 0.3;
+              }
+            }
+
+            & > span {
+              color: chartreuse;
+            }
+          }
+          & > p {
+            opacity: 0;
+            overflow: hidden;
+            margin-top: 1rem;
+            font-size: 1.1rem;
+            transition: all 0.3s ease-in;
+            height: 0;
+          }
+          &:hover {
+            & > p {
+              opacity: 1;
+              height: 100%;
+            }
+            & > .heading {
+              animation: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .triple_img {
+    @include center();
+    & > img {
+      height: 25rem;
+      width: 30rem;
+    }
+  }
+}

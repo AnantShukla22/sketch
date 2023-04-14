@@ -1,0 +1,51 @@
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordian_container {
+  // if any problem with responsive dirsctly amke it with padding
+  height: 100vh;
+  @include center();
+  flex-direction: column;
+  align-items: flex-start;
+  // margin-top: 10rem;
+  color: rgb(214, 188, 157);
+  & > h1 {
+    font-size: 4rem;
+    color: rgb(214, 188, 157);
+    margin-bottom: 10rem;
+  }
+  .accordian_list {
+   width: 100%;
+    .accordian {
+        cursor: pointer;
+        transition: .2s ease-in-out;
+        &:hover{
+            padding-bottom: 2rem;
+        }
+        &>hr{
+            margin: .4rem 0;
+        }
+      .question {
+        @include center();
+        justify-content: space-between;
+        transition: .2s ease-in-out;
+        & > h2 {
+          font-size: 2rem;
+          font-weight: 500;
+          color: rgb(0, 142, 95)   ;
+        }
+ 
+      }
+      .answer{
+        padding:   .4rem 0 2rem 0;
+        font-size: 1.3rem;
+        color: rgb(214, 188, 157);
+        transition: 1s ease-in-out;
+      }
+
+    }
+  }
+}

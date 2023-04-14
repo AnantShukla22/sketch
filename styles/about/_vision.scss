@@ -1,0 +1,25 @@
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.vision_container {
+  height: 100vh;
+  @include center();
+  color: aliceblue;
+  width: 80%;
+  margin: auto;
+
+  & > h1 {
+    font-size: 6rem;
+  }
+
+  & > p {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 3rem 0;
+  }
+
+}

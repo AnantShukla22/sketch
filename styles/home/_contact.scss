@@ -1,0 +1,92 @@
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_container {
+  @include center();
+  color: aliceblue;
+  height: 100vh;
+  gap: 7rem;
+  .contact_info {
+    position: relative;
+    box-shadow: 0px 0px 20px 7px pink inset;
+    padding: 3rem 5rem;
+    @include center();
+    flex-direction: column;
+
+    .contact_heading {
+      @include center();
+      flex-direction: column;
+      align-items: flex-end;
+      & > h1 {
+        font-size: 3.5rem;
+        font-weight: 600;
+      }
+      & > h3 {
+        font-size: 2.4rem;
+        font-weight: 500;
+        text-align: right;
+        width: 100%;
+        margin-bottom: 3rem;
+      }
+    }
+
+    & > p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      font-weight: 500;
+    }
+
+    .logo1 {
+      height: 8rem;
+      width: 8rem;
+      position: absolute;
+      bottom: -4rem;
+      left: -3rem;
+      img {
+        object-fit: contain;
+      }
+    }
+    & > button {
+        @include center();
+        gap: 1rem;
+      padding: 13px 25px;
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+      outline: none;
+      border: none;
+      border-radius: 0.5rem;
+        transition: 0.2s ease-in-out;
+      &>span {
+        @include center();
+      }
+
+      &:hover{
+        transform: translateY(-0.4rem)
+
+      }
+    }
+
+    .contact_handles {
+      @include center();
+      gap: 3rem;
+      & > p {
+        font-size: 1.2rem;
+      }
+
+      .social {
+        @include center();
+        gap: 1rem;
+      }
+    }
+  }
+
+  .logo2 {
+    height: 25rem;
+    aspect-ratio: 1;
+
+    
+  }
+}

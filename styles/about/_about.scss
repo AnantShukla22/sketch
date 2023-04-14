@@ -1,0 +1,45 @@
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#about {
+  width: 80%;
+  margin: auto;
+  margin-top: 3rem;
+  .about_container {
+    @include center();
+  }
+  .carousel_container{
+    margin: 10rem 0;
+    padding: 0 9rem;
+    border-radius: 1rem;
+    height: 100vh;
+    &>h1{
+      color: aliceblue;
+      font-size: 4.5rem;
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+
+    .about_carousel{
+      border-radius: 10rem;
+    }
+  }
+  &>.svg_container{
+    position: absolute;
+    top: 17rem;
+    left: 10rem;
+    height: 100%;
+
+    &>svg{
+      display: inline-block;
+      height: 100%;
+      &>path{
+        color: rgb(29, 125, 209);
+      }
+    }
+  }
+}
