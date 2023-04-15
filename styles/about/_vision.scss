@@ -8,13 +8,13 @@
 .vision_container {
   height: 100vh;
   @include center();
-  color: var(--home-second-color);
+  color: var(--home-fourth-color);
   width: 80%;
   margin: auto;
 
   & > h1 {
     font-size: 6rem;
-    color: var(--home-second-color);
+    color: var(--home-fourth-color);
 
   }
 

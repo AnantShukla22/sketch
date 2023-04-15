@@ -7,13 +7,13 @@ const Statistics = () => {
   const animate = {
     initial: {
       opacity: 0,
-      // scale: 0,
+      scale: 0,
     },
     heading: {
       opacity: 1,
       scale: 1,
       transition: {
-        duration: 1.5,
+        duration: 1,
         delay:.4
       },
     },
@@ -29,7 +29,7 @@ const Statistics = () => {
       opacity: 1,
       scale: 1,
       transition: {
-        duration: 1.4,
+        duration: 1,
         delay: 1.6,
       },
     },

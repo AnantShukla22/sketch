@@ -5,7 +5,7 @@
     flex-direction: column;
 }
 .footer_container{
-    min-height: 100vh;
+    // min-height: 100vh;
     @include center();
     position: relative;
     color:var(--home-first-color);
@@ -39,10 +39,11 @@
                 width: 7rem;
                 border-radius: .7rem;
                 font-size: 1.05rem;
-                background-color: var(--home-third-color);
+                background-color: rgb(4, 166, 4);
             }
         }
         .footer_links{
+            margin-bottom: 4rem;
             &>ul{
                 list-style: none;
                 @include center();

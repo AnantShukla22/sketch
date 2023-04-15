@@ -21,7 +21,7 @@ const Accordian = () => {
       scale: 1,
       transition: {
         duration: 1,
-        delay: 1.1,
+        delay: .9,
       },
     },
   };

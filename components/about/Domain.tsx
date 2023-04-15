@@ -18,7 +18,7 @@ const Domain = () => {
       scale: 1,
       transition: {
         duration: 1,
-        delay: 1,
+        delay: .9,
       },
     },
     part2: {
@@ -26,7 +26,7 @@ const Domain = () => {
       scale: 1,
       transition: {
         duration: 1,
-        delay: 1.5,
+        delay: 1.2,
       },
     },
     part3: {
@@ -34,7 +34,7 @@ const Domain = () => {
       scale: 1,
       transition: {
         duration: 1,
-        delay: 1.8,
+        delay: 1.5,
       },
     },
   };

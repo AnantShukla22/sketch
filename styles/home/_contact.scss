@@ -8,11 +8,11 @@
   @include center();
   height: 100vh;
   gap: 7rem;
-  color:var(--home-first-color)  ;
+  color:var(--home-fourth-color)  ;
 
   .contact_info {
     position: relative;
-    box-shadow: 0px 0px 20px 7px var(--home-third-color) inset;
+    box-shadow: 0px 0px 20px 7px var(--home-first-color) inset;
     padding: 3rem 5rem;
     @include center();
     flex-direction: column;
