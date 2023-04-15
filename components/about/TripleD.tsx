@@ -1,14 +1,51 @@
 import Image from "next/image";
 import logo from "../../public/images/logo.png";
+import { motion as m } from "framer-motion";
 
 const TripleD = () => {
+  const animate = {
+    initial: {
+      opacity: 0,
+    },
+    heading: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 1,
+        delay: 0.5,
+      },
+    },
+    part1: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: .8,
+        delay: 1,
+      },
+    },
+    part2: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 2,
+        delay: 1.8,
+      },
+    },
+  };
   return (
     <div className="triple_container">
       <div className="triple_content">
         <div className="triple_wrapper">
-          <h1> Motto - Triple D's </h1>
+          <m.h1 variants={animate} initial="initial" whileInView={"heading"}>
+            Motto - Triple D's
+          </m.h1>
           <div className="triple_accordian">
-            <div className="topic">
+            <m.div
+              variants={animate}
+              initial="initial"
+              whileInView={"part1"}
+              className="topic"
+            >
               <div className="heading">
                 <span>001... </span> DESIGN
                 <br />
@@ -19,8 +56,13 @@ const TripleD = () => {
                 to learn and explore, not only graphic designing but also dive
                 into UI (User Interface)/ UX (User Experience).
               </p>
-            </div>
-            <div className="topic">
+            </m.div>
+            <m.div
+              variants={animate}
+              initial="initial"
+              whileInView={"part1"}
+              className="topic"
+            >
               <div className="heading">
                 <span>002... </span> DEVELOP
                 <br />
@@ -32,8 +74,13 @@ const TripleD = () => {
                 roadmap to success. We often partner with technology firms,
                 startups and other student communities, helping us step up.
               </p>
-            </div>
-            <div className="topic">
+            </m.div>
+            <m.div
+              variants={animate}
+              initial="initial"
+              whileInView={"part1"}
+              className="topic"
+            >
               <div className="heading">
                 <span>003... </span> DELEVER
                 <br />
@@ -44,13 +91,18 @@ const TripleD = () => {
                 the outcome by associating them with fests, hackathons and our
                 Alumnus where their interests can be put to use.
               </p>
-            </div>
+            </m.div>
           </div>
         </div>
       </div>
-      <div className="triple_img">
+      <m.div
+        variants={animate}
+        initial="initial"
+        whileInView={"part2"}
+        className="triple_img"
+      >
         <Image src={logo} alt="" />
-      </div>
+      </m.div>
     </div>
   );
 };

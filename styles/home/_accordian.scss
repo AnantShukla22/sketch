@@ -10,11 +10,9 @@
   @include center();
   flex-direction: column;
   align-items: flex-start;
-  // margin-top: 10rem;
-  color: rgb(214, 188, 157);
   & > h1 {
     font-size: 4rem;
-    color: rgb(214, 188, 157);
+    color: var(--home-first-color);   // choose diff color
     margin-bottom: 10rem;
   }
   .accordian_list {
@@ -35,14 +33,14 @@
         & > h2 {
           font-size: 2rem;
           font-weight: 500;
-          color: rgb(0, 142, 95)   ;
+          color:var(--home-second-color)  ;
         }
  
       }
       .answer{
         padding:   .4rem 0 2rem 0;
         font-size: 1.3rem;
-        color: rgb(214, 188, 157);
+        color:var(--home-first-color)  ;
         transition: 1s ease-in-out;
       }
 

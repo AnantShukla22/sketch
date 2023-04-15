@@ -1,15 +1,51 @@
 import Link from "next/link";
 import React from "react";
+import { motion as m } from "framer-motion";
 
 const Footer = () => {
+  const animate = {
+    initial: {
+      opacity: 0,
+      // scale: 0,
+    },
+    heading: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 1,
+        delay: .6,
+
+      },
+    },
+    input: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 1,
+        delay: 1,
+      },
+    },
+    sketch: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 4,
+        delay: 1.3,
+      },
+    },
+  };
   return (
     <div className="footer_container">
       <div className="footer_content">
-        <h1>Subscribe For Latest Updates.</h1>
-        <div className="footer_input">
+        <m.h1  variants={animate} 
+        initial="initial"
+        whileInView={"heading"}>Subscribe For Latest Updates.</m.h1>
+        <m.div variants={animate} 
+        initial="initial"
+        whileInView={"input"} className="footer_input">
           <input type="text" placeholder="Email address" />
           <button>Submit</button>
-        </div>
+        </m.div>
         <div className="footer_links">
           <ul>
             <li>
@@ -28,9 +64,11 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="footer_logo">
+      <m.div variants={animate} 
+        initial="initial"
+        whileInView={"sketch"} className="footer_logo">
         SKETCH
-      </div>
+      </m.div>
     </div>
   );
 };

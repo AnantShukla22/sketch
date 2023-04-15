@@ -8,7 +8,7 @@
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1.3fr 2fr;
-  color: aliceblue;
+  color: var(--home-first-color);
   .triple_content {
     @include center();
     height: 100%;
@@ -17,6 +17,7 @@
       & > h1 {
         width: 100%;
         font-size: 3.8rem;
+        color: var(--home-third-color);
         margin-bottom: 4rem;
       }
 
@@ -32,7 +33,7 @@
           & > .heading {
             font-size: 1.7rem;
             animation: pulse 1.7s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-
+            
             @keyframes pulse {
               0%,
               100% {
@@ -44,10 +45,11 @@
             }
 
             & > span {
-              color: chartreuse;
+              color: var(--home-second-color);  // use different color
             }
           }
           & > p {
+            color: var(--home-third-color);
             opacity: 0;
             overflow: hidden;
             margin-top: 1rem;

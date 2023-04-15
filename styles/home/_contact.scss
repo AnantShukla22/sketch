@@ -6,12 +6,13 @@
 
 .contact_container {
   @include center();
-  color: aliceblue;
   height: 100vh;
   gap: 7rem;
+  color:var(--home-first-color)  ;
+
   .contact_info {
     position: relative;
-    box-shadow: 0px 0px 20px 7px pink inset;
+    box-shadow: 0px 0px 20px 7px var(--home-third-color) inset;
     padding: 3rem 5rem;
     @include center();
     flex-direction: column;
@@ -20,9 +21,11 @@
       @include center();
       flex-direction: column;
       align-items: flex-end;
+
       & > h1 {
         font-size: 3.5rem;
         font-weight: 600;
+        
       }
       & > h3 {
         font-size: 2.4rem;
@@ -40,11 +43,11 @@
     }
 
     .logo1 {
-      height: 8rem;
-      width: 8rem;
+      height: 10rem;
+      width: 10rem;
       position: absolute;
-      bottom: -4rem;
-      left: -3rem;
+      bottom: -4.7rem;
+      left: -4.8rem;
       img {
         object-fit: contain;
       }
@@ -70,6 +73,7 @@
     }
 
     .contact_handles {
+      color: var(--home-second-color);
       @include center();
       gap: 3rem;
       & > p {
@@ -86,7 +90,5 @@
   .logo2 {
     height: 25rem;
     aspect-ratio: 1;
-
-    
   }
 }

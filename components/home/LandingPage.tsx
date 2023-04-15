@@ -3,38 +3,43 @@ import logo from "../../public/images/logo.png";
 import { motion as m } from "framer-motion";
 
 const LandingPage = () => {
-  const logos = {
+  const animate = {
     initial: {
       opacity: 0,
       scale: 0,
     },
-    animate: {
+    heading: {
       opacity: 1,
       scale: 1.1,
       transition: {
-        duration: 1.2,
+        duration: 1,
+        delay: .2,
+
       },
     },
-    spanAnimate: {
+    headingSpan: {
       opacity: 1,
       scale: 1,
       transition: {
-        duration: 1.2,
-        delay: 1.2,
+        duration: 1,
+        delay: 1,
       },
     },
   };
   return (
     <div className="landing_container">
-      <m.div className="img_container"
-        variants={logos}
+      <m.div
+        className="img_container"
+        variants={animate} 
         initial="initial"
-        animate="animate"
+        whileInView={"heading"}
       >
         <Image src={logo} sizes="100" fill alt="" />
       </m.div>
 
-      <m.span variants={logos} initial="initial" animate="spanAnimate">
+      <m.span       variants={animate} 
+        initial="initial"
+        whileInView={"headingSpan"}>
         Design . Develop . Deliver
       </m.span>
     </div>

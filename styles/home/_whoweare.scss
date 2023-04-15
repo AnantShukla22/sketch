@@ -7,10 +7,10 @@
 
 .about_whoweare {
   @include center();
-  color: aliceblue;
   height: 100vh;
   width: 80%;
   margin: auto;
+  color: var(--home-first-color);
 
   & > h1 {
     @include center();

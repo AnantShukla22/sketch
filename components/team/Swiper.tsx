@@ -45,7 +45,7 @@ const Swipers = () => {
        
         <SwiperSlide className="swiperSlide">
           <div className="team_name">
-            <span>Aishwarya Tewari</span>
+            <span>Anant Shukla :</span>
             <p>Design</p>
           </div>
           <Image src={logo1} sizes="100" fill alt="" />

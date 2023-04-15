@@ -7,15 +7,14 @@
 .header_container {
     position: absolute;
     width: 100%;
-    top: 1rem;
+    top: 0;
     z-index: 1;
   @include center();
   justify-content: space-between;
   height: 4.4rem;
-  background-color: rgb(58, 58, 58);
-  border-radius: 1rem 1rem 1rem 1rem;
+  background: #c00036;
+  border-radius: 0 0 10rem 10rem;
   padding: 0 3rem;
-//   margin: 0 2rem;
   .header_logo {
     @include center();
     & > img {
@@ -34,8 +33,13 @@
       &>li>a{
         text-decoration: none;
         font-size: 1.5rem;
-        color: chocolate;
+        font-weight: 600;
+        // color: var(--home-fourth-color);
+        color: rgb(255, 217, 166);
       }
     }
   }
+
+
 }
+

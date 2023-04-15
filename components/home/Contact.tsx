@@ -6,18 +6,55 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsDiscord } from "react-icons/bs";
+import { motion as m } from "framer-motion";
 
 const Contact = () => {
+  const animate = {
+    initial: {
+      opacity: 0,
+      scale: 0,
+    },
+    heading: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 1,
+        delay:0.5
+      },
+    },
+    content: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 1,
+        delay: 1.3,
+      },
+    },
+    sketch: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 1.6,
+        delay: 2,
+      },
+    },
+  };
   return (
     <div className="contact_container">
-      <div className="contact_info">
-        <div className="contact_heading">
+      <m.div variants={animate} 
+        initial="initial"
+        whileInView={"heading"} className="contact_info">
+        <m.div variants={animate} 
+        initial="initial"
+        whileInView={"content"}  className="contact_heading">
           <h1>SKETCH AROUND</h1>
           <h3>...and find out</h3>
-        </div>
+        </m.div>
 
-        <p>Join our Discord to get an exclusive in-game reward bhaafsa wdda!</p>
-        <button>Join Discord <span><BsDiscord/></span></button>
+        <m.p variants={animate} 
+        initial="initial"
+        whileInView={"content"} >Join our Discord to get an exclusive in-game reward bhaafsa wdda!</m.p>
+        <button >Join Discord <span><BsDiscord/></span></button>
         <div className="contact_handles">
           <p>We're also on</p>
           <div className="social">
@@ -27,10 +64,12 @@ const Contact = () => {
             <AiFillYoutube size={28}/>
           </div>
         </div>
-        <div className="img_container logo1">
+        <m.div  variants={animate} 
+        initial="initial"
+        whileInView={"sketch"}  className="img_container logo1">
           <Image src={logo2} sizes="100" fill alt="" />
-        </div>
-      </div>
+        </m.div>
+      </m.div>
       <div className="img_container logo2">
         <Image src={logo1} sizes="100" fill alt="" />
       </div>

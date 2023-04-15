@@ -1,21 +1,58 @@
 import { BsFillPersonFill } from "react-icons/bs";
 import { MdEmojiEvents } from "react-icons/md";
 import { GiBookAura } from "react-icons/gi";
+import { motion as m } from "framer-motion";
 
 const Statistics = () => {
+  const animate = {
+    initial: {
+      opacity: 0,
+      // scale: 0,
+    },
+    heading: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 1.5,
+        delay:.4
+      },
+    },
+    spanAnimate1: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 1,
+        delay: .9,
+      },
+    },
+    spanAnimate2: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 1.4,
+        delay: 1.6,
+      },
+    },
+  };
   return (
     <div className="statistics_container" id="statistics">
       <div className="statistics_content">
-        <h1>Statistics</h1>
+        <m.h1 variants={animate} 
+        initial="initial"
+        whileInView={"heading"}>Statistics</m.h1>
         <hr />
-        <p>
+        <m.p variants={animate} 
+        initial="initial"
+        whileInView={"spanAnimate1"}>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed,
           repudiandae molestias! Magni eligendi incidunt, animi cumque eius
           autem illum voluptatem praesentium, sequi nulla repellat ea
           exercitationem. Voluptates fugiat eaque cupiditate!
-        </p>
+        </m.p>
       </div>
-      <div className="statistics_detail">
+      <m.div className="statistics_detail" variants={animate} 
+        initial="initial"
+        whileInView={"spanAnimate2"}>
         <div className="detail_1">
           <div className="detail_icon">
             <BsFillPersonFill size={70}/>
@@ -43,7 +80,7 @@ const Statistics = () => {
             <h6>Of Establishment</h6>
           </div>
         </div>
-      </div>
+      </m.div>
     </div>
   );
 };
