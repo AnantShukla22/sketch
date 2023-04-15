@@ -82,7 +82,7 @@ const TripleD = () => {
               className="topic"
             >
               <div className="heading">
-                <span>003... </span> DELEVER
+                <span>003... </span> DELIVER
                 <br />
               </div>
               <p className="desc">

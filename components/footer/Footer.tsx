@@ -29,8 +29,8 @@ const Footer = () => {
       opacity: 1,
       scale: 1,
       transition: {
-        duration: 4,
-        delay: 1.6,
+        duration: 3,
+        delay: 1.3,
       },
     },
   };

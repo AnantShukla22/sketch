@@ -24,13 +24,13 @@ body {
 
 :root {
   --team-first-color:#eeeeee;
-  --team-second-color:#00b7ff;
+  --team-second-color:#03acef;
   --team-third-color:#384d6e;
   --team-fourth-color: #151515;
   --home-first-color:#d8005e;
   --home-second-color:#00cc1f;
-  --home-third-color: #cecece;
-  --home-fourth-color: #00a0df;
+  --home-third-color: #c6cd00;
+  --home-fourth-color: #01a2e8;
 }
 
 #home {
@@ -72,7 +72,8 @@ body {
   align-items: center;
   align-items: flex-start;
   flex-direction: column;
-  color: var(--home-fourth-color);
+  color: var(--home-first-color);
+  color: rgb(0, 148, 72);
 }
 .statistics_container .statistics_content h1 {
   font-size: 4.5rem;
@@ -93,6 +94,7 @@ body {
   flex-direction: column;
   gap: 4.4rem;
   color: var(--home-first-color);
+  color: rgb(211, 0, 0);
 }
 .statistics_container .statistics_detail .detail_1 {
   display: flex;
@@ -100,6 +102,9 @@ body {
   align-items: center;
   flex-direction: row;
   gap: 2rem;
+}
+.statistics_container .statistics_detail .detail_1 .detail_icon {
+  color: var(--home-third-color);
 }
 .statistics_container .statistics_detail .detail_1 .detail_category h1 {
   display: flex;
@@ -111,6 +116,8 @@ body {
   font-size: 2.5rem;
 }
 .statistics_container .statistics_detail .detail_1 .detail_category h6 {
+  display: flex;
+  border-bottom: 1px yellow solid;
   font-size: 1.5rem;
 }
 .statistics_container .statistics_detail .detail_2 {
@@ -120,6 +127,9 @@ body {
   flex-direction: row;
   gap: 2rem;
   margin-left: 6rem;
+}
+.statistics_container .statistics_detail .detail_2 .detail_icon {
+  color: var(--home-third-color);
 }
 .statistics_container .statistics_detail .detail_2 .detail_category h1 {
   display: flex;
@@ -132,6 +142,8 @@ body {
   font-size: 2.5rem;
 }
 .statistics_container .statistics_detail .detail_2 .detail_category h6 {
+  display: flex;
+  border-bottom: 1px yellow solid;
   font-size: 1.5rem;
 }
 .statistics_container .statistics_detail .detail_3 {
@@ -141,10 +153,15 @@ body {
   flex-direction: row;
   gap: 2rem;
 }
+.statistics_container .statistics_detail .detail_3 .detail_icon {
+  color: var(--home-third-color);
+}
 .statistics_container .statistics_detail .detail_3 .detail_category h1 {
   font-size: 3.5rem;
 }
 .statistics_container .statistics_detail .detail_3 .detail_category h6 {
+  display: flex;
+  border-bottom: 1px yellow solid;
   font-size: 1.5rem;
 }
 
@@ -267,7 +284,7 @@ body {
   align-items: center;
   height: 100vh;
   gap: 7rem;
-  color: var(--home-fourth-color);
+  color: var(--home-second-color);
 }
 .contact_container .contact_info {
   position: relative;
@@ -334,7 +351,7 @@ body {
   transform: translateY(-0.4rem);
 }
 .contact_container .contact_info .contact_handles {
-  color: var(--home-second-color);
+  color: var(--home-fourth-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -416,13 +433,12 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: var(--home-fourth-color);
+  color: var(--home-first-color);
   width: 80%;
   margin: auto;
 }
 .vision_container > h1 {
   font-size: 6rem;
-  color: var(--home-fourth-color);
 }
 .vision_container > p {
   font-size: 1.8rem;
@@ -810,7 +826,7 @@ body {
   min-height: 100vh;
 }
 .loader_container .cat {
-  background-color: rgb(0, 119, 178);
+  background-color: rgb(1, 138, 206);
   height: 160px;
   width: 160px;
   border-radius: 120px 120px 120px 120px;

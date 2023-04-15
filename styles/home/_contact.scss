@@ -8,7 +8,7 @@
   @include center();
   height: 100vh;
   gap: 7rem;
-  color:var(--home-fourth-color)  ;
+  color:var(--home-second-color)  ;
 
   .contact_info {
     position: relative;
@@ -73,7 +73,7 @@
     }
 
     .contact_handles {
-      color: var(--home-second-color);
+      color: var(--home-fourth-color);
       @include center();
       gap: 3rem;
       & > p {

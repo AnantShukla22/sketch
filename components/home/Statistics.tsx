@@ -22,7 +22,7 @@ const Statistics = () => {
       scale: 1,
       transition: {
         duration: 1,
-        delay: .9,
+        delay: .7,
       },
     },
     spanAnimate2: {
@@ -30,7 +30,7 @@ const Statistics = () => {
       scale: 1,
       transition: {
         duration: 1,
-        delay: 1.6,
+        delay: 1.4,
       },
     },
   };
