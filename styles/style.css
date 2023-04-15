@@ -787,7 +787,7 @@ body {
   justify-content: center;
   justify-content: space-between;
   height: 4.4rem;
-  background: #0076a8;
+  box-shadow: 0 0 2rem gray inset;
   border-radius: 0 0 10rem 10rem;
   padding: 0 3rem;
 }
@@ -815,7 +815,7 @@ body {
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 600;
-  color: rgb(255, 217, 166);
+  color: var(--home-fourth-color);
 }
 
 .loader_container {
