@@ -6,11 +6,9 @@ const EventYear = ({ year, yearDetail, yearEventList }: any) => {
   return (
     <div className="event_year_container">
       <div className="event_year">{year}</div>
-      <Marquee className="marquee">
-        {Object.entries(yearEventList).map(([key, value]:any, i) => (
-          <span key={i} >
-            {value}
-          </span>
+      <Marquee className="marqueee" speed={50} onFinish={()=>null} gradient={false}>
+        {Object.entries(yearEventList).map(([key, value]: any, i) => (
+          <span key={i} className="marquee_span">{value}</span>
         ))}
       </Marquee>
       {yearDetail.map((item: any) => (

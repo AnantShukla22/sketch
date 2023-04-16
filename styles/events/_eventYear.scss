@@ -9,6 +9,15 @@
     color: aliceblue;
     .event_year{
         font-size: 20rem;
-        margin: 15rem 0 10rem 0;
+        margin: 5rem 0 2rem 0;
+    }
+    .marqueee{
+        margin-bottom: 7rem;
+        @include center();
+        min-width: 100%;
+        .marquee_span{
+            padding: 1rem 10rem;
+            border-right: 1px white solid;
+        }
     }
 }

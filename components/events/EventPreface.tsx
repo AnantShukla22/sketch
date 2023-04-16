@@ -3,13 +3,12 @@ import { AiOutlineHome } from "react-icons/ai";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import EventIntroImg from "../../public/images/event/eventIntroImg.jpg";
+import { Typewriter } from "react-simple-typewriter";
 
 const EventPreface = () => {
-    
   const router = useRouter();
 
   return (
-
     <div className="event_container">
       <div className="burgerHeader">
         <AiOutlineHome
@@ -17,6 +16,9 @@ const EventPreface = () => {
           className="event_burger_icon"
         />
         <BurgerMenu />
+      </div>
+      <div className="event_hr">
+        <hr />
       </div>
       <div className="event_header">
         <div className="event_heading1">
@@ -26,7 +28,16 @@ const EventPreface = () => {
           <span>JAN</span>
           <div>
             <span>7 YEARS</span>
-            <span>OF ESTABLISHMENT</span>
+            <span>
+            Of 
+              <Typewriter
+                loop
+                typeSpeed={50}
+                deleteSpeed={50}
+                delaySpeed={1600}
+                words={[" Establishment", " Achievements", " Inspiration", " Appreciation"]}
+              />
+            </span>
           </div>
           <span>DEC</span>
         </div>

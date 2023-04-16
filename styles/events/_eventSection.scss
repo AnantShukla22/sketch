@@ -10,14 +10,14 @@
   display: grid;
   grid-template-columns: 1.3fr 3fr 1.3fr;
   font-size: 1.05rem;
-    margin-bottom: 13rem;
+    margin-bottom: 5rem;
   .event_section_left {
     // background-color: rgb(190, 44, 173);
     @include center();
     justify-content: flex-start;
     align-items: flex-start;
     > h1 {
-        font-size: 5vw;
+        font-size: 3.5vw;
       margin-bottom: 3vw;
       font-weight: 300;
     }
@@ -31,7 +31,7 @@
     justify-content: flex-start;
     gap: 2rem;
     > img {
-      height: 33vw;
+      height: 34vw;
       width: 42vw;
       object-fit: cover;
     }
