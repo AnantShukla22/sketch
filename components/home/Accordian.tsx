@@ -12,7 +12,7 @@ const Accordian = () => {
       scale: 1,
       transition: {
         duration: 1,
-        delay: .5,
+        delay: .3,
 
       },
     },
@@ -21,7 +21,7 @@ const Accordian = () => {
       scale: 1,
       transition: {
         duration: 1,
-        delay: .9,
+        delay: .7,
       },
     },
   };

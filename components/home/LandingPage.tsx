@@ -13,7 +13,7 @@ const LandingPage = () => {
       scale: 1.1,
       transition: {
         duration: 1,
-        delay: .2,
+        delay: .1,
 
       },
     },
@@ -22,7 +22,7 @@ const LandingPage = () => {
       scale: 1,
       transition: {
         duration: 1,
-        delay: 1,
+        delay: .8,
       },
     },
   };

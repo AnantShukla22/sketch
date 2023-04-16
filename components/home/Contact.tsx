@@ -19,7 +19,7 @@ const Contact = () => {
       scale: 1,
       transition: {
         duration: 1,
-        delay:0.5
+        delay:0.3
       },
     },
     content: {
@@ -27,7 +27,7 @@ const Contact = () => {
       scale: 1,
       transition: {
         duration: 1,
-        delay: 1.3,
+        delay: 1,
       },
     },
     sketch: {
@@ -35,7 +35,7 @@ const Contact = () => {
       scale: 1,
       transition: {
         duration: 1.6,
-        delay: 2,
+        delay: 1.7,
       },
     },
   };

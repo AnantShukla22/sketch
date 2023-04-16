@@ -12,7 +12,7 @@ const TripleD = () => {
       scale: 1,
       transition: {
         duration: 1,
-        delay: 0.5,
+        delay: 0.3,
       },
     },
     part1: {
@@ -20,7 +20,7 @@ const TripleD = () => {
       scale: 1,
       transition: {
         duration: .8,
-        delay: 1,
+        delay: .7,
       },
     },
     part2: {
@@ -28,7 +28,7 @@ const TripleD = () => {
       scale: 1,
       transition: {
         duration: 2,
-        delay: 1.8,
+        delay: 1.5,
       },
     },
   };

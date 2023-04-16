@@ -1,0 +1,77 @@
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.event_container {
+  color: aliceblue;
+  @include center();
+  flex-direction: column;
+
+  .burgerHeader {
+    @include center();
+    justify-content: space-between;
+    padding: 1.2rem 2rem;
+    width: 100%;
+    margin-top: 1rem;
+    // border: 1px red solid;
+    .event_burger_icon{
+        background-color: red;
+        padding:10px;
+        color: white;
+        border-radius: 100%;
+        height: 3.5rem;
+        width: 3.5rem;
+        font-size: 1rem;
+    }
+  }
+
+  .event_header {
+    margin-top:2rem;
+    .event_heading1 {
+      font-size: 11.5vw;
+      color: rgb(1, 26, 212);
+      &>span{
+        color: red
+      }
+    }
+    .event_heading2 {
+      @include center();
+      justify-content: space-between;
+      & > span {
+        font-size: 5rem;
+        color: burlywood;
+        font-weight: 100;
+      }
+      & > div {
+        @include center();
+        flex-direction: column;
+        font-size: 1.5rem;
+        gap: 6px;
+        
+        &>:nth-child(1){
+            color: red;
+        }
+        &>:nth-child(2){
+            color: rgb(0, 30, 255);
+        }
+      }
+    }
+  }
+  .event_introImg>img{
+    margin-top: 10rem ;
+    height: 40rem;
+    width: 90vw;
+    object-fit: cover;
+  }
+  .event_preface{
+    width: 85%;
+    margin: auto;
+    margin-top: 10rem ;
+    >p{
+        font-size: 3rem;
+        text-align: center;
+        line-height: 4rem;
+    }
+  }
+}

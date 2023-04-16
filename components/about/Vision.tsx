@@ -10,7 +10,7 @@ const Vision = () => {
       opacity: 1,
       scale: 1.1,
       transition: {
-        duration: 1.2,
+        duration: .9,
       },
     },
     spanAnimate: {
@@ -18,14 +18,14 @@ const Vision = () => {
       scale: 1,
       transition: {
         duration: 1.2,
-        delay: 1.2,
+        delay: .9,
       },
     },
   };
   return (
     <m.div className="vision_container"  variants={logos}
     initial="initial"
-    animate="animate">
+    whileInView={"animate"}>
       <h1>Our Vision</h1>
       <p>
         We are the horizon where your yearnings come true, we strives to balance

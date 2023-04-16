@@ -14,7 +14,7 @@ const CarouselCom = () => {
       scale: 1,
       transition: {
         duration: 3,
-        delay: .5,
+        delay: .3,
 
       },
     },

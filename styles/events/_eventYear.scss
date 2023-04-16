@@ -1,0 +1,14 @@
+@mixin center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+.event_year_container{
+    @include center();
+    color: aliceblue;
+    .event_year{
+        font-size: 20rem;
+        margin: 15rem 0 10rem 0;
+    }
+}

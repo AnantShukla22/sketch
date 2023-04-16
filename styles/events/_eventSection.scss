@@ -1,0 +1,64 @@
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.event_section {
+  color: rgb(217, 255, 0);
+  display: grid;
+  grid-template-columns: 1.3fr 3fr 1.3fr;
+  font-size: 1.05rem;
+    margin-bottom: 13rem;
+  .event_section_left {
+    // background-color: rgb(190, 44, 173);
+    @include center();
+    justify-content: flex-start;
+    align-items: flex-start;
+    > h1 {
+        font-size: 5vw;
+      margin-bottom: 3vw;
+      font-weight: 300;
+    }
+    > :nth-child(2) {
+      margin-bottom: 50vw;
+    }
+  }
+  .event_section_mid {
+    @include center();
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+    > img {
+      height: 33vw;
+      width: 42vw;
+      object-fit: cover;
+    }
+  }
+  .event_section_right {
+    // background-color: rgb(134, 88, 29);
+    @include center();
+    justify-content: flex-start;
+    align-items: flex-end;
+    .event_dates {
+      @include center();
+      align-items: flex-start;
+      flex-direction: row;
+      gap: 0.5rem;
+      letter-spacing: -2px;
+      margin-bottom: 33vw;
+      .event_date {
+        font-size: 8vw;
+        line-height: 5.6vw;
+      }
+      .event_month {
+        font-size: 3vw;
+        line-height: 2.15vw;
+      }
+    }
+    >p{
+        text-align: end;
+    }
+  }
+}

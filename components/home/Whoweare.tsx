@@ -19,7 +19,7 @@ const Whoweare = () => {
       scale: 1,
       transition: {
         duration: 1,
-        delay: .5,
+        delay: .4,
       },
     },
     spanAnimate2: {
@@ -27,7 +27,7 @@ const Whoweare = () => {
       scale: 1,
       transition: {
         duration: 1.2,
-        delay: .6,
+        delay: .5,
       },
     },
   };
