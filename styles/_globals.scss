@@ -5,6 +5,7 @@
 }
 
 body{
+  
     background-color: black;
     &::-webkit-scrollbar {
       display: none;
@@ -29,8 +30,8 @@ body{
   :root{
 
     --team-first-color:#eeeeee;
-    --team-second-color:#03acef;
-    --team-third-color:#384d6e;
+    --team-second-color:#00b7ff;
+    --team-third-color:#2b4c80;
     --team-fourth-color: #151515;
 
      --home-first-color:#d8005e;

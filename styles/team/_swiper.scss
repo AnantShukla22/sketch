@@ -5,38 +5,42 @@
 }
 .swiper_container {
   @include center();
+  // width: 70%;
+  // margin: auto;
+  justify-content: space-between;
   padding: 1rem 3rem;
   position: relative;
-  // overflow: hidden;
+  overflow: hidden;
   border-radius: 20px;
   box-shadow: 5px 5px 10px var(--team-third-color),
     -5px -5px 10px var(--team-second-color);
-  & > ::before {
+  &::before {
     content: "";
     position: absolute;
-    width: 22rem;
+    width: 20rem;
     height: 100rem;
+    left: 30rem ;
     background: linear-gradient(
       var(--team-third-color),
       var(--team-second-color)
     );
-    animation: animate 10.5s linear infinite;
+    animation: spin 5.5s linear infinite;
     z-index: -1;
-    @keyframes animate {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
   }
-  & > ::after {
+  &::after {
     content: "";
     position: absolute;
     inset: 6px;
     background: rgb(0, 0, 0);
     z-index: -1;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 
   .swiper_wrapper {
