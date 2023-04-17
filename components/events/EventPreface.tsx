@@ -17,9 +17,6 @@ const EventPreface = () => {
         />
         <BurgerMenu />
       </div>
-      <div className="event_hr">
-        <hr />
-      </div>
       <div className="event_header">
         <div className="event_heading1">
           <span>SKETCH</span> EVENTS

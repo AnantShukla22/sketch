@@ -13,8 +13,7 @@ const LandingPage = () => {
       scale: 1.1,
       transition: {
         duration: 1,
-        delay: .1,
-
+        delay: 0.1,
       },
     },
     headingSpan: {
@@ -22,7 +21,7 @@ const LandingPage = () => {
       scale: 1,
       transition: {
         duration: 1,
-        delay: .8,
+        delay: 0.8,
       },
     },
   };
@@ -30,16 +29,14 @@ const LandingPage = () => {
     <div className="landing_container">
       <m.div
         className="img_container"
-        variants={animate} 
+        variants={animate}
         initial="initial"
         whileInView={"heading"}
       >
-        <Image src={logo} sizes="100" fill alt="" />
+        <Image src={logo}  alt="" />
       </m.div>
 
-      <m.span       variants={animate} 
-        initial="initial"
-        whileInView={"headingSpan"}>
+      <m.span variants={animate} initial="initial" whileInView={"headingSpan"}>
         Design . Develop . Deliver
       </m.span>
     </div>

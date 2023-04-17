@@ -14,7 +14,7 @@
   height: 4.4rem;
   box-shadow: 0 0 2rem gray inset;
   border-radius: 0 0 10rem 10rem;
-  padding: 0 3rem;
+  padding: 0 4em;
   .header_logo {
     @include center();
     & > img {
@@ -24,12 +24,11 @@
   }
   .header_navList {
     width: 100%;
-    padding: 0 10rem;
     & > ul {
       list-style: none;
       @include center();
-      justify-content: space-between;
-
+      justify-content: space-around;
+      padding: 0 4em;
       &>li>span{
         cursor: pointer;
         font-size: 1.5rem;

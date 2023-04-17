@@ -1,12 +1,12 @@
-@mixin center(){
+@mixin center() {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #home {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
   .landing_container {
     margin-top: 2rem;
     height: 100vh;
@@ -14,12 +14,15 @@
     flex-direction: column;
     gap: 3rem;
     .img_container {
-      height: 50vh;
-      width: 50vh;
+      > img {
+        height: 50vh;
+        width: 50vw;
+        object-fit: contain;
+      }
     }
     span {
-      color:var(--home-fourth-color);
-            letter-spacing: 0.2rem;
+      color: var(--home-fourth-color);
+      letter-spacing: 0.2rem;
       font-weight: 600;
       font-size: 2.9rem;
     }

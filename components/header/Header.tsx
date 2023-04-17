@@ -16,7 +16,7 @@ const Header = () => {
       <span onClick={()=>{router.push("/")}}>Home</span>
     </li>
     <li>
-      <span onClick={()=>{router.push("/about")}}>About Us</span>
+      <span onClick={()=>{router.push("/about")}}>About</span>
     </li>
   </ul>
 </div>

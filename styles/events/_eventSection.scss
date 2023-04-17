@@ -10,14 +10,15 @@
   display: grid;
   grid-template-columns: 1.3fr 3fr 1.3fr;
   font-size: 1.05rem;
-    margin-bottom: 5rem;
+  margin-bottom: 5rem;
+  width: 95%;
+  margin: auto;
   .event_section_left {
-    // background-color: rgb(190, 44, 173);
     @include center();
     justify-content: flex-start;
     align-items: flex-start;
     > h1 {
-        font-size: 3.5vw;
+      font-size: 3.5vw;
       margin-bottom: 3vw;
       font-weight: 300;
     }
@@ -57,8 +58,8 @@
         line-height: 2.15vw;
       }
     }
-    >p{
-        text-align: end;
+    > p {
+      text-align: end;
     }
   }
 }
