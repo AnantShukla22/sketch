@@ -31,7 +31,7 @@ const Vision = () => {
         We are the horizon where your yearnings come true, we strives to balance
         fun and hard work while promoting personal growth and community
         building. Our workshops events, and mentorship programs bring students
-        together to <br /> achieve greater goals and explore their creativeness.
+        together to achieve greater goals and explore their creativeness.
       </p>
     </m.div>
   );

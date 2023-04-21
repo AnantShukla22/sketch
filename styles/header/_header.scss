@@ -29,7 +29,8 @@
       @include center();
       justify-content: space-around;
       padding: 0 4em;
-      &>li>span{
+      &>li>a{
+        text-decoration: none;
         cursor: pointer;
         font-size: 1.5rem;
         font-weight: 600;

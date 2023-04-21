@@ -5,7 +5,6 @@ import { useRouter } from "next/router";
 
 const Header = () => {
 
-  const router=useRouter();
   return (
     <>
     <div className="header_container">
@@ -13,10 +12,10 @@ const Header = () => {
 <div className="header_navList">
   <ul>
     <li>
-      <span onClick={()=>{router.push("/")}}>Home</span>
+      <Link href="/">Home</Link>
     </li>
     <li>
-      <span onClick={()=>{router.push("/about")}}>About</span>
+      <Link href="/about">About</Link>
     </li>
   </ul>
 </div>
@@ -26,10 +25,10 @@ const Header = () => {
 <div className="header_navList">
   <ul>
     <li>
-      <span onClick={()=>{router.push("/team")}}>Team</span>
+      <Link href="/team">Team</Link>
     </li>
     <li>
-      <span onClick={()=>{router.push("/events")}}>Events</span>
+      <Link href="/events">Events</Link>
     </li>
   </ul>
 </div>
