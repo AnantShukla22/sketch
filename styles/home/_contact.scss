@@ -6,7 +6,7 @@
 
 .contact_container {
   @include center();
-  min-height: 80vh;
+  min-height: 100vh;
   gap: 7rem;
   color: var(--font-color-first);
 
@@ -74,7 +74,7 @@
     }
 
     .contact_handles {
-      color: var(--home-fourth-color);
+      color: var(--primary-color);
       @include center();
       gap: 3rem;
       & > p {

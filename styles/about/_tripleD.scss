@@ -5,47 +5,68 @@
 }
 
 .triple_container {
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: 1.3fr 2fr;
-  color: var(--home-first-color);
+  min-height: 80vh;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--font-color-first);
   .triple_content {
     @include center();
     height: 100%;
     .triple_wrapper {
-      height: 20rem;
+      height: auto;
       & > h1 {
-        width: 100%;
-        font-size: 3.8rem;
-        color: var(--about-second-color);
+        width: max-content;
+        font-size: 4rem;
         margin-bottom: 4rem;
+        font-family: var(--heading-font);
+        background: -webkit-linear-gradient(left, #5f008e, #8e004e, #008e5f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background: -moz-linear-gradient(left, #5f008e, #8e004e, #008e5f);
+        -moz-background-clip: text;
+        background-clip: text;
+        -moz-text-fill-color: transparent;
       }
 
       .triple_accordian {
         width: 80%;
         margin: auto;
+
         & > .topic {
           width: 100%;
           margin: 0.6rem 0;
           font-size: 1.4rem;
           margin-bottom: 3rem;
           cursor: pointer;
+          transition: all 0.6s ease;
+          &:nth-of-type(1) {
+            color: var(--primary-color);
+          }
+          &:nth-of-type(2) {
+            color: var(--secondary-color);
+          }
+          &:nth-of-type(3) {
+            color: var(--tertiary-color);
+          }
           & > .heading {
-            font-size: 1.7rem;
+            font-size: 2.25rem;
+            font-family: var(--main-font);
             animation: pulse 1.7s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-            
+
             @keyframes pulse {
               0%,
               100% {
                 opacity: 1;
               }
               50% {
-                opacity: 0.3;
+                opacity: 0.6;
               }
             }
 
             & > span {
-              color: var(--home-second-color);  // use different color
+              color: var(--home-second-color); // use different color
             }
           }
           & > p {

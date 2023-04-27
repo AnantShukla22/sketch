@@ -8,18 +8,29 @@
 .vision_container {
   height: 100vh;
   @include center();
-  color: var(--home-first-color);
+  color: var(--font-color-first);
   width: 80%;
   margin: auto;
 
   & > h1 {
     font-size: 6rem;
+    font-family: var(--heading-font);
+    background: url("/images/mirror.jpg");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    background-clip: text;
+    -moz-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   & > p {
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: center;
     margin: 3rem 0;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.1rem;
+    word-break: keep-all;
   }
-
 }

@@ -7,11 +7,12 @@
 
 .domain_container {
   @include center();
-  margin: 4rem   0;
+  margin: 4rem 0;
   & > h1 {
     font-size: 4.5rem;
     margin-bottom: 3rem;
-    color: var(--home-first-color);
+    color: var(--primary-color);
+    font-family: var(--heading-font);
   }
 
   .domain_types {
@@ -36,29 +37,30 @@
     .box {
       height: 10.3rem;
       width: 16rem;
-      padding: .8rem 1rem;
+      padding: 0.8rem 1rem;
       background-image: linear-gradient(
         315deg,
-        var(--home-fourth-color) 0%,
+        var(--primary-color) 0%,
         #000000 74%
       );
-      // border: 1px solid var(--home-third-color);
+      border: 1px solid var(--primary-color);
       outline: none;
       border-radius: 1.6rem;
       @include center();
       justify-content: space-around;
 
       & > h1 {
-        font-size: 2rem;
-        color: var(--home-first-color);
+        font-size: 1.8rem;
+        font-family: var(--main-font);
+        color: var(--tertiary-color);
+        font-weight: 600;
         // margin: 10px 0;
-
       }
       & > p {
-        color: var(--home-third-color);
-        
-        font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: .9rem;
+        color: var(--font-color-first);
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 0.9rem;
         font-weight: 500;
       }
     }

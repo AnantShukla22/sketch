@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -28,25 +27,6 @@ body::-webkit-scrollbar {
      object-fit: cover;
 }
 
-:root {
-  --team-first-color:#eeeeee;
-  --team-second-color:#00b7ff;
-  --team-third-color:#2b4c80;
-  --team-fourth-color: #151515;
-  --home-first-color:#d8005e;
-  --home-second-color:#00cc1f;
-  --home-third-color: #c6cd00;
-  --home-fourth-color: #01a2e8;
-}
-
-@font-face {
-  font-family: "high jump";
-  src: url("./fonts/main.ttf");
-}
-@font-face {
-  font-family: "money";
-  src: url("./fonts/moneyu.ttf");
-}
 :root {
   --main-font: "Rubik Pixels", cursive;
   --main-font-second: "high jump", sans-serif;
@@ -143,7 +123,6 @@ body::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
   font-size: 3.5rem;
-  font-family: var(--main-font);
 }
 .statistics_container .statistics_detail .detail_1 .detail_category h1 span {
   font-size: 2.5rem;
@@ -166,7 +145,6 @@ body::-webkit-scrollbar {
   align-items: center;
   justify-content: flex-start;
   font-size: 3.5rem;
-  font-family: var(--main-font);
 }
 .statistics_container .statistics_detail .detail_2 .detail_category h1 span {
   font-size: 2.5rem;
@@ -187,7 +165,6 @@ body::-webkit-scrollbar {
 }
 .statistics_container .statistics_detail .detail_3 .detail_category h6 {
   display: flex;
-  font-family: var(--main-font);
   font-size: 1.5rem;
 }
 
@@ -201,7 +178,8 @@ body::-webkit-scrollbar {
 .domain_container > h1 {
   font-size: 4.5rem;
   margin-bottom: 3rem;
-  color: var(--home-first-color);
+  color: var(--primary-color);
+  font-family: var(--heading-font);
 }
 .domain_container .domain_types {
   display: grid;
@@ -239,7 +217,8 @@ body::-webkit-scrollbar {
   height: 10.3rem;
   width: 16rem;
   padding: 0.8rem 1rem;
-  background-image: linear-gradient(315deg, var(--home-fourth-color) 0%, #000000 74%);
+  background-image: linear-gradient(315deg, var(--primary-color) 0%, #000000 74%);
+  border: 1px solid var(--primary-color);
   outline: none;
   border-radius: 1.6rem;
   display: flex;
@@ -249,11 +228,13 @@ body::-webkit-scrollbar {
   justify-content: space-around;
 }
 .domain_container .domain_types .box > h1 {
-  font-size: 2rem;
-  color: var(--home-first-color);
+  font-size: 1.8rem;
+  font-family: var(--main-font);
+  color: var(--tertiary-color);
+  font-weight: 600;
 }
 .domain_container .domain_types .box > p {
-  color: var(--home-third-color);
+  color: var(--font-color-first);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 0.9rem;
   font-weight: 500;
@@ -313,7 +294,7 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
+  min-height: 100vh;
   gap: 7rem;
   color: var(--font-color-first);
 }
@@ -385,7 +366,7 @@ body::-webkit-scrollbar {
   box-shadow: 3px 3px 10px 1px white;
 }
 .contact_container .contact_info .contact_handles {
-  color: var(--home-fourth-color);
+  color: var(--primary-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -422,10 +403,11 @@ body::-webkit-scrollbar {
   border-radius: 1rem;
 }
 #about .carousel_container > h1 {
-  color: var(--home-first-color);
+  color: var(--secondary-color);
   font-size: 4.5rem;
   text-align: center;
   margin-bottom: 5rem;
+  font-family: var(--heading-font);
 }
 #about .carousel_container .about_carousel {
   border-radius: 10rem;
@@ -468,24 +450,38 @@ body::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: var(--home-first-color);
+  color: var(--font-color-first);
   width: 80%;
   margin: auto;
 }
 .vision_container > h1 {
   font-size: 6rem;
+  font-family: var(--heading-font);
+  background: url("/images/mirror.jpg");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  background-clip: text;
+  -moz-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .vision_container > p {
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-align: center;
   margin: 3rem 0;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.1rem;
+  word-break: keep-all;
 }
 
 .triple_container {
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: 1.3fr 2fr;
-  color: var(--home-first-color);
+  min-height: 80vh;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--font-color-first);
 }
 .triple_container .triple_content {
   display: flex;
@@ -494,13 +490,21 @@ body::-webkit-scrollbar {
   height: 100%;
 }
 .triple_container .triple_content .triple_wrapper {
-  height: 20rem;
+  height: auto;
 }
 .triple_container .triple_content .triple_wrapper > h1 {
-  width: 100%;
-  font-size: 3.8rem;
-  color: var(--about-second-color);
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 4rem;
   margin-bottom: 4rem;
+  font-family: var(--heading-font);
+  background: -webkit-linear-gradient(left, #5f008e, #8e004e, #008e5f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background: -moz-linear-gradient(left, #5f008e, #8e004e, #008e5f);
+  -moz-background-clip: text;
+  background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 .triple_container .triple_content .triple_wrapper .triple_accordian {
   width: 80%;
@@ -512,9 +516,20 @@ body::-webkit-scrollbar {
   font-size: 1.4rem;
   margin-bottom: 3rem;
   cursor: pointer;
+  transition: all 0.6s ease;
+}
+.triple_container .triple_content .triple_wrapper .triple_accordian > .topic:nth-of-type(1) {
+  color: var(--primary-color);
+}
+.triple_container .triple_content .triple_wrapper .triple_accordian > .topic:nth-of-type(2) {
+  color: var(--secondary-color);
+}
+.triple_container .triple_content .triple_wrapper .triple_accordian > .topic:nth-of-type(3) {
+  color: var(--tertiary-color);
 }
 .triple_container .triple_content .triple_wrapper .triple_accordian > .topic > .heading {
-  font-size: 1.7rem;
+  font-size: 2.25rem;
+  font-family: var(--main-font);
   animation: pulse 1.7s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 @keyframes pulse {
@@ -522,7 +537,7 @@ body::-webkit-scrollbar {
     opacity: 1;
   }
   50% {
-    opacity: 0.3;
+    opacity: 0.6;
   }
 }
 .triple_container .triple_content .triple_wrapper .triple_accordian > .topic > .heading > span {
@@ -849,7 +864,7 @@ body::-webkit-scrollbar {
   cursor: pointer;
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--home-fourth-color);
+  color: white;
 }
 
 .loader_container {

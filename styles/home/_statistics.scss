@@ -47,7 +47,6 @@
         h1 {
           @include center();
           font-size: 3.5rem;
-          font-family: var(--main-font);
           span {
             font-size: 2.5rem;
           }
@@ -69,7 +68,6 @@
           @include center();
           justify-content: flex-start;
           font-size: 3.5rem;
-          font-family: var(--main-font);
 
           span {
             font-size: 2.5rem;
@@ -92,7 +90,6 @@
         }
         h6 {
           display: flex;
-          font-family: var(--main-font);
           font-size: 1.5rem;
         }
       }
