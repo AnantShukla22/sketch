@@ -9,7 +9,7 @@
   margin: auto;
   .landing_container {
     margin-top: 2rem;
-    height: 100vh;
+    min-height: 100vh;
     @include center;
     flex-direction: column;
     gap: 3rem;
@@ -21,10 +21,20 @@
       }
     }
     span {
-      color: var(--home-fourth-color);
+      color: var(--font-color-first);
       letter-spacing: 0.2rem;
-      font-weight: 600;
-      font-size: 2.9rem;
+      font-weight: 900;
+      font-size: 2.8rem;
+      position: relative;
+      font-family: var(--main-font-second);
+      background: url("/images/mirror.jpg");
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+      background-repeat: no-repeat;
+      background-position: center;
     }
   }
 }

@@ -7,16 +7,17 @@
 
 .about_whoweare {
   @include center();
-  height: 100vh;
+  min-height: 80vh;
   width: 80%;
   margin: auto;
-  color: var(--home-first-color);
+  color: var(--secondary-color);
 
   & > h1 {
     @include center();
     font-size: 7rem;
     font-weight: 500;
-    line-height: 0.9;
+    line-height: 9rem;
+    font-family: var(--heading-font);
   }
 
   & > p {

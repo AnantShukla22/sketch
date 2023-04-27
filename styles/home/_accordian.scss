@@ -6,44 +6,47 @@
 
 .accordian_container {
   // if any problem with responsive dirsctly amke it with padding
-  height: 100vh;
+  min-height: 80vh;
   @include center();
   flex-direction: column;
   align-items: flex-start;
+  width: 80%;
+  margin: auto;
   & > h1 {
-    font-size: 4rem;
-    color: var(--home-first-color);   // choose diff color
-    margin-bottom: 10rem;
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    margin-bottom: 7.5rem;
+    align-self: flex-end;
+    font-family: var(--heading-font);
   }
   .accordian_list {
-   width: 100%;
+    width: 100%;
+    margin: 0 auto;
     .accordian {
-        cursor: pointer;
-        transition: .2s ease-in-out;
-        &:hover{
-            padding-bottom: 2rem;
-        }
-        &>hr{
-            margin: .4rem 0;
-        }
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+      &:hover {
+        padding-bottom: 2rem;
+      }
+      & > hr {
+        margin: 0.4rem 0;
+      }
       .question {
         @include center();
         justify-content: space-between;
-        transition: .2s ease-in-out;
+        transition: 0.2s ease-in-out;
         & > h2 {
           font-size: 2rem;
           font-weight: 500;
-          color:var(--home-second-color)  ;
+          color: var(--primary-color);
         }
- 
       }
-      .answer{
-        padding:   .4rem 0 2rem 0;
+      .answer {
+        padding: 0.4rem 0 2rem 0;
         font-size: 1.3rem;
-        color:var(--home-first-color)  ;
+        color: var(--secondary-color);
         transition: 1s ease-in-out;
       }
-
     }
   }
 }
