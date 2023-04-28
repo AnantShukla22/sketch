@@ -62,44 +62,7 @@ const Swipers = ({member,type}:any) => {
  <Image src={elem.image.url} sizes="100" fill alt="" />
 </SwiperSlide>)
 )}
-        {/* <SwiperSlide className="swiperSlide">
-          <div className="team_name">
-            <span>Anant Shukla :</span>
-            <p>Design</p>
-          </div>
-          <Image src={logo1} sizes="100" fill alt="" />
-        </SwiperSlide> */}
-        {/* <SwiperSlide className="swiperSlide">
-          <div className="team_name">
-            <span>Anant Shukla :</span>
-            <p>Design</p>
-          </div>
-          <Image src={logo1} sizes="100" fill alt="" />
-        </SwiperSlide> */}
-        {/* <SwiperSlide className="swiperSlide">
-          <Image src={logo1} sizes="100" fill alt="" />
-        </SwiperSlide>
-        <SwiperSlide className="swiperSlide">
-          <Image src={logo1} sizes="100" fill alt="" />
-        </SwiperSlide>
-        <SwiperSlide className="swiperSlide">
-          <Image src={logo1} sizes="100" fill alt="" />
-        </SwiperSlide>
-        <SwiperSlide className="swiperSlide">
-          <Image src={logo1} sizes="100" fill alt="" />
-        </SwiperSlide>
-        <SwiperSlide className="swiperSlide">
-          <Image src={logo1} sizes="100" fill alt="" />
-        </SwiperSlide>
-        <SwiperSlide className="swiperSlide">
-          <Image src={logo1} sizes="100" fill alt="" />
-        </SwiperSlide>
-        <SwiperSlide className="swiperSlide">
-          <Image src={logo1} sizes="100" fill alt="" />
-        </SwiperSlide>
-        <SwiperSlide className="swiperSlide">
-          <Image src={logo1} sizes="100" fill alt="" />
-        </SwiperSlide> */}
+        
       </Swiper>
       <div className="swiper_id">
         <span>01</span> - 48
