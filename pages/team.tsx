@@ -5,8 +5,14 @@ import { GiTigerHead  } from "react-icons/gi";
 import { FaWolfPackBattalion  } from "react-icons/fa";
 import { GiMonkey  } from "react-icons/gi";
 import Header from "@/components/header/Header";
+import { GetServerSideProps } from "next";
+import gqlclient from "@/styles/gql/client";
+import { getMember } from "@/styles/gql/queries";
+import {useState ,useEffect} from "react";
 
-const Team = () => {
+const Team = ({members}:any) => {
+  const [memType,setMemType]=useState("head");
+  
   return (<>
   <Header/>
   <div className="team_container" id="team">
@@ -14,25 +20,25 @@ const Team = () => {
       <div className="swiper_leftBtns">
         <div className="btn_content">
           <button>
-            < GiTigerHead size={23} />
+            < GiTigerHead size={23} onClick={()=>{setMemType("alu")}}/>
           </button>
-          <span>Alumini</span>
+          <span >Alumini</span>
         </div>
         <div className="btn_content">
           <button className="btn_mid">
-            < FaWolfPackBattalion size={23} />
+            < FaWolfPackBattalion size={23} onClick={()=>{setMemType("head")}}/>
           </button>
-          <span>Head</span>
+          <span >Head</span>
         </div>
         <div className="btn_content">
           <button>
-            <GiMonkey size={28}/>
+            <GiMonkey size={28} onClick={()=>{setMemType("mem")}}/>
           </button>
-          <span>Members</span>
+          <span >Members</span>
         </div>
       </div>
       <div className="swiper_wrapper">
-        <Swiper />
+        <Swiper member={members} type={memType}/>
       </div>
       <div className="swiper_rightBtns">
         <div className="btn_content">
@@ -55,13 +61,23 @@ const Team = () => {
   );
 };
 
-export async function getServerSideProps(){
-  await new Promise((resolve)=>{
-    setTimeout(resolve,1000);
-  })
-
+export const getServerSideProps:GetServerSideProps=async()=>{
+  const headm:any=await gqlclient.request(getMember,{
+    memType:"Head",
+  });
+  const memberm:any=await gqlclient.request(getMember,{
+    memType:"Member",
+  });
+  const aluminim:any=await gqlclient.request(getMember,{
+    memType:"Alumini",
+  });
+const members={
+   head:headm.memberCollection.items,
+   mem:memberm.memberCollection.items,
+   alu:aluminim.memberCollection.items,
+};
   return{
-    props:{}
-  }
-}
+    props:{members:members},
+  };
+};
 export default Team;

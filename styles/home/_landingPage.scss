@@ -6,7 +6,7 @@
 
 #home {
   width: 80%;
-  margin: auto;
+ margin: auto;
   .landing_container {
     margin-top: 2rem;
     min-height: 100vh;
@@ -15,8 +15,9 @@
     gap: 3rem;
     .img_container {
       > img {
-        height: 50vh;
-        width: 50vw;
+        // height: 50vh;
+        width: 30vw;
+        aspect-ratio: 1.25;
         object-fit: contain;
       }
     }

@@ -35,6 +35,13 @@ body::-webkit-scrollbar {
   --secondary-color: #8e004e;
   --tertiary-color: #008e5f;
   --font-color-first: white;
+  --team-color:#4aa6df;
+  --team-second-color:#00b7ff;
+  --team-third-color:#2b4c80;
+  --team-fourth-color: #151515;
+  --event-first-color:#c1026b;
+  --event-second-color:#7f01be;
+  --event-third-color:rgb(145, 144, 144);
 }
 
 #home {
@@ -51,8 +58,8 @@ body::-webkit-scrollbar {
   gap: 3rem;
 }
 #home .landing_container .img_container > img {
-  height: 50vh;
-  width: 50vw;
+  width: 30vw;
+  aspect-ratio: 1.25;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -573,6 +580,7 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 80vh;
   justify-content: space-between;
   padding: 1rem 3rem;
   position: relative;
@@ -626,9 +634,9 @@ body::-webkit-scrollbar {
   width: 100%;
   position: absolute;
   top: -0.8rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   white-space: nowrap;
-  color: var(--team-second-color);
+  color: var(--team-color);
   letter-spacing: 1px;
 }
 .swiper_container .swiper_wrapper .swiper .team_name > span {
@@ -641,7 +649,7 @@ body::-webkit-scrollbar {
   filter: blur(0);
 }
 .swiper_container .swiper_wrapper .swiper .swiper-slide-active:hover {
-  box-shadow: 0px 0px 30px var(--team-third-color) inset;
+  box-shadow: 0px 0px 20px var(--team-color) inset;
 }
 .swiper_container .swiper_wrapper .swiper .swiper-slide-active .team_name {
   opacity: 1;
@@ -649,7 +657,7 @@ body::-webkit-scrollbar {
   transition: all 1s ease;
 }
 .swiper_container .swiper_wrapper .swiper_id {
-  color: var(--team-second-color);
+  color: var(--team-color);
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
@@ -680,11 +688,11 @@ body::-webkit-scrollbar {
   border: none;
   background: transparent;
   border: 1px solid black;
-  box-shadow: 0px 0px 3rem red;
-  color: yellow;
+  box-shadow: 0px 0px 3rem var(--team-color);
+  color: var(--team-color);
   border: 1px solid black;
-  box-shadow: 0px 0px 2.3rem rgb(0, 92, 177);
-  color: var(--team-second-color);
+  box-shadow: 0px 0px 2.3rem var(--team-color);
+  color: var(--team-color);
 }
 
 .team_container {
@@ -693,8 +701,9 @@ body::-webkit-scrollbar {
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
+  margin: 2vh 0;
   padding-top: 4rem;
-  color: var(--team-first-color);
+  color: var(--team-color);
 }
 .team_container .team_logo > img {
   height: 4rem;
@@ -730,11 +739,11 @@ body::-webkit-scrollbar {
   border-radius: 100%;
   background: transparent;
   border: 1px solid black;
-  box-shadow: 0px 0px 2rem red;
+  box-shadow: 0px 0px 2rem var(--team-color);
   color: yellow;
   border: 1px solid black;
-  box-shadow: 0px 0px 2.3rem rgb(0, 92, 177);
-  color: var(--team-second-color);
+  box-shadow: 0px 0px 2.3rem var(--team-color);
+  color: var(--team-color);
   cursor: pointer;
 }
 .team_container .swiper_leftBtns .btn_content > button:hover,
@@ -972,7 +981,7 @@ body::-webkit-scrollbar {
 .event_container:before {
   content: "";
   position: fixed;
-  top: 7.5rem;
+  top: 6.75rem;
   left: 0rem;
   height: 8px;
   width: 18px;
@@ -982,7 +991,7 @@ body::-webkit-scrollbar {
 .event_container::after {
   content: "";
   position: fixed;
-  top: 7.5rem;
+  top: 6.75rem;
   right: 0px;
   height: 8px;
   width: 18px;
@@ -994,14 +1003,14 @@ body::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
-  height: 9rem;
+  height: 7rem;
   width: 100%;
   position: relative;
 }
 .event_container .burgerHeader:before {
   content: "";
   position: fixed;
-  top: 7.73rem;
+  top: 7rem;
   left: 0rem;
   height: 1px;
   width: 100vw;
@@ -1009,7 +1018,7 @@ body::-webkit-scrollbar {
   z-index: -1;
 }
 .event_container .burgerHeader .event_burger_icon {
-  background-color: red;
+  background-color: var(--event-third-color);
   padding: 10px;
   color: white;
   border-radius: 100%;
@@ -1018,14 +1027,15 @@ body::-webkit-scrollbar {
   font-size: 1rem;
 }
 .event_container .event_header .event_heading1 {
+  margin-top: 1rem;
   font-size: 12.5vw;
-  color: rgb(1, 26, 212);
+  color: var(--event-first-color);
   line-height: 10vw;
   letter-spacing: -6px;
   margin-bottom: 0.1em;
 }
 .event_container .event_header .event_heading1 > span {
-  color: red;
+  color: var(--event-second-color);
   margin-right: 0.1em;
 }
 .event_container .event_header .event_heading2 {
@@ -1060,7 +1070,7 @@ body::-webkit-scrollbar {
 .event_container .event_header .event_heading2 > span {
   font-size: 5rem;
   font-size: 6.5vw;
-  color: burlywood;
+  color: var(--event-third-color);
   font-weight: 100;
 }
 .event_container .event_header .event_heading2 > div {
@@ -1072,10 +1082,10 @@ body::-webkit-scrollbar {
   font-weight: 600;
 }
 .event_container .event_header .event_heading2 > div > :nth-child(1) {
-  color: red;
+  color: var(--event-first-color);
 }
 .event_container .event_header .event_heading2 > div > :nth-child(2) {
-  color: rgb(0, 30, 255);
+  color: var(--event-second-color);
 }
 .event_container .event_introImg > img {
   margin: 10rem 0 10rem 0;
@@ -1096,12 +1106,12 @@ body::-webkit-scrollbar {
 }
 
 .event_section {
-  color: rgb(102, 0, 255);
   display: grid;
   grid-template-columns: 1.3fr 3fr 1.3fr;
   font-size: 1.05rem;
   margin-bottom: 5rem;
   width: 95%;
+  color: white;
   margin: auto;
 }
 .event_section .event_section_left {
@@ -1116,6 +1126,7 @@ body::-webkit-scrollbar {
   font-size: 3.5vw;
   margin-bottom: 3vw;
   font-weight: 300;
+  color: var(--event-first-color);
 }
 .event_section .event_section_left > :nth-child(2) {
   margin-bottom: 50vw;
@@ -1157,9 +1168,11 @@ body::-webkit-scrollbar {
 .event_section .event_section_right .event_dates .event_date {
   font-size: 8vw;
   line-height: 5.6vw;
+  color: var(--event-second-color);
 }
 .event_section .event_section_right .event_dates .event_month {
   font-size: 3vw;
+  color: var(--event-first-color);
   line-height: 2.15vw;
 }
 .event_section .event_section_right > p {
@@ -1201,7 +1214,7 @@ body::-webkit-scrollbar {
   right: 0;
   top: -1.75rem;
   transition: all 1s linear;
-  background-color: red;
+  background-color: var(--event-third-color);
   padding: 10px;
   color: white;
   border-radius: 100%;

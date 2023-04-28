@@ -10,7 +10,7 @@
     &:before {
       content: "";
       position: fixed;
-      top: 7.5rem;
+      top: 6.75rem;
       left: 0rem;
       height: 8px;
       width: 18px;
@@ -20,7 +20,7 @@
     &::after {
       content: "";
       position: fixed;
-      top: 7.5rem;
+      top: 6.75rem;
       right: 0px;
       height: 8px;
       width: 18px;
@@ -31,13 +31,14 @@
     .burgerHeader {
       @include center();
       justify-content: space-between;
-      height: 9rem;
+      height: 7rem;
       width: 100%;
       position: relative;
+
       &:before {
         content: "";
         position: fixed;
-        top: 7.73rem;
+        top: 7rem;
         left: 0rem;
         height: 1px;
         width: 100vw;
@@ -45,7 +46,7 @@
         z-index:-1;
       }
       .event_burger_icon {
-        background-color: red;
+        background-color: var(--event-third-color);
         padding: 10px;
         color: white;
         border-radius: 100%;
@@ -57,12 +58,13 @@
     
     .event_header {
       .event_heading1 {
+        margin-top: 1rem;
         font-size: 12.5vw;
-        color: rgb(1, 26, 212);
+        color: var(--event-first-color);
         line-height: 10vw;
         letter-spacing: -6px;
         & > span {
-          color: red;
+          color:  var(--event-second-color);
           margin-right: .1em
         }
         margin-bottom: .1em
@@ -100,7 +102,7 @@
         & > span {
           font-size: 5rem;
           font-size: 6.5vw;
-          color: burlywood;
+          color:var(--event-third-color);
           font-weight: 100;
         }
       
@@ -110,10 +112,10 @@
           font-size: 3.32vw;
           font-weight: 600;
           & > :nth-child(1) {
-            color: red;
+            color: var(--event-first-color);
           }
           & > :nth-child(2) {
-            color: rgb(0, 30, 255);
+            color: var(--event-second-color);
           }
         }
       }

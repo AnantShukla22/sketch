@@ -14,10 +14,20 @@ import "../../node_modules/swiper/modules/effect-coverflow/effect-coverflow.scss
 
 SwiperCore.use([Navigation, Pagination, EffectCoverflow]);
 
-const Swipers = () => {
+const Swipers = ({member,type}:any) => {
+  let info;
+  if(type==="head"){
+   info= member.head;}
+  else if(type==="mem"){
+    info=member.mem;
+  }
+  else{
+    info=member.alu;
+  }
+  console.log("abe",info);
   return (
     <>
-  
+   
       <Swiper
         className="swiper"
         effect={"coverflow"}
@@ -41,16 +51,32 @@ const Swipers = () => {
           prevEl: ".swiper_prev_btn",
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
-      >
-       
-        <SwiperSlide className="swiperSlide">
+      > 
+      
+{info.map((elem:any,index:number)=>(
+ <SwiperSlide key={index} className="swiperSlide">
+ <div className="team_name">
+   <span>{elem.name}</span>
+   <p>{elem.domain}</p>
+ </div>
+ <Image src={elem.image.url} sizes="100" fill alt="" />
+</SwiperSlide>)
+)}
+        {/* <SwiperSlide className="swiperSlide">
           <div className="team_name">
             <span>Anant Shukla :</span>
             <p>Design</p>
           </div>
           <Image src={logo1} sizes="100" fill alt="" />
-        </SwiperSlide>
-        <SwiperSlide className="swiperSlide">
+        </SwiperSlide> */}
+        {/* <SwiperSlide className="swiperSlide">
+          <div className="team_name">
+            <span>Anant Shukla :</span>
+            <p>Design</p>
+          </div>
+          <Image src={logo1} sizes="100" fill alt="" />
+        </SwiperSlide> */}
+        {/* <SwiperSlide className="swiperSlide">
           <Image src={logo1} sizes="100" fill alt="" />
         </SwiperSlide>
         <SwiperSlide className="swiperSlide">
@@ -73,7 +99,7 @@ const Swipers = () => {
         </SwiperSlide>
         <SwiperSlide className="swiperSlide">
           <Image src={logo1} sizes="100" fill alt="" />
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
       <div className="swiper_id">
         <span>01</span> - 48

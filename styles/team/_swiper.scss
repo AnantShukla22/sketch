@@ -5,8 +5,7 @@
 }
 .swiper_container {
   @include center();
-  // width: 70%;
-  // margin: auto;
+  min-height: 80vh;
   justify-content: space-between;
   padding: 1rem 3rem;
   position: relative;
@@ -19,7 +18,7 @@
     position: absolute;
     width: 20rem;
     height: 100rem;
-    left: 30rem ;
+    left: 30rem;
     background: linear-gradient(
       var(--team-third-color),
       var(--team-second-color)
@@ -58,9 +57,9 @@
         width: 100%;
         position: absolute;
         top: -0.8rem;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         white-space: nowrap;
-        color: var(--team-second-color);
+        color: var(--team-color);
         letter-spacing: 1px;
 
         & > span {
@@ -76,7 +75,7 @@
       .swiper-slide-active {
         filter: blur(0);
         &:hover {
-          box-shadow: 0px 0px 30px var(--team-third-color) inset;
+          box-shadow: 0px 0px 20px var(--team-color) inset;
         }
         .team_name {
           opacity: 1;
@@ -88,7 +87,7 @@
 
     // swiper class ends
     .swiper_id {
-      color: var(--team-second-color);
+      color: var(--team-color);
       font-size: 1.1rem;
       font-weight: 600;
       margin-bottom: 1.5rem;
@@ -115,11 +114,11 @@
         border: none;
         background: transparent;
         border: 1px solid black;
-        box-shadow: 0px 0px 3rem red;
-        color: yellow;
+        box-shadow: 0px 0px 3rem var(--team-color);
+        color: var(--team-color);
         border: 1px solid black;
-        box-shadow: 0px 0px 2.3rem rgb(0, 92, 177);
-        color: var(--team-second-color);
+        box-shadow: 0px 0px 2.3rem var(--team-color);
+        color: var(--team-color);
       }
     }
   }

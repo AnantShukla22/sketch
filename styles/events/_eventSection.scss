@@ -6,12 +6,13 @@
 }
 
 .event_section {
-  color: rgb(102, 0, 255);
   display: grid;
   grid-template-columns: 1.3fr 3fr 1.3fr;
   font-size: 1.05rem;
   margin-bottom: 5rem;
   width: 95%;
+  color: white;
+
   margin: auto;
   .event_section_left {
     @include center();
@@ -21,9 +22,12 @@
       font-size: 3.5vw;
       margin-bottom: 3vw;
       font-weight: 300;
+      color: var(--event-first-color);
+
     }
     > :nth-child(2) {
       margin-bottom: 50vw;
+
     }
   }
   .event_section_mid {
@@ -52,14 +56,18 @@
       .event_date {
         font-size: 8vw;
         line-height: 5.6vw;
+        color: var(--event-second-color);
+
       }
       .event_month {
         font-size: 3vw;
+        color: var(--event-first-color);
         line-height: 2.15vw;
       }
     }
     > p {
       text-align: end;
+
     }
   }
 }
