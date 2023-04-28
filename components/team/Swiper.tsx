@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import logo1 from "../../public/images/logo.png";
 import SwiperCore, { Navigation, Pagination, EffectCoverflow } from "swiper";
 import { BiRightArrow } from "react-icons/bi";
 import { BiLeftArrow } from "react-icons/bi";
@@ -61,8 +60,7 @@ const Swipers = ({member,type}:any) => {
  </div>
  <Image src={elem.image.url} sizes="100" fill alt="" />
 </SwiperSlide>)
-)}
-        
+)} 
       </Swiper>
       <div className="swiper_id">
         <span>01</span> - 48
