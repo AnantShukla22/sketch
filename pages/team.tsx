@@ -6,8 +6,8 @@ import { FaWolfPackBattalion  } from "react-icons/fa";
 import { GiMonkey  } from "react-icons/gi";
 import Header from "@/components/header/Header";
 import { GetServerSideProps } from "next";
-import gqlclient from "@/styles/gql/client";
-import { getMember } from "@/styles/gql/queries";
+import gqlclient from "@/gql/client";
+import { getMember } from "@/gql/queries";
 import {useState ,useEffect} from "react";
 
 const Team = ({members}:any) => {

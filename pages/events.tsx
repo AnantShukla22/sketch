@@ -15,6 +15,7 @@ const events = () => {
     <EventYear year={"2016"} yearDetail={year1Details} yearEventList={year1EventList} />
     <EventYear year={"2017"} yearDetail={year2Details}  yearEventList={year2EventList}/>
     <EventYear year={"2018"} yearDetail={year3Details}  yearEventList={year3EventList}/>
+    
 
     </div>
   );
