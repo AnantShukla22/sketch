@@ -8,7 +8,7 @@ import Header from "@/components/header/Header";
 import { GetServerSideProps } from "next";
 import gqlclient from "@/gql/client";
 import { getMember } from "@/gql/queries";
-import {useState ,useEffect} from "react";
+import {useState } from "react";
 
 const Team = ({members}:any) => {
   const [memType,setMemType]=useState("head");
