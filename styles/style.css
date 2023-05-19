@@ -634,13 +634,13 @@ body::-webkit-scrollbar {
   width: 100%;
   position: absolute;
   top: -0.8rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   white-space: nowrap;
   color: var(--team-color);
   letter-spacing: 1px;
 }
 .swiper_container .swiper_wrapper .swiper .team_name > span {
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 .swiper_container .swiper_wrapper .swiper .swiper-slide {
   filter: blur(3px);
@@ -700,9 +700,8 @@ body::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 100vh;
-  margin: 2vh 0;
-  padding-top: 4rem;
+  min-height: 95vh;
+  margin-top: 2rem;
   color: var(--team-color);
 }
 .team_container .team_logo > img {

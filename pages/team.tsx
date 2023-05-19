@@ -11,7 +11,7 @@ import { getMember } from "@/gql/queries";
 import {useState } from "react";
 
 const Team = ({members}:any) => {
-  const [memType,setMemType]=useState("head");
+  const [memType,setMemType]=useState("mem");
   
   return (<>
   <Header/>
@@ -26,15 +26,15 @@ const Team = ({members}:any) => {
         </div>
         <div className="btn_content">
           <button className="btn_mid">
-            < FaWolfPackBattalion size={23} onClick={()=>{setMemType("head")}}/>
+            < GiMonkey size={23} onClick={()=>{setMemType("mem")}}/>
           </button>
-          <span >Head</span>
+          <span >Members</span>
         </div>
         <div className="btn_content">
           <button>
-            <GiMonkey size={28} onClick={()=>{setMemType("mem")}}/>
+            < FaWolfPackBattalion size={28} onClick={()=>{setMemType("head")}}/>
           </button>
-          <span >Members</span>
+          <span >Head</span>
         </div>
       </div>
       <div className="swiper_wrapper">

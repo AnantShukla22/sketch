@@ -4,7 +4,6 @@ import SwiperCore, { Navigation, Pagination, EffectCoverflow } from "swiper";
 import { BiRightArrow } from "react-icons/bi";
 import { BiLeftArrow } from "react-icons/bi";
 
-
 // scss of sliper import
 import "../../node_modules/swiper/swiper.scss";
 import "../../node_modules/swiper/modules/navigation/navigation.scss";
@@ -13,20 +12,17 @@ import "../../node_modules/swiper/modules/effect-coverflow/effect-coverflow.scss
 
 SwiperCore.use([Navigation, Pagination, EffectCoverflow]);
 
-const Swipers = ({member,type}:any) => {
+const Swipers = ({ member, type }: any) => {
   let info;
-  if(type==="head"){
-   info= member.head;}
-  else if(type==="mem"){
-    info=member.mem;
+  if (type === "head") {
+    info = member.head;
+  } else if (type === "mem") {
+    info = member.mem;
+  } else {
+    info = member.alu;
   }
-  else{
-    info=member.alu;
-  }
-  console.log("abe",info);
   return (
     <>
-   
       <Swiper
         className="swiper"
         effect={"coverflow"}
@@ -50,17 +46,16 @@ const Swipers = ({member,type}:any) => {
           prevEl: ".swiper_prev_btn",
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
-      > 
-      
-{info.map((elem:any,index:number)=>(
- <SwiperSlide key={index} className="swiperSlide">
- <div className="team_name">
-   <span>{elem.name}</span>
-   <p>{elem.domain}</p>
- </div>
- <Image src={elem.image.url} sizes="100" fill alt="" />
-</SwiperSlide>)
-)} 
+      >
+        {info.map((elem: any, index: number) => (
+          <SwiperSlide key={index} className="swiperSlide">
+            <div className="team_name">
+              <span>{elem.name}</span>
+              <p>{elem.domain}</p>
+            </div>
+            <Image src={elem.image.url} sizes="100" fill alt="" />
+          </SwiperSlide>
+        ))}
       </Swiper>
       <div className="swiper_id">
         <span>01</span> - 48
