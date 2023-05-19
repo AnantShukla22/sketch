@@ -410,10 +410,17 @@
         width: 6.5rem;
         position: absolute;
         bottom: -3.3rem;
-        left: 8.2rem;
+        left: 7.9rem;
         img {
           object-fit: contain;
         }
+      }
+      & > button {
+        @include center();
+        gap: 1rem;
+        padding: 10px 10px;
+        font-size: .9rem;
+        margin-bottom: 1rem;
       }
       .contact_handles {
         gap: 2rem;

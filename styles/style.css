@@ -964,11 +964,20 @@ body::-webkit-scrollbar {
     width: 6.5rem;
     position: absolute;
     bottom: -3.3rem;
-    left: 8.2rem;
+    left: 7.9rem;
   }
   .contact_container .contact_info .logo1 img {
     -o-object-fit: contain;
        object-fit: contain;
+  }
+  .contact_container .contact_info > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px 10px;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
   }
   .contact_container .contact_info .contact_handles {
     gap: 2rem;
