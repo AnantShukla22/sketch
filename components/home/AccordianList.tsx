@@ -24,7 +24,7 @@ const AccordianList = ({ question, answer }: any) => {
       <hr />
       <div className="question">
         <h2>{question}</h2>
-        {active?<BiUpArrow size={25} />:<BiDownArrow size={25} />}
+        {active?<BiUpArrow size={25} color="#8503c6"/>:<BiDownArrow size={25} color="#d00173" />}
         
       </div>
       {active && (

@@ -6,16 +6,13 @@
 
 .accordian_container {
   // if any problem with responsive dirsctly amke it with padding
-  min-height: 80vh;
+  min-height: 100vh;
   @include center();
   flex-direction: column;
-  align-items: flex-start;
-  width: 80%;
-  margin: auto;
   & > h1 {
     font-size: 3.5rem;
     color: var(--primary-color);
-    margin-bottom: 7.5rem;
+    margin-bottom: 6rem;
     align-self: flex-end;
     font-family: var(--heading-font);
   }
@@ -50,3 +47,74 @@
     }
   }
 }
+
+@media screen and (max-width:1250px) {
+  .accordian_container {
+    & > h1 {
+      font-size: 3.1rem;
+      margin-bottom: 4.5rem;
+    }
+    .accordian_list {
+      .accordian {
+        .question {
+          & > h2 {
+            font-size: 1.8rem;
+          }
+        }
+        .answer {
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:940px) {
+  .accordian_container {
+    & > h1 {
+      font-size: 3rem;
+      margin-bottom: 3.5rem;
+    }
+    .accordian_list {
+      .accordian {
+        .question {
+          & > h2 {
+            font-size: 1.6rem;
+          }
+        }
+        .answer {
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:740px) {
+  .accordian_container {
+    & > h1 {
+      line-height: 3rem;
+      font-size: 2.8rem;
+      margin-bottom: 3.3rem;
+      align-self: center;
+      text-align: center;
+
+    }
+    .accordian_list {
+      .accordian {
+        .question {
+          & > h2 {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:650px) {
+  .accordian_container {
+    & > h1 {
+      text-align: center;
+    }
+
+  }
+}
+

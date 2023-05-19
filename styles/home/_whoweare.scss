@@ -7,27 +7,127 @@
 
 .about_whoweare {
   @include center();
-  min-height: 80vh;
-  width: 80%;
-  margin: auto;
+  min-height: 100vh;
   color: var(--secondary-color);
-
   & > h1 {
     @include center();
     font-size: 7rem;
     font-weight: 500;
-    line-height: 9rem;
+    line-height: 7rem;
     font-family: var(--heading-font);
   }
 
   & > p {
     font-size: 2.2rem;
     text-align: center;
-    margin: 4rem 0;
+    margin: 2rem 0;
+    width: 85%;
   }
   & > h3 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     text-align: center;
     font-weight: 500;
+  }
+}
+@media screen and (max-width: 1320px) {
+  .about_whoweare {
+    & > p {
+      width: 90%;
+    }
+  }
+}
+@media screen and (max-width: 1150px) {
+  .about_whoweare {
+    & > h1 {
+      font-size: 6rem;
+      line-height: 6rem;
+    }
+    & > p {
+      font-size: 2rem;
+      width: 95%;
+
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .about_whoweare {
+    & > h1 {
+      font-size: 5.5rem;
+      line-height: 5.4rem;
+    }
+    & > p {
+      width: 95%;
+font-size: 1.9rem;
+    }
+    & > h3 {
+      font-size: 1.3rem;
+
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about_whoweare {
+    & > h1 {
+      font-size: 4.8rem;
+      line-height: 5rem;
+    }
+    & > p {
+      width: 95%;
+font-size: 1.8rem;
+    }
+    & > h3 {
+      font-size: 1.2rem;
+
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about_whoweare {
+    & > h1 {
+      font-size: 4.8rem;
+      line-height: 5rem;
+    }
+    & > p {
+      width: 95%;
+font-size: 1.6rem;
+    }
+    & > h3 {
+      font-size: 1.1rem;
+
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .about_whoweare {
+    & > h1 {
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+    & > p {
+      width: 95%;
+font-size: 1.5rem;
+    }
+    & > h3 {
+      font-size: 1.1rem;
+
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .about_whoweare {
+    & > h1 {
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+    & > p {
+      width: 95%;
+font-size: 1.4rem;
+    }
+    & > h3 {
+      font-size: 1,1rem;
+
+    }
   }
 }

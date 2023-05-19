@@ -19,7 +19,7 @@ const Contact = () => {
       scale: 1,
       transition: {
         duration: 1,
-        delay:0.3
+        delay: 0.3,
       },
     },
     content: {
@@ -41,37 +41,51 @@ const Contact = () => {
   };
   return (
     <div className="contact_container">
-      <m.div variants={animate} 
+      <m.div
+        variants={animate}
         initial="initial"
-        whileInView={"heading"} className="contact_info">
-        <m.div variants={animate} 
-        initial="initial"
-        whileInView={"content"}  className="contact_heading">
+        whileInView={"heading"}
+        className="contact_info"
+      >
+        <m.div
+          variants={animate}
+          initial="initial"
+          whileInView={"content"}
+          className="contact_heading"
+        >
           <h1>SKETCH AROUND</h1>
           <h3>...and find out</h3>
         </m.div>
 
-        <m.p variants={animate} 
-        initial="initial"
-        whileInView={"content"} >Join our Discord to get an exclusive in-game reward bhaafsa wdda!</m.p>
-        <button >Join Discord <span><BsDiscord/></span></button>
+        <m.p variants={animate} initial="initial" whileInView={"content"}>
+          Join our Discord to get an exclusive in-game reward bhaafsa wdda!
+        </m.p>
+        <button>
+          Join Discord{" "}
+          <span>
+            <BsDiscord />
+          </span>
+        </button>
         <div className="contact_handles">
           <p>We're also on</p>
           <div className="social">
-            <AiOutlineTwitter size={28}/>
-            <AiOutlineMail size={28}/>
-            <AiFillLinkedin size={28}/>
-            <AiFillYoutube size={28}/>
+            <AiOutlineTwitter size={28} />
+            <AiOutlineMail size={28} />
+            <AiFillLinkedin size={28} />
+            <AiFillYoutube size={28} />
           </div>
         </div>
-        <m.div  variants={animate} 
-        initial="initial"
-        whileInView={"sketch"}  className="img_container logo1">
+        <m.div
+          variants={animate}
+          initial="initial"
+          whileInView={"sketch"}
+          className="img_container logo1"
+        >
           <Image src={logo2} sizes="100" fill alt="" />
         </m.div>
       </m.div>
       <div className="img_container logo2">
-        <Image src={logo1} sizes="100" fill alt="" />
+        <Image src={logo1} sizes="100" fill alt=""  />
       </div>
     </div>
   );

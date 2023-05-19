@@ -14,7 +14,7 @@ const Statistics = () => {
       scale: 1,
       transition: {
         duration: 1,
-        delay:.2
+        delay: 0.2,
       },
     },
     spanAnimate1: {
@@ -22,7 +22,7 @@ const Statistics = () => {
       scale: 1,
       transition: {
         duration: 1,
-        delay: .5,
+        delay: 0.5,
       },
     },
     spanAnimate2: {
@@ -37,43 +37,48 @@ const Statistics = () => {
   return (
     <div className="statistics_container" id="statistics">
       <div className="statistics_content">
-        <m.h1 variants={animate} 
-        initial="initial"
-        whileInView={"heading"}>Statistics</m.h1>
+        <m.h1 variants={animate} initial="initial" whileInView={"heading"}>
+          Statistics
+        </m.h1>
         <hr />
-        <m.p variants={animate} 
-        initial="initial"
-        whileInView={"spanAnimate1"}>
+        <m.p variants={animate} initial="initial" whileInView={"spanAnimate1"}>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed,
           repudiandae molestias! Magni eligendi incidunt, animi cumque eius
           autem illum voluptatem praesentium, sequi nulla repellat ea
           exercitationem. Voluptates fugiat eaque cupiditate!
         </m.p>
       </div>
-      <m.div className="statistics_detail" variants={animate} 
+      <m.div
+        className="statistics_detail"
+        variants={animate}
         initial="initial"
-        whileInView={"spanAnimate2"}>
+        whileInView={"spanAnimate2"}
+      >
         <div className="detail_1">
           <div className="detail_icon">
-            <BsFillPersonFill size={70}/>
+            <BsFillPersonFill size={60} />
           </div>
           <div className="detail_category">
-            <h1>Total 40 <span>+</span></h1>
+            <h1>
+              Total 40 <span>+</span>
+            </h1>
             <h6>Members</h6>
           </div>
         </div>
         <div className="detail_2">
           <div className="detail_icon">
-            <MdEmojiEvents size={70}/>
+            <MdEmojiEvents size={60} />
           </div>
           <div className="detail_category">
-            <h1>25<span>+</span> </h1>
+            <h1>
+              25<span>+</span>{" "}
+            </h1>
             <h6>Events Organized</h6>
           </div>
         </div>
         <div className="detail_3">
           <div className="detail_icon">
-            <GiBookAura size={65}/>
+            <GiBookAura size={55} />
           </div>
           <div className="detail_category">
             <h1>7 Years</h1>

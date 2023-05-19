@@ -14,14 +14,16 @@
     position: relative;
     box-shadow: 0px 0px 20px 7px var(--secondary-color) inset;
     padding: 3rem 5rem;
+    width: 45rem;
+    height: 28rem;
     @include center();
     flex-direction: column;
 
     .contact_heading {
       @include center();
       flex-direction: column;
-      align-items: flex-end;
-
+      // align-items: flex-start;
+      width: 100%;
       & > h1 {
         font-size: 3.5rem;
         font-weight: 600;
@@ -88,8 +90,340 @@
     }
   }
 
-  .logo2 {
+  .img_container {
     height: 25rem;
     aspect-ratio: 1;
+  }
+}
+
+@media screen and (max-width: 1430px) {
+  .contact_container {
+    gap: 6rem;
+    .contact_info {
+      padding: 2rem 4rem;
+    }
+  }
+}
+@media screen and (max-width: 1310px) {
+  .contact_container {
+    gap: 6rem;
+
+    .contact_info {
+      padding: 2rem 3rem;
+      height: 25rem;
+      .contact_heading {
+        @include center();
+        flex-direction: column;
+        align-items: flex-end;
+
+        & > h1 {
+          font-size: 3.5rem;
+          font-weight: 600;
+        }
+        & > h3 {
+          font-size: 2.4rem;
+          margin-bottom: 2rem;
+        }
+      }
+      & > p {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .img_container {
+      height: 22rem;
+      aspect-ratio: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .contact_container {
+    gap: 4rem;
+
+    .contact_info {
+      padding: 2rem 3rem;
+      height: 24rem;
+      .contact_heading {
+        @include center();
+        flex-direction: column;
+        align-items: flex-end;
+
+        & > h1 {
+          font-size: 3.2rem;
+        }
+        & > h3 {
+          font-size: 2.4rem;
+          margin-bottom: 2rem;
+        }
+      }
+      & > p {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .img_container {
+      height: 20rem;
+      aspect-ratio: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .contact_container {
+    .contact_info {
+      .logo1 {
+        height: 9rem;
+        width: 9rem;
+        position: absolute;
+        bottom: -4.3rem;
+        left: -4.2rem;
+        img {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1055px) {
+  .contact_container {
+    gap: 3rem;
+
+    .contact_info {
+      padding: 2rem 3rem;
+      height: 25rem;
+      .contact_heading {
+        @include center();
+        flex-direction: column;
+        align-items: flex-end;
+
+        & > h1 {
+          font-size: 3.2rem;
+        }
+        & > h3 {
+          font-size: 2.4rem;
+          margin-bottom: 2rem;
+        }
+      }
+      & > p {
+        margin-bottom: 1rem;
+      }
+      .logo1 {
+        height: 9rem;
+        width: 9rem;
+        position: absolute;
+        bottom: -4.3rem;
+        left: -4.2rem;
+        img {
+          object-fit: contain;
+        }
+      }
+    }
+
+    .logo2 {
+      height: 17rem;
+      aspect-ratio: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .contact_container {
+    gap: 3rem;
+
+    .contact_info {
+      width: 38rem;
+    }
+
+    .logo2 {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .contact_container {
+    .contact_info {
+      padding: 2rem 3rem;
+      height: 22rem;
+      width: 33rem;
+      .contact_heading {
+        @include center();
+        flex-direction: column;
+        align-items: flex-end;
+
+        & > h1 {
+          font-size: 2.8rem;
+        }
+        & > h3 {
+          font-size: 2.1rem;
+          margin-bottom: 1.5rem;
+        }
+      }
+      & > p {
+        margin-bottom: 1rem;
+        font-size: 1.15rem;
+      }
+      & > button {
+        @include center();
+        gap: 1rem;
+        padding: 11px 17px;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+      .logo1 {
+        height: 8rem;
+        width: 8rem;
+        position: absolute;
+        bottom: -3.8rem;
+        left: -4.2rem;
+        img {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .contact_container {
+    .contact_info {
+      .logo1 {
+        height: 8rem;
+        width: 8rem;
+        position: absolute;
+        bottom: -4rem;
+        left: 12.2rem;
+        img {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact_container {
+    .contact_info {
+      padding: 2rem 3rem;
+      height: 20rem;
+      width: 29rem;
+      .contact_heading {
+        @include center();
+        flex-direction: column;
+        align-items: flex-end;
+
+        & > h1 {
+          font-size: 2.5rem;
+          white-space: nowrap;
+        }
+        & > h3 {
+          font-size: 1.8rem;
+          margin-bottom: 1.5rem;
+        }
+      }
+      & > p {
+        margin-bottom: 1rem;
+        font-size: 1.15rem;
+      }
+      & > button {
+        @include center();
+        gap: 1rem;
+        padding: 11px 14px;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+      }
+      .logo1 {
+        height: 8rem;
+        width: 8rem;
+        position: absolute;
+        bottom: -4rem;
+        left: 10.4rem;
+        img {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 515px) {
+  .contact_container {
+    .contact_info {
+      height: 18rem;
+      width: 27rem;
+      padding: 2rem 2.5rem;
+      .contact_heading {
+        & > h1 {
+          font-size: 2.3rem;
+          white-space: nowrap;
+        }
+        & > h3 {
+          font-size: 1.6rem;
+          margin-bottom: 1.5rem;
+        }
+      }
+      & > button {
+        @include center();
+        gap: 1rem;
+        padding: 10px 11px;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+      .logo1 {
+        height: 7rem;
+        width: 7rem;
+        position: absolute;
+        bottom: -3.3rem;
+        left: 10rem;
+        img {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .contact_container {
+    .contact_info {
+      height: 18rem;
+      width: 23rem;
+      padding: 1rem 2rem;
+      box-shadow: 0px 0px 20px 5px var(--secondary-color) inset;
+
+      .contact_heading {
+        & > h1 {
+          font-size: 2.1rem;
+          white-space: nowrap;
+        }
+        & > h3 {
+          font-size: 1.5rem;
+          margin-bottom: 1.5rem;
+        }
+      }
+      & > p {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+      }
+      .logo1 {
+        height: 6.5rem;
+        width: 6.5rem;
+        position: absolute;
+        bottom: -3.3rem;
+        left: 8.2rem;
+        img {
+          object-fit: contain;
+        }
+      }
+      .contact_handles {
+        gap: 2rem;
+        & > p {
+          font-size: 1rem;
+        }  
+        .social {
+          gap: .8rem;
+        }
+      }
+    }
   }
 }

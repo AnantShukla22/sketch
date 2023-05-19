@@ -8,7 +8,7 @@
     // min-height: 100vh;
     @include center();
     position: relative;
-    color:var(--home-first-color);
+    color:var( --secondary-color);
     .footer_content{
         width: 60%;
         margin: auto;
@@ -51,8 +51,9 @@
                 gap: 2rem;
                 &>li>a{
                     font-size: 1.3rem;
+                    font-weight: 600;
                     text-decoration: none;
-                    color: var(--home-second-color);  
+                    color:var( --primary-color);
                     letter-spacing: 2px;
                 }
             }
