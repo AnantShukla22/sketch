@@ -12,12 +12,12 @@ export default function Home() {
     <>
       {/* <Header /> */}
       <section id="home">
-        {/* <LandingPage /> */}
+        <LandingPage />
         <Whoweare />
         <Statistics />
         <Accordian />
         <Contact />
-        {/* <Footer /> */}
+        <Footer />
       </section>
     </>
   );
