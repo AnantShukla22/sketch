@@ -9,13 +9,13 @@ const About = () => {
   
   return (
     <>
-    <Header/>
+    {/* <Header/> */}
     <div className="about_container" id="about">
       <Vision />
-      <TripleD />
-      <Domain />
-      <CarouselCom />
-     <Footer/>
+      {/* <TripleD /> */}
+      {/* <Domain /> */}
+      {/* <CarouselCom /> */}
+     {/* <Footer/> */}
     </div>
     </> 
   );

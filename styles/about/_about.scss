@@ -5,16 +5,9 @@
   flex-direction: column;
 }
 
-#about {
-  width: 80%;
-  margin: auto;
-  margin-top: 3rem;
-  .about_container {
-    @include center();
-  }
+.about_container {
+  @include center();
   .carousel_container {
-    margin: 10rem 0;
-    padding: 0 9rem;
     border-radius: 1rem;
     & > h1 {
       color: var(--secondary-color);
@@ -23,7 +16,6 @@
       margin-bottom: 5rem;
       font-family: var(--heading-font);
     }
-
     .about_carousel {
       border-radius: 10rem;
     }
