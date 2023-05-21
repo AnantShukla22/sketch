@@ -13,9 +13,9 @@ const About = () => {
     <div className="about_container" id="about">
       <Vision />
       <TripleD />
-      {/* <Domain /> */}
+      <Domain />
       {/* <CarouselCom /> */}
-     {/* <Footer/> */}
+     <Footer/>
     </div>
     </> 
   );

@@ -7,7 +7,7 @@
 
 .domain_container {
   @include center();
-  margin: 4rem 0;
+  margin: 10rem 0;
   & > h1 {
     font-size: 4.5rem;
     margin-bottom: 3rem;
@@ -16,10 +16,8 @@
   }
 
   .domain_types {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     @include center();
-    gap: 3rem;
+    gap: 2rem;
     .col_1 {
       @include center();
       flex-direction: row;
@@ -62,6 +60,232 @@
           sans-serif;
         font-size: 0.9rem;
         font-weight: 500;
+      }
+    }
+  }
+  // responsive
+  .domain_types_responsive {
+    @include center();
+    display: none;
+    .col_1_responsive {
+      @include center();
+      flex-direction: row;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    .col_2_responsive {
+      @include center();
+      flex-direction: row;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    .col_3_responsive {
+      @include center();
+      flex-direction: row;
+      gap: 2rem;
+    }
+
+    .box {
+      height: 9rem;
+      width: 14rem;
+      padding: 0.8rem 1rem;
+      background-image: linear-gradient(
+        315deg,
+        var(--primary-color) 0%,
+        #000000 74%
+      );
+      border: 1px solid var(--primary-color);
+      outline: none;
+      border-radius: 1.6rem;
+      @include center();
+      justify-content: space-around;
+
+      & > h1 {
+        font-size: 1.6rem;
+        font-family: var(--main-font);
+        color: var(--tertiary-color);
+        font-weight: 600;
+        // margin: 10px 0;
+      }
+      & > p {
+        color: var(--font-color-first);
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
+// font-size: 3.5rem;
+
+@media screen and (max-width: 1250px) {
+  .domain_container {
+    @include center();
+    & > h1 {
+      font-size: 4rem;
+      margin-bottom: 3rem;
+      color: var(--primary-color);
+      font-family: var(--heading-font);
+    }
+  }
+}
+@media screen and (max-width: 850px) {
+  .domain_container {
+    & > h1 {
+      font-size: 3.5rem;
+      margin-bottom: 3rem;
+    }
+    .domain_types {
+      gap: 1.5rem;
+      .col_2 {
+        gap: 1rem;
+      }
+      .col_3 {
+        gap: 1rem;
+      }
+      .box {
+        height: 9rem;
+        width: 14rem;
+        & > h1 {
+          font-size: 1.6rem;
+        }
+        & > p {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 730px) {
+  .domain_container {
+    .domain_types {
+      display: none;
+    }
+    .domain_types_responsive {
+      display: block;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .domain_container {
+    .domain_types_responsive {
+      @include center();
+      .col_1_responsive {
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+      }
+      .col_2_responsive {
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+      }
+      .col_3_responsive {
+        gap: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .domain_container {
+    .domain_types_responsive {
+      .col_1_responsive {
+        @include center();
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+        & > :nth-child(1) {
+          margin-left: 5.5rem;
+          position: relative;
+        }
+        & > :nth-child(1)::before {
+          content: "";
+          position: absolute;
+          top: 3rem;
+          left: -2rem;
+          content: "";
+          border-left: 20px solid #008e5f;
+          border-top: 20px solid transparent;
+          border-bottom: 20px solid transparent;
+        }
+        & > :nth-child(2) {
+          margin-right: 5.5rem;
+          position: relative;
+        }
+        & > :nth-child(2)::after {
+          content: "";
+          position: absolute;
+          top: 3rem;
+          left: 14.8rem;
+          content: "";
+          border-right: 20px solid #008e5f;
+          border-top: 20px solid transparent;
+          border-bottom: 20px solid transparent;
+        }
+      }
+      .col_2_responsive {
+        @include center();
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+        & > :nth-child(1) {
+          margin-left: 5.5rem;
+          position: relative;
+        }
+        & > :nth-child(1)::before {
+          content: "";
+          position: absolute;
+          top: 3rem;
+          left: -2rem;
+          content: "";
+          border-left: 20px solid #008e5f;
+          border-top: 20px solid transparent;
+          border-bottom: 20px solid transparent;
+        }
+        & > :nth-child(2) {
+          margin-right: 5.5rem;
+          position: relative;
+        }
+        & > :nth-child(2)::after {
+          content: "";
+          position: absolute;
+          top: 3rem;
+          left: 14.8rem;
+          content: "";
+          border-right: 20px solid #008e5f;
+          border-top: 20px solid transparent;
+          border-bottom: 20px solid transparent;
+        }
+      }
+      .col_3_responsive {
+        @include center();
+        gap: 1rem;
+        & > :nth-child(1) {
+          margin-left: 5.5rem;
+          position: relative;
+        }
+        & > :nth-child(1)::before {
+          content: "";
+          position: absolute;
+          top: 3rem;
+          left: -2rem;
+          content: "";
+          border-left: 20px solid #008e5f;
+          border-top: 20px solid transparent;
+          border-bottom: 20px solid transparent;
+        }
+        & > :nth-child(2) {
+          margin-right: 5.5rem;
+          position: relative;
+        }
+        & > :nth-child(2)::after {
+          content: "";
+          position: absolute;
+          top: 3rem;
+          left: 14.8rem;
+          content: "";
+          border-right: 20px solid #008e5f;
+          border-top: 20px solid transparent;
+          border-bottom: 20px solid transparent;
+        }
       }
     }
   }

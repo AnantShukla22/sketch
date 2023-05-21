@@ -19,7 +19,7 @@ const Footer = () => {
       opacity: 1,
       scale: 1,
       transition: {
-        duration: 1.5,
+        duration: 1.2,
         delay: 1.3,
       },
     },
@@ -27,8 +27,8 @@ const Footer = () => {
       opacity: 1,
       scale: 1,
       transition: {
-        duration: 2.5,
-        delay: 2,
+        duration: 2.2,
+        delay: 1.7,
       },
     },
   };
