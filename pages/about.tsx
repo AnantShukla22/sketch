@@ -9,7 +9,7 @@ const About = () => {
   
   return (
     <>
-    {/* <Header/> */}
+    <Header/>
     <div className="about_container" id="about">
       <Vision />
       <TripleD />
