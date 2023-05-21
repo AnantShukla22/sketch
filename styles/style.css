@@ -416,19 +416,8 @@ body::-webkit-scrollbar {
   }
 }
 @media screen and (max-width: 375px) {
-  .statistics_container .statistics_content h1 {
-    align-self: center;
-    margin-bottom: 3rem;
-    font-size: 3rem;
-  }
-  .statistics_container .statistics_content p {
-    font-size: 1.1rem;
-  }
   .statistics_container .statistics_detail {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
+    gap: 1.5rem;
   }
   .statistics_container .statistics_detail .detail_1 {
     margin: 0;
@@ -1245,20 +1234,13 @@ body::-webkit-scrollbar {
     font-size: 1.5rem;
   }
   .about_whoweare > h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 450px) {
-  .about_whoweare > h1 {
-    font-size: 4rem;
-    line-height: 4rem;
-  }
   .about_whoweare > p {
     width: 95%;
     font-size: 1.4rem;
-  }
-  .about_whoweare > h3 {
-    font-size: 1, 1rem;
   }
 }
 .vision_container {

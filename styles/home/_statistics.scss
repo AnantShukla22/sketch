@@ -371,20 +371,10 @@
 @media screen and (max-width: 375px) {
   .statistics_container {
     .statistics_content {
-      h1 {
-        align-self: center;
-        margin-bottom: 3rem;
-        font-size: 3rem;
-      }
-      p {
-        font-size: 1.1rem;
-      }
     }
     .statistics_detail {
-      width: 100%;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2.5rem;
+      
+      gap: 1.5rem;
       .detail_1 {
         margin: 0;
         .detail_icon {
