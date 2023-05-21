@@ -652,6 +652,7 @@ body::-webkit-scrollbar {
 @media screen and (max-width: 650px) {
   .accordian_container > h1 {
     text-align: center;
+    font-size: 2.7rem;
   }
 }
 .contact_container {
@@ -1579,8 +1580,6 @@ body::-webkit-scrollbar {
   color: var(--secondary-color);
 }
 .footer_container .footer_content {
-  width: 60%;
-  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1608,7 +1607,6 @@ body::-webkit-scrollbar {
   outline: none;
 }
 .footer_container .footer_content .footer_input > button {
-  padding: 1rem 1rem;
   border: 0;
   outline: none;
   height: 3.5rem;
@@ -1643,6 +1641,174 @@ body::-webkit-scrollbar {
   letter-spacing: 1rem;
 }
 
+@media screen and (max-width: 1150px) {
+  .footer_container .footer_content {
+    gap: 2rem;
+  }
+  .footer_container .footer_content .footer_input {
+    gap: 0.6rem;
+    margin-bottom: 4rem;
+  }
+  .footer_container .footer_content .footer_input > input {
+    height: 3.2rem;
+    width: 22rem;
+  }
+  .footer_container .footer_content .footer_input > button {
+    height: 3.2rem;
+    width: 6.5rem;
+  }
+  .footer_container .footer_content .footer_links > ul {
+    gap: 1.2rem;
+  }
+  .footer_container .footer_content .footer_links > ul > li > a {
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+  }
+  .footer_container .footer_logo {
+    font-size: 22vw;
+    line-height: 17vw;
+    overflow: hidden;
+    letter-spacing: 0.7rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .footer_container .footer_content {
+    gap: 1.8rem;
+  }
+  .footer_container .footer_content > h1 {
+    font-size: 1.7rem;
+  }
+  .footer_container .footer_content .footer_input {
+    gap: 1rem;
+    margin-bottom: 2.7rem;
+  }
+  .footer_container .footer_content .footer_input > input {
+    height: 3rem;
+    width: 20rem;
+  }
+  .footer_container .footer_content .footer_input > button {
+    padding: 0rem;
+    height: 3rem;
+    width: 6rem;
+    font-size: 1rem;
+  }
+  .footer_container .footer_content .footer_links {
+    margin-bottom: 3rem;
+  }
+  .footer_container .footer_content .footer_links > ul {
+    gap: 1.3rem;
+  }
+  .footer_container .footer_content .footer_links > ul > li > a {
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+  .footer_container .footer_logo {
+    font-size: 22vw;
+    line-height: 17vw;
+    overflow: hidden;
+    letter-spacing: 0.5rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .footer_container .footer_content {
+    gap: 1.8rem;
+  }
+  .footer_container .footer_content > h1 {
+    font-size: 1.6rem;
+  }
+  .footer_container .footer_content .footer_input {
+    gap: 0.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .footer_container .footer_content .footer_input > input {
+    height: 2.8rem;
+    width: 18.5rem;
+    border-radius: 0.5rem;
+  }
+  .footer_container .footer_content .footer_input > button {
+    padding: 0rem;
+    height: 2.8rem;
+    width: 5.5rem;
+    border-radius: 0.5rem;
+  }
+  .footer_container .footer_content .footer_links {
+    margin-bottom: 2rem;
+  }
+  .footer_container .footer_content .footer_links > ul {
+    gap: 1.3rem;
+  }
+  .footer_container .footer_content .footer_links > ul > li > a {
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .footer_container .footer_content > h1 {
+    font-size: 1.5rem;
+  }
+  .footer_container .footer_content .footer_input {
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  .footer_container .footer_content .footer_input > input {
+    height: 2.6rem;
+    width: 16rem;
+  }
+  .footer_container .footer_content .footer_input > button {
+    padding: 0rem;
+    height: 2.6rem;
+    width: 5rem;
+  }
+  .footer_container .footer_content .footer_links {
+    margin-bottom: 2rem;
+  }
+  .footer_container .footer_content .footer_links > ul {
+    gap: 1.1rem;
+  }
+  .footer_container .footer_content .footer_links > ul > li > a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .footer_container .footer_content > h1 {
+    font-size: 1.4rem;
+  }
+  .footer_container .footer_content .footer_input {
+    gap: 0.3rem;
+    margin-bottom: 1.6rem;
+  }
+  .footer_container .footer_content .footer_input > input {
+    height: 2.2rem;
+    width: 14rem;
+  }
+  .footer_container .footer_content .footer_input > button {
+    padding: 0rem;
+    height: 2.2rem;
+    width: 4.5rem;
+  }
+  .footer_container .footer_content .footer_links {
+    margin-bottom: 1.5rem;
+  }
+  .footer_container .footer_content .footer_links > ul {
+    gap: 0.7rem;
+  }
+  .footer_container .footer_content .footer_links > ul > li > a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0px;
+  }
+}
 .header_container {
   position: absolute;
   width: 100%;

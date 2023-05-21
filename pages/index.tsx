@@ -17,7 +17,7 @@ export default function Home() {
         <Statistics />
         <Accordian />
         <Contact />
-        {/* <Footer /> */}
+        <Footer />
       </section>
     </>
   );
