@@ -12,7 +12,7 @@ const About = () => {
     {/* <Header/> */}
     <div className="about_container" id="about">
       <Vision />
-      {/* <TripleD /> */}
+      <TripleD />
       {/* <Domain /> */}
       {/* <CarouselCom /> */}
      {/* <Footer/> */}

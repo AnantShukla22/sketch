@@ -21,3 +21,20 @@
     }
   }
 }
+
+#about{
+  width: 80%;
+  margin: auto;
+}
+
+@media screen and (max-width:1150px) {
+  #about{
+    width: 85%;
+    margin: auto;
+  }
+}
+@media screen and (max-width:780px) {
+}
+@media screen and (max-width:525px) {
+
+}

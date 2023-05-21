@@ -120,10 +120,6 @@ body::-webkit-scrollbar {
   }
 }
 @media screen and (max-width: 650px) {
-  #home {
-    width: 90%;
-    margin: auto;
-  }
   #home .landing_container {
     margin-top: 0;
     gap: 2rem;
@@ -160,10 +156,6 @@ body::-webkit-scrollbar {
   }
 }
 @media screen and (max-width: 400px) {
-  #home {
-    width: 95%;
-    margin: auto;
-  }
   #home .landing_container {
     margin-top: 0;
     gap: 2.5rem;
@@ -1214,6 +1206,17 @@ body::-webkit-scrollbar {
   border-radius: 10rem;
 }
 
+#about {
+  width: 80%;
+  margin: auto;
+}
+
+@media screen and (max-width: 1150px) {
+  #about {
+    width: 85%;
+    margin: auto;
+  }
+}
 .about_whoweare {
   display: flex;
   justify-content: center;
@@ -1324,8 +1327,6 @@ body::-webkit-scrollbar {
   align-items: center;
   flex-direction: column;
   color: var(--font-color-first);
-  margin: auto;
-  width: 80%;
 }
 .vision_container > h1 {
   font-size: 7rem;
@@ -1349,10 +1350,6 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 1250px) {
-  .vision_container {
-    margin: auto;
-    width: 80%;
-  }
   .vision_container > h1 {
     font-size: 6rem;
   }
@@ -1363,16 +1360,12 @@ body::-webkit-scrollbar {
   }
 }
 @media screen and (max-width: 1000px) {
-  .vision_container {
-    margin: auto;
-    width: 90%;
-  }
   .vision_container > h1 {
     font-size: 5.5rem;
   }
   .vision_container > p {
-    font-size: 1.5rem;
-    letter-spacing: 0.1rem;
+    font-size: 1.55rem;
+    letter-spacing: normal;
     word-spacing: 0.1rem;
   }
 }
@@ -1381,42 +1374,36 @@ body::-webkit-scrollbar {
     font-size: 5.3rem;
   }
   .vision_container > p {
-    font-size: 1.35rem;
-    margin: 1.55rem 0;
+    font-size: 1.4rem;
+    margin: 1.4rem 0;
     word-spacing: 0;
   }
 }
 @media screen and (max-width: 650px) {
-  .vision_container {
-    margin: auto;
-    width: 90%;
-  }
-  .vision_container > h1 {
-    font-size: 5rem;
-  }
-  .vision_container > p {
-    font-size: 1.25rem;
-    margin: 1.4rem 0;
-  }
-}
-@media screen and (max-width: 500px) {
   .vision_container > h1 {
     font-size: 4.7rem;
   }
   .vision_container > p {
-    font-size: 1.15rem;
+    font-size: 1.3rem;
+    margin: 1.1rem 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .vision_container > h1 {
+    font-size: 4rem;
+  }
+  .vision_container > p {
+    font-size: 1.2rem;
     margin: 1.4rem 0;
   }
 }
 @media screen and (max-width: 450px) {
   .vision_container > h1 {
     text-align: center;
-    line-height: 5rem;
+    line-height: 4rem;
   }
 }
 .triple_container {
-  min-height: 80vh;
-  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;

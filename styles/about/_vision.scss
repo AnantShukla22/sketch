@@ -9,8 +9,6 @@
   height: 95vh;
   @include center();
   color: var(--font-color-first);
-  margin: auto;
-  width: 80%;
   & > h1 {
     font-size: 7rem;
     font-family: var(--heading-font);
@@ -36,8 +34,6 @@
 
 @media screen and (max-width:1250px) {
   .vision_container {
-    margin: auto;
-    width: 80%;
     & > h1 {
       font-size: 6rem;
     }
@@ -52,15 +48,13 @@
 }
 @media screen and (max-width:1000px) {
   .vision_container {
-    margin: auto;
-    width: 90%;
     & > h1 {
       font-size: 5.5rem;
     }
   
     & > p {
-      font-size: 1.5rem;
-      letter-spacing: 0.1rem;
+      font-size: 1.55rem;
+      letter-spacing: normal;
       word-spacing: 0.1rem;
     }
   }
@@ -74,8 +68,8 @@
     }
   
     & > p {
-      font-size: 1.35rem;
-      margin: 1.55rem 0;
+      font-size: 1.4rem;
+      margin: 1.4rem 0;
       word-spacing: 0;
     }
   }
@@ -83,15 +77,13 @@
 }
 @media screen and (max-width:650px) {
   .vision_container {
-    margin: auto;
-    width: 90%;
     & > h1 {
-      font-size: 5rem;
+      font-size: 4.7rem;
     }
   
     & > p {
-      font-size: 1.25rem;
-      margin: 1.4rem 0;
+      font-size: 1.3rem;
+      margin: 1.1rem 0;
     }
   }
   
@@ -100,11 +92,11 @@
 @media screen and (max-width:500px) {
   .vision_container {
     & > h1 {
-      font-size: 4.7rem;
+      font-size: 4rem;
     }
   
     & > p {
-      font-size: 1.15rem;
+      font-size: 1.2rem;
       margin: 1.4rem 0;
     }
   }
@@ -115,7 +107,7 @@
   .vision_container {
     & > h1 {
       text-align: center;
-      line-height: 5rem;
+      line-height: 4rem;
     }
 
   }
