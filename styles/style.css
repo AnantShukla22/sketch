@@ -1326,6 +1326,8 @@ body::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 90%;
+  margin: auto;
   color: var(--font-color-first);
 }
 .vision_container > h1 {
@@ -1350,6 +1352,9 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 1250px) {
+  .vision_container {
+    width: 95%;
+  }
   .vision_container > h1 {
     font-size: 6rem;
   }
@@ -1360,6 +1365,9 @@ body::-webkit-scrollbar {
   }
 }
 @media screen and (max-width: 1000px) {
+  .vision_container {
+    width: 100%;
+  }
   .vision_container > h1 {
     font-size: 5.5rem;
   }
@@ -1408,12 +1416,13 @@ body::-webkit-scrollbar {
   align-items: center;
   justify-content: space-between;
   color: var(--font-color-first);
+  min-height: 100vh;
 }
 .triple_container .triple_content {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  padding-right: 8rem;
 }
 .triple_container .triple_content .triple_wrapper {
   height: auto;
@@ -1431,10 +1440,6 @@ body::-webkit-scrollbar {
   -moz-background-clip: text;
   background-clip: text;
   -moz-text-fill-color: transparent;
-}
-.triple_container .triple_content .triple_wrapper .triple_accordian {
-  width: 80%;
-  margin: auto;
 }
 .triple_container .triple_content .triple_wrapper .triple_accordian > .topic {
   width: 100%;
@@ -1454,7 +1459,7 @@ body::-webkit-scrollbar {
   color: var(--tertiary-color);
 }
 .triple_container .triple_content .triple_wrapper .triple_accordian > .topic > .heading {
-  font-size: 2.25rem;
+  font-size: 2rem;
   font-family: var(--main-font);
   animation: pulse 1.7s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
@@ -1491,10 +1496,116 @@ body::-webkit-scrollbar {
   align-items: center;
 }
 .triple_container .triple_img > img {
-  height: 25rem;
-  width: 30rem;
+  height: 23rem;
+  width: 25rem;
 }
 
+@media screen and (max-width: 1250px) {
+  .triple_container .triple_img > img {
+    height: 20rem;
+    width: 20rem;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .triple_container .triple_content {
+    padding-right: 4rem;
+  }
+  .triple_container .triple_content .triple_wrapper > h1 {
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+  }
+  .triple_container .triple_content .triple_wrapper .triple_accordian > .topic {
+    width: 100%;
+    margin: 0.6rem 0;
+    margin-bottom: 3rem;
+  }
+  .triple_container .triple_content .triple_wrapper .triple_accordian > .topic > .heading {
+    font-size: 1.8rem;
+  }
+  .triple_container .triple_content .triple_wrapper .triple_accordian > .topic > p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+  .triple_container .triple_img > img {
+    height: 19rem;
+    width: 20rem;
+  }
+}
+@media screen and (max-width: 930px) {
+  .triple_container .triple_content {
+    padding-right: 2rem;
+  }
+  .triple_container .triple_content .triple_wrapper > h1 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
+  .triple_container .triple_content .triple_wrapper .triple_accordian > .topic {
+    width: 100%;
+    margin: 0.6rem 0;
+    margin-bottom: 3rem;
+  }
+  .triple_container .triple_content .triple_wrapper .triple_accordian > .topic > .heading {
+    font-size: 1.6rem;
+  }
+  .triple_container .triple_content .triple_wrapper .triple_accordian > .topic > p {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  .triple_container .triple_img > img {
+    height: 18rem;
+    width: 19rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .triple_container .triple_content {
+    padding-right: 2rem;
+  }
+  .triple_container .triple_img > img {
+    display: none;
+    height: 18rem;
+    width: 19rem;
+  }
+}
+@media screen and (max-width: 520px) {
+  .triple_container .triple_content {
+    padding-right: 0rem;
+  }
+  .triple_container .triple_content .triple_wrapper > h1 {
+    font-size: 2.6rem;
+    margin-bottom: 2.5rem;
+  }
+  .triple_container .triple_content .triple_wrapper .triple_accordian > .topic {
+    width: 100%;
+    margin: 0.4rem 0;
+    margin-bottom: 2rem;
+  }
+  .triple_container .triple_content .triple_wrapper .triple_accordian > .topic > .heading {
+    font-size: 1.4rem;
+  }
+  .triple_container .triple_content .triple_wrapper .triple_accordian > .topic > p {
+    margin-top: 0.8rem;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .triple_container .triple_content .triple_wrapper > h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    word-spacing: 1px;
+  }
+  .triple_container .triple_content .triple_wrapper .triple_accordian > .topic {
+    width: 100%;
+    margin: 0.4rem 0;
+    margin-bottom: 1.5rem;
+  }
+  .triple_container .triple_content .triple_wrapper .triple_accordian > .topic > .heading {
+    font-size: 1.375rem;
+  }
+  .triple_container .triple_content .triple_wrapper .triple_accordian > .topic > p {
+    margin-top: 0.6rem;
+    font-size: 1rem;
+  }
+}
 .swiper_container {
   display: flex;
   justify-content: center;

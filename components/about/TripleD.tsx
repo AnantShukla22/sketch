@@ -37,7 +37,7 @@ const TripleD = () => {
       <div className="triple_content">
         <div className="triple_wrapper">
           <m.h1 variants={animate} initial="initial" whileInView={"heading"}>
-            Motto - Triple D's
+            Motto - Triple D
           </m.h1>
           <div className="triple_accordian">
             <m.div

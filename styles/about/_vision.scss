@@ -8,6 +8,8 @@
 .vision_container {
   height: 95vh;
   @include center();
+  width: 90%;
+  margin: auto;
   color: var(--font-color-first);
   & > h1 {
     font-size: 7rem;
@@ -34,6 +36,7 @@
 
 @media screen and (max-width:1250px) {
   .vision_container {
+    width: 95%;
     & > h1 {
       font-size: 6rem;
     }
@@ -47,7 +50,9 @@
   
 }
 @media screen and (max-width:1000px) {
+  
   .vision_container {
+    width: 100%;
     & > h1 {
       font-size: 5.5rem;
     }
