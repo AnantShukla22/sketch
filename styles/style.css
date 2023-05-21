@@ -1917,8 +1917,8 @@ body::-webkit-scrollbar {
 .header_responsive {
   display: none;
   position: fixed;
-  top: 0.5rem;
-  right: 0.5rem;
+  top: 1rem;
+  right: 1rem;
   color: aliceblue;
 }
 .header_responsive .burger_icon {
@@ -1938,7 +1938,7 @@ body::-webkit-scrollbar {
   position: absolute;
   top: 0.75rem;
   right: 1rem;
-  margin-right: 4rem;
+  margin-right: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;

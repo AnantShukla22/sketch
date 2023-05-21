@@ -42,8 +42,8 @@
 .header_responsive {
   display: none;
   position: fixed;
-  top: .5rem;
-  right: .5rem;
+  top: 1rem;
+  right: 1rem;
   color: aliceblue;
   .burger_icon {
     @include center();
@@ -60,7 +60,7 @@
     position: absolute;
     top: .75rem;
     right: 1rem;
-    margin-right: 4rem;
+    margin-right: 3rem;
     @include center();
     gap: 1rem;
     animation: animate 1.5s none;
