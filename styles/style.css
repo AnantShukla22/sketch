@@ -1571,7 +1571,7 @@ body::-webkit-scrollbar {
     padding-right: 0rem;
   }
   .triple_container .triple_content .triple_wrapper > h1 {
-    font-size: 2.6rem;
+    font-size: 2.8rem;
     margin-bottom: 2.5rem;
   }
   .triple_container .triple_content .triple_wrapper .triple_accordian > .topic {
@@ -1580,7 +1580,7 @@ body::-webkit-scrollbar {
     margin-bottom: 2rem;
   }
   .triple_container .triple_content .triple_wrapper .triple_accordian > .topic > .heading {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
   .triple_container .triple_content .triple_wrapper .triple_accordian > .topic > p {
     margin-top: 0.8rem;
@@ -1589,7 +1589,7 @@ body::-webkit-scrollbar {
 }
 @media screen and (max-width: 400px) {
   .triple_container .triple_content .triple_wrapper > h1 {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     margin-bottom: 2rem;
     word-spacing: 1px;
   }
@@ -1599,7 +1599,7 @@ body::-webkit-scrollbar {
     margin-bottom: 1.5rem;
   }
   .triple_container .triple_content .triple_wrapper .triple_accordian > .topic > .heading {
-    font-size: 1.375rem;
+    font-size: 1.45rem;
   }
   .triple_container .triple_content .triple_wrapper .triple_accordian > .topic > p {
     margin-top: 0.6rem;
