@@ -82,6 +82,7 @@
           }
         }
         .answer {
+          font-size: 1.25rem;
         }
       }
     }
@@ -102,8 +103,11 @@
       .accordian {
         .question {
           & > h2 {
-            font-size: 1.4rem;
+            font-size: 1.45rem;
           }
+        }
+        .answer {
+          font-size: 1.2rem;
         }
       }
     }

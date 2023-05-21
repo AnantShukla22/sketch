@@ -415,6 +415,85 @@ body::-webkit-scrollbar {
     font-size: 1.1rem;
   }
 }
+@media screen and (max-width: 375px) {
+  .statistics_container .statistics_content h1 {
+    align-self: center;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+  }
+  .statistics_container .statistics_content p {
+    font-size: 1.1rem;
+  }
+  .statistics_container .statistics_detail {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+  .statistics_container .statistics_detail .detail_1 {
+    margin: 0;
+  }
+  .statistics_container .statistics_detail .detail_1 .detail_icon {
+    display: none;
+  }
+  .statistics_container .statistics_detail .detail_1 .detail_category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .statistics_container .statistics_detail .detail_1 .detail_category h1 {
+    font-size: 2.1rem;
+  }
+  .statistics_container .statistics_detail .detail_1 .detail_category h1 span {
+    display: flex;
+  }
+  .statistics_container .statistics_detail .detail_1 .detail_category h6 {
+    display: flex;
+    font-size: 1.2rem;
+  }
+  .statistics_container .statistics_detail .detail_2 {
+    margin: 0;
+  }
+  .statistics_container .statistics_detail .detail_2 .detail_icon {
+    display: none;
+  }
+  .statistics_container .statistics_detail .detail_2 .detail_category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .statistics_container .statistics_detail .detail_2 .detail_category h1 {
+    font-size: 2.1rem;
+  }
+  .statistics_container .statistics_detail .detail_2 .detail_category h1 span {
+    display: flex;
+  }
+  .statistics_container .statistics_detail .detail_2 .detail_category h6 {
+    display: flex;
+    font-size: 1.2rem;
+  }
+  .statistics_container .statistics_detail .detail_3 {
+    margin: 0;
+  }
+  .statistics_container .statistics_detail .detail_3 .detail_icon {
+    display: none;
+  }
+  .statistics_container .statistics_detail .detail_3 .detail_category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .statistics_container .statistics_detail .detail_3 .detail_category h1 {
+    font-size: 2.1rem;
+  }
+  .statistics_container .statistics_detail .detail_3 .detail_category h6 {
+    display: flex;
+    font-size: 1.2rem;
+  }
+}
 .domain_container {
   display: flex;
   justify-content: center;
@@ -551,6 +630,9 @@ body::-webkit-scrollbar {
   .accordian_container .accordian_list .accordian .question > h2 {
     font-size: 1.6rem;
   }
+  .accordian_container .accordian_list .accordian .answer {
+    font-size: 1.25rem;
+  }
 }
 @media screen and (max-width: 740px) {
   .accordian_container > h1 {
@@ -561,7 +643,10 @@ body::-webkit-scrollbar {
     text-align: center;
   }
   .accordian_container .accordian_list .accordian .question > h2 {
-    font-size: 1.4rem;
+    font-size: 1.45rem;
+  }
+  .accordian_container .accordian_list .accordian .answer {
+    font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 650px) {
@@ -944,6 +1029,55 @@ body::-webkit-scrollbar {
   .contact_container .contact_info {
     height: 18rem;
     width: 23rem;
+    padding: 1rem 2rem;
+    box-shadow: 0px 0px 20px 5px var(--secondary-color) inset;
+  }
+  .contact_container .contact_info .contact_heading > h1 {
+    font-size: 2.1rem;
+    white-space: nowrap;
+  }
+  .contact_container .contact_info .contact_heading > h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .contact_container .contact_info > p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  .contact_container .contact_info .logo1 {
+    height: 6.5rem;
+    width: 6.5rem;
+    position: absolute;
+    bottom: -3.3rem;
+    left: 7.9rem;
+  }
+  .contact_container .contact_info .logo1 img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .contact_container .contact_info > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px 10px;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  .contact_container .contact_info .contact_handles {
+    gap: 2rem;
+  }
+  .contact_container .contact_info .contact_handles > p {
+    font-size: 1rem;
+  }
+  .contact_container .contact_info .contact_handles .social {
+    gap: 0.8rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .contact_container .contact_info {
+    height: 17rem;
+    width: 21.8rem;
     padding: 1rem 2rem;
     box-shadow: 0px 0px 20px 5px var(--secondary-color) inset;
   }
