@@ -701,8 +701,8 @@ body::-webkit-scrollbar {
 }
 @media screen and (max-width: 850px) {
   .domain_container > h1 {
-    font-size: 3.5rem;
-    margin-bottom: 3rem;
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
   }
   .domain_container .domain_types {
     gap: 1.5rem;
@@ -714,8 +714,8 @@ body::-webkit-scrollbar {
     gap: 1rem;
   }
   .domain_container .domain_types .box {
-    height: 9rem;
-    width: 14rem;
+    height: 8.7rem;
+    width: 13.5rem;
   }
   .domain_container .domain_types .box > h1 {
     font-size: 1.6rem;
@@ -1425,17 +1425,25 @@ body::-webkit-scrollbar {
   flex-direction: column;
 }
 .about_container .carousel_container {
+  min-height: 100vh;
   border-radius: 1rem;
+  margin-bottom: 5rem;
 }
 .about_container .carousel_container > h1 {
   color: var(--secondary-color);
   font-size: 4.5rem;
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   font-family: var(--heading-font);
 }
 .about_container .carousel_container .about_carousel {
-  border-radius: 10rem;
+  width: 60rem;
+}
+.about_container .carousel_container .about_carousel .carousel_image {
+  width: 60rem;
+  height: 35rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #about {
@@ -1447,6 +1455,112 @@ body::-webkit-scrollbar {
   #about {
     width: 85%;
     margin: auto;
+  }
+}
+@media screen and (max-width: 1035px) {
+  .about_container .carousel_container > h1 {
+    font-size: 4.2rem;
+    margin-bottom: 3.5rem;
+  }
+  .about_container .carousel_container .about_carousel {
+    width: 50rem;
+  }
+  .about_container .carousel_container .about_carousel .carousel_image {
+    width: 50rem;
+    height: 30rem;
+  }
+}
+@media screen and (max-width: 940px) {
+  .about_container .carousel_container {
+    margin: auto;
+  }
+  .about_container .carousel_container > h1 {
+    font-size: 3.8rem;
+    margin-bottom: 3rem;
+  }
+  .about_container .carousel_container .about_carousel {
+    width: 40rem;
+  }
+  .about_container .carousel_container .about_carousel .carousel_image {
+    width: 40rem;
+    height: 30rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  .about_container .carousel_container {
+    margin: auto;
+  }
+  .about_container .carousel_container > h1 {
+    font-size: 3.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .about_container .carousel_container .about_carousel {
+    width: 35rem;
+  }
+  .about_container .carousel_container .about_carousel .carousel_image {
+    width: 35rem;
+    height: 25rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .about_container .carousel_container {
+    margin: auto;
+  }
+  .about_container .carousel_container > h1 {
+    font-size: 3.2rem;
+    margin-bottom: 2.3rem;
+  }
+  .about_container .carousel_container .about_carousel {
+    width: 30rem;
+  }
+  .about_container .carousel_container .about_carousel .carousel_image {
+    width: 30rem;
+    height: 22rem;
+  }
+}
+@media screen and (max-width: 570px) {
+  .about_container .carousel_container {
+    margin: auto;
+  }
+  .about_container .carousel_container > h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  .about_container .carousel_container .about_carousel {
+    width: 26rem;
+  }
+  .about_container .carousel_container .about_carousel .carousel_image {
+    width: 26rem;
+    height: 20rem;
+  }
+}
+@media screen and (max-width: 490px) {
+  .about_container .carousel_container {
+    margin: auto;
+  }
+  .about_container .carousel_container > h1 {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+  }
+  .about_container .carousel_container .about_carousel {
+    width: 23rem;
+  }
+  .about_container .carousel_container .about_carousel .carousel_image {
+    width: 23rem;
+    height: 18rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  .about_container .carousel_container > h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .about_container .carousel_container .about_carousel {
+    width: 19rem;
+  }
+  .about_container .carousel_container .about_carousel .carousel_image {
+    width: 19rem;
+    height: 14rem;
   }
 }
 .about_whoweare {
@@ -1575,11 +1689,9 @@ body::-webkit-scrollbar {
   background-position: center;
 }
 .vision_container > p {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   text-align: center;
   margin: 2rem 0;
-  letter-spacing: 0.1rem;
-  word-spacing: 0.1rem;
   word-break: keep-all;
 }
 
@@ -1606,7 +1718,6 @@ body::-webkit-scrollbar {
   .vision_container > p {
     font-size: 1.55rem;
     letter-spacing: normal;
-    word-spacing: 0.1rem;
   }
 }
 @media screen and (max-width: 850px) {
@@ -1619,7 +1730,6 @@ body::-webkit-scrollbar {
   .vision_container > p {
     font-size: 1.4rem;
     margin: 1.4rem 0;
-    word-spacing: 0;
   }
 }
 @media screen and (max-width: 650px) {

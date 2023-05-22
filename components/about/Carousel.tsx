@@ -33,15 +33,9 @@ const CarouselCom = () => {
         interval={5000}
         className="about_carousel"
       >
-        <div>
-          <Image loading="lazy" src={logo} alt="" width={1000} height={500} />
-        </div>
-        <div>
-          <Image loading="lazy" src={logo} alt="" width={1000} height={500} />
-        </div>
-        <div>
-          <Image loading="lazy" src={logo} alt="" width={1000} height={500} />
-        </div>
+          <Image loading="lazy" src={logo} alt=""  className="carousel_image" />
+          <Image loading="lazy" src={logo} alt=""   className="carousel_image"/>
+          <Image loading="lazy" src={logo} alt=""  className="carousel_image" />
       </Carousel>
     </m.div>
   );

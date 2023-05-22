@@ -14,7 +14,7 @@ const About = () => {
       <Vision />
       <TripleD />
       <Domain />
-      {/* <CarouselCom /> */}
+      <CarouselCom />
      <Footer/>
     </div>
     </> 
