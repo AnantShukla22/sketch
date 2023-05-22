@@ -2875,6 +2875,24 @@ body::-webkit-scrollbar {
     line-height: 2.2rem;
   }
 }
+@media screen and (max-width: 800px) {
+  .event_container:before {
+    top: 5.75rem;
+  }
+  .event_container::after {
+    top: 5.75rem;
+  }
+  .event_container .burgerHeader {
+    height: 6rem;
+  }
+  .event_container .burgerHeader:before {
+    top: 6rem;
+  }
+  .event_container .burgerHeader .event_burger_icon {
+    height: 3.3em;
+    width: 3.3em;
+  }
+}
 @media screen and (max-width: 700px) {
   .event_container .event_introImg > img {
     margin: 8rem 0 5rem 0;
@@ -2892,6 +2910,23 @@ body::-webkit-scrollbar {
   }
 }
 @media screen and (max-width: 600px) {
+  .event_container:before {
+    top: 5rem;
+  }
+  .event_container::after {
+    top: 5rem;
+  }
+  .event_container .burgerHeader {
+    height: 5rem;
+  }
+  .event_container .burgerHeader:before {
+    top: 5.25rem;
+  }
+  .event_container .burgerHeader .event_burger_icon {
+    margin-bottom: 5px;
+    height: 3.1em;
+    width: 3.1em;
+  }
   .event_container .event_introImg > img {
     height: 20rem;
     width: 90vw;
@@ -2920,6 +2955,28 @@ body::-webkit-scrollbar {
     font-size: 1.5rem;
   }
 }
+@media screen and (max-width: 500px) {
+  .event_container {
+    margin-top: 0.5rem;
+  }
+  .event_container:before {
+    top: 4.5rem;
+  }
+  .event_container::after {
+    top: 4.5rem;
+  }
+  .event_container .burgerHeader {
+    height: 4rem;
+  }
+  .event_container .burgerHeader:before {
+    top: 4.75rem;
+  }
+  .event_container .burgerHeader .event_burger_icon {
+    margin-bottom: 7px;
+    height: 3em;
+    width: 3em;
+  }
+}
 @media screen and (max-width: 480px) {
   .event_container .event_introImg > img {
     height: 15rem;
@@ -2936,6 +2993,26 @@ body::-webkit-scrollbar {
   }
 }
 @media screen and (max-width: 400px) {
+  .event_container {
+    margin-top: 0.3rem;
+  }
+  .event_container:before {
+    top: 4.2rem;
+  }
+  .event_container::after {
+    top: 4.2rem;
+  }
+  .event_container .burgerHeader {
+    height: 4rem;
+  }
+  .event_container .burgerHeader:before {
+    top: 4.45rem;
+  }
+  .event_container .burgerHeader .event_burger_icon {
+    margin-bottom: 11px;
+    height: 2.8em;
+    width: 2.8em;
+  }
   .event_container .event_introImg > img {
     height: 13rem;
     width: 90vw;
@@ -3075,13 +3152,13 @@ body::-webkit-scrollbar {
 }
 .event_burgerMenu > ul {
   position: absolute;
-  top: -1rem;
+  top: -0.8rem;
   right: 1rem;
   margin-right: 7rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
+  gap: 3rem;
   animation: animate 1.5s none;
   overflow: hidden;
 }
@@ -3097,4 +3174,91 @@ body::-webkit-scrollbar {
   font-size: 1.5rem;
   list-style: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .event_burgerMenu .burger_icon {
+    height: 3.3em;
+    width: 3.3em;
+  }
+  .event_burgerMenu > ul {
+    top: -0.8rem;
+    right: 1rem;
+    margin-right: 7rem;
+    gap: 2rem;
+  }
+  .event_burgerMenu > ul > li {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .event_burgerMenu .burger_icon {
+    height: 3.2em;
+    width: 3.2em;
+  }
+  .event_burgerMenu > ul {
+    top: -0.8rem;
+    right: -1rem;
+    margin-right: 7rem;
+    gap: 1.5rem;
+  }
+  @keyframes animate {
+    from {
+      right: -5.2rem;
+    }
+    to {
+      right: -1rem;
+    }
+  }
+  .event_burgerMenu > ul > li {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .event_burgerMenu .burger_icon {
+    height: 3.1em;
+    width: 3.1em;
+    font-size: 0.9rem;
+  }
+  .event_burgerMenu > ul {
+    top: -1rem;
+    right: -2.5rem;
+    margin-right: 7rem;
+    gap: 1.3rem;
+  }
+  @keyframes animate {
+    from {
+      right: -5.2rem;
+    }
+    to {
+      right: -2rem;
+    }
+  }
+  .event_burgerMenu > ul > li {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .event_burgerMenu .burger_icon {
+    height: 3em;
+    width: 3em;
+    font-size: 0.9rem;
+  }
+  .event_burgerMenu > ul {
+    top: -1rem;
+    right: -3rem;
+    margin-right: 7rem;
+    gap: 1rem;
+  }
+  @keyframes animate {
+    from {
+      right: -5.2rem;
+    }
+    to {
+      right: -2rem;
+    }
+  }
+  .event_burgerMenu > ul > li {
+    font-size: 1.1rem;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -15,18 +15,17 @@
     padding:10px;
     color: white;
     border-radius: 100%;
-    // to be change in responsive
     height: 3.5em;
     width: 3.5em;
     font-size: 1rem;
   }
   & > ul {
     position: absolute;
-    top: -1rem;
+    top: -.8rem;
     right: 1rem;
     margin-right: 7rem;
     @include center();
-    gap: 4rem;
+    gap: 3rem;
     animation: animate 1.5s none;
     overflow: hidden;
     @keyframes animate {
@@ -42,6 +41,106 @@
       list-style: none;
       cursor: pointer;
 
+    }
+  }
+}
+
+
+@media screen and (max-width:800px) {
+  .event_burgerMenu {
+    .burger_icon {
+      height: 3.3em;
+      width: 3.3em;
+    }
+    & > ul {
+      top: -.8rem;
+      right: 1rem;
+      margin-right: 7rem;
+      gap: 2rem;
+      > li {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:600px) {
+  .event_burgerMenu {
+    .burger_icon {
+
+      height: 3.2em;
+      width: 3.2em;
+    }
+    & > ul {
+      top: -.8rem;
+      right: -1rem;
+      margin-right: 7rem;
+      gap: 1.5rem;
+      @keyframes animate {
+        from {
+          right: -5.2rem;
+        }
+        to {
+          right: -1rem;
+        }
+      }
+      > li {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:500px) {
+  .event_burgerMenu {
+    .burger_icon {
+
+      height: 3.1em;
+      width: 3.1em;
+      font-size: .9rem;
+    }
+    & > ul {
+      top: -1rem;
+      right: -2.5rem;
+      margin-right: 7rem;
+      gap: 1.3rem;
+      @keyframes animate {
+        from {
+          right: -5.2rem;
+        }
+        to {
+          right: -2rem;
+        }
+      }
+      > li {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+@media screen and (max-width:400px) {
+  .event_burgerMenu {
+    .burger_icon {
+      height: 3em;
+      width: 3em;
+      font-size: .9rem;
+    }
+    & > ul {
+      top: -1rem;
+      right: -3rem;
+      margin-right: 7rem;
+      gap: 1rem;
+      @keyframes animate {
+        from {
+          right: -5.2rem;
+        }
+        to {
+          right: -2rem;
+        }
+      }
+      > li {
+        font-size: 1.1rem;
+      }
     }
   }
 }

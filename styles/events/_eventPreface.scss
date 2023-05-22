@@ -1,309 +1,385 @@
-  @mixin center() {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.event_container {
+  color: aliceblue;
+  @include center();
+  flex-direction: column;
+  &:before {
+    content: "";
+    position: fixed;
+    top: 6.75rem;
+    left: 0rem;
+    height: 8px;
+    width: 18px;
+    background: rgb(65, 146, 217);
+    z-index: -1;
   }
-  .event_container {
-    color: aliceblue;
+  &::after {
+    content: "";
+    position: fixed;
+    top: 6.75rem;
+    right: 0px;
+    height: 8px;
+    width: 18px;
+    background: rgb(65, 146, 217);
+    z-index: -1;
+  }
+
+  .burgerHeader {
     @include center();
-    flex-direction: column;
+    justify-content: space-between;
+    height: 7rem;
+    width: 100%;
+    position: relative;
+
     &:before {
       content: "";
       position: fixed;
-      top: 6.75rem;
+      top: 7rem;
       left: 0rem;
-      height: 8px;
-      width: 18px;
+      height: 1px;
+      width: 100vw;
       background: rgb(65, 146, 217);
-      z-index:-1;
+      z-index: -1;
     }
-    &::after {
-      content: "";
-      position: fixed;
-      top: 6.75rem;
-      right: 0px;
-      height: 8px;
-      width: 18px;
-      background: rgb(65, 146, 217);
-      z-index:-1;
+    .event_burger_icon {
+      background-color: var(--event-third-color);
+      padding: 10px;
+      color: white;
+      border-radius: 100%;
+      height: 3.5rem;
+      width: 3.5rem;
+      font-size: 1rem;
     }
-    
-    .burgerHeader {
+  }
+
+  .event_header {
+    .event_heading1 {
+      margin-top: 1rem;
+      font-size: 12.5vw;
+      color: var(--event-first-color);
+      line-height: 10vw;
+      letter-spacing: -6px;
+      & > span {
+        color: var(--event-second-color);
+        margin-right: 0.1em;
+      }
+      margin-bottom: 0.1em;
+    }
+    .event_heading2 {
       @include center();
       justify-content: space-between;
-      height: 7rem;
-      width: 100%;
       position: relative;
-
       &:before {
         content: "";
-        position: fixed;
-        top: 7rem;
-        left: 0rem;
-        height: 1px;
-        width: 100vw;
+        position: absolute;
+        top: 3.1vw;
+        left: -2.65rem;
+        // have to change 1.5vw after 700px
+        border-right: 1.5vw solid rgb(0, 0, 0);
+        border-bottom: 1.5vw solid transparent;
+        border-left: 1.5vw solid rgb(0, 0, 0);
         background: rgb(65, 146, 217);
-        z-index:-1;
+        transform: rotate(90deg);
       }
-      .event_burger_icon {
-        background-color: var(--event-third-color);
-        padding: 10px;
-        color: white;
-        border-radius: 100%;
-        height: 3.5rem;
-        width: 3.5rem;
-        font-size: 1rem;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 3.1vw;
+        right: -2.65rem;
+        // have to change 1.5vw after 700px
+        border-right: 1.5vw solid rgb(0, 0, 0);
+        border-bottom: 1.5vw solid transparent;
+        border-left: 1.5vw solid rgb(0, 0, 0);
+        background: rgb(65, 146, 217);
+        transform: rotate(270deg);
       }
-    }
-    
-    .event_header {
-      .event_heading1 {
-        margin-top: 1rem;
-        font-size: 12.5vw;
-        color: var(--event-first-color);
-        line-height: 10vw;
-        letter-spacing: -6px;
-        & > span {
-          color:  var(--event-second-color);
-          margin-right: .1em
-        }
-        margin-bottom: .1em
+      & > span {
+        font-size: 5rem;
+        font-size: 6.5vw;
+        color: var(--event-third-color);
+        font-weight: 100;
       }
-      .event_heading2 {
+
+      & > div {
         @include center();
-        justify-content: space-between;
-        position: relative;
-        &:before {
-          content: "";
-          position: absolute;
-          top: 3.1vw;
-          left: -2.65rem;
-                    // have to change 1.5vw after 700px
-          border-right: 1.5vw solid rgb(0, 0, 0);
-          border-bottom: 1.5vw solid transparent;
-          border-left: 1.5vw solid rgb(0, 0, 0);
-          background: rgb(65, 146, 217);
-          transform: rotate(90deg);
-          
+        flex-direction: column;
+        font-size: 3.32vw;
+        font-weight: 600;
+        & > :nth-child(1) {
+          color: var(--event-first-color);
         }
-        &::after {
-          content: "";
-          position: absolute;
-          top: 3.1vw;
-          right: -2.65rem;
-          // have to change 1.5vw after 700px
-          border-right: 1.5vw solid rgb(0, 0, 0);
-          border-bottom: 1.5vw solid transparent;
-          border-left: 1.5vw solid rgb(0, 0, 0);
-          background: rgb(65, 146, 217);
-          transform: rotate(270deg);
-          
-        }
-        & > span {
-          font-size: 5rem;
-          font-size: 6.5vw;
-          color:var(--event-third-color);
-          font-weight: 100;
-        }
-      
-        & > div {
-          @include center();
-          flex-direction: column;
-          font-size: 3.32vw;
-          font-weight: 600;
-          & > :nth-child(1) {
-            color: var(--event-first-color);
-          }
-          & > :nth-child(2) {
-            color: var(--event-second-color);
-          }
+        & > :nth-child(2) {
+          color: var(--event-second-color);
         }
       }
     }
+  }
+  .event_introImg > img {
+    margin: 10rem 0 10rem 0;
+    height: 40rem;
+    width: 90vw;
+    object-fit: cover;
+  }
+  .event_preface {
+    width: 85%;
+    margin: auto;
+    margin: 10rem 0 10rem 0;
+    > p {
+      font-size: 3rem;
+      text-align: center;
+      line-height: 3.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .event_container {
+    .event_preface {
+      margin: 9rem 0 9rem 0;
+      > p {
+        font-size: 2.7rem;
+        line-height: 3rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .event_container {
     .event_introImg > img {
-      margin: 10rem 0 10rem 0;
-      height: 40rem;
+      margin: 8rem 0 8rem 0;
+      height: 35rem;
       width: 90vw;
       object-fit: cover;
     }
     .event_preface {
-      width: 85%;
-      margin: auto;
-      margin: 10rem 0 10rem 0;
+      margin: 8rem 0 8rem 0;
+
       > p {
-        font-size: 3rem;
-        text-align: center;
-        line-height: 3.5rem;
+        font-size: 2.4rem;
+        line-height: 2.8rem;
       }
     }
   }
+}
+@media screen and (max-width: 1000px) {
+  .event_container {
+    .event_introImg > img {
+      margin: 8rem 0 7rem 0;
+      height: 32rem;
+      width: 90vw;
+      object-fit: cover;
+    }
+    .event_preface {
+      margin: 7rem 0 7rem 0;
 
-
-  @media screen and (max-width:1300px) {
-    .event_container {
-      .event_preface {
-        margin: 9rem 0 9rem 0;
-        > p {
-          font-size: 2.7rem;
-          line-height: 3rem;
-        }
+      > p {
+        font-size: 2.1rem;
+        line-height: 2.5rem;
       }
     }
   }
+}
 
-  @media screen and (max-width:1180px) {
-    .event_container {
-      .event_introImg > img {
-        margin: 8rem 0 8rem 0;
-        height: 35rem;
-        width: 90vw;
-        object-fit: cover;
-      }
-      .event_preface {
-        margin: 8rem 0 8rem 0;
+@media screen and (max-width: 870px) {
+  .event_container {
+    .event_introImg > img {
+      margin: 8rem 0 6rem 0;
+      height: 27rem;
+      width: 90vw;
+      object-fit: cover;
+    }
+    .event_preface {
+      margin: 6rem 0 6rem 0;
+      width: 90%;
 
-        > p {
-          font-size: 2.4rem;
-          line-height: 2.8rem;
-        }
+      > p {
+        font-size: 2rem;
+        line-height: 2.2rem;
       }
     }
   }
-  @media screen and (max-width:1000px) {
-    .event_container {
-      .event_introImg > img {
-        margin: 8rem 0 7rem 0;
-        height: 32rem;
-        width: 90vw;
-        object-fit: cover;
-      }
-      .event_preface {
-        margin: 7rem 0 7rem 0;
+}
 
-        > p {
-          font-size: 2.1rem;
-          line-height: 2.5rem;
-        }
+@media screen and (max-width: 800px) {
+  .event_container {
+    &:before {
+      top: 5.75rem;
+    }
+    &::after {
+      top: 5.75rem;
+    }
+    .burgerHeader {
+      height: 6rem;
+      &:before {
+        top: 6rem;
+      }
+      .event_burger_icon {
+        height: 3.3em;
+        width: 3.3em;
       }
     }
   }
+}
 
-  @media screen and (max-width:870px) {
-    .event_container {
-      .event_introImg > img {
-        margin: 8rem 0 6rem 0;
-        height: 27rem;
-        width: 90vw;
-        object-fit: cover;
-      }
-      .event_preface {
-        margin: 6rem 0 6rem 0;
-        width: 90%;
-
-        > p {
-          font-size: 2rem;
-          line-height: 2.2rem;
-        }
+@media screen and (max-width: 700px) {
+  .event_container {
+    .event_introImg > img {
+      margin: 8rem 0 5rem 0;
+      height: 24rem;
+      width: 90vw;
+      object-fit: cover;
+    }
+    .event_preface {
+      margin: 5rem 0 5rem 0;
+      > p {
+        font-size: 1.8rem;
+        line-height: 1.9rem;
       }
     }
   }
+}
 
-  @media screen and (max-width:700px) {
-    .event_container {
-      .event_introImg > img {
-        margin: 8rem 0 5rem 0;
-        height: 24rem;
-        width: 90vw;
-        object-fit: cover;
+@media screen and (max-width: 600px) {
+  .event_container {
+    &:before {
+      top: 5rem;
+    }
+    &::after {
+      top: 5rem;
+    }
+    .burgerHeader {
+      height: 5rem;
+      &:before {
+        top: 5.25rem;
       }
-      .event_preface {
-        margin: 5rem 0 5rem 0;
-        > p {
-          font-size: 1.8rem;
-          line-height: 1.9rem;
-        }
+      .event_burger_icon {
+        margin-bottom: 5px;
+      height: 3.1em;
+      width: 3.1em;
+      }
+    }
+    .event_introImg > img {
+      height: 20rem;
+      width: 90vw;
+      object-fit: cover;
+    }
+    .event_preface {
+      width: 93%;
+
+      > p {
+        font-size: 1.6rem;
+        line-height: 1.7rem;
       }
     }
   }
+}
 
-  @media screen and (max-width:600px) {
-    .event_container {
-      .event_introImg > img {
-        height: 20rem;
-        width: 90vw;
-        object-fit: cover;
-      }
-      .event_preface {
-        width: 93%;
+@media screen and (max-width: 550px) {
+  .event_container {
+    .event_introImg > img {
+      height: 18rem;
+      width: 90vw;
+      object-fit: cover;
+    }
+    .event_preface {
+      margin: 4rem 0 4rem 0;
 
-        > p {
-          font-size: 1.6rem;
-          line-height: 1.7rem;
-        }
+      > p {
+        font-size: 1.5rem;
       }
     }
   }
+}
 
-  @media screen and (max-width:550px) {
-    .event_container {
-      .event_introImg > img {
-        height: 18rem;
-        width: 90vw;
-        object-fit: cover;
+@media screen and (max-width: 500px) {
+  .event_container {
+    margin-top: .5rem;
+    &:before {
+      top: 4.5rem;
+    }
+    &::after {
+      top: 4.5rem;
+    }
+    .burgerHeader {
+      height: 4rem;
+      &:before {
+        top: 4.75rem;
       }
-      .event_preface {
-        margin: 4rem 0 4rem 0;
-
-        > p {
-          font-size: 1.5rem;
-        }
+      .event_burger_icon {
+        margin-bottom: 7px;
+      height: 3em;
+      width: 3em;
       }
     }
   }
+}
 
-  @media screen and (max-width:480px) {
-    .event_container {
-      .event_introImg > img {
-        height: 15rem;
-        width: 90vw;
-        object-fit: cover;
-      }
-      .event_preface {
-        margin: 3rem 0 3rem 0;
+@media screen and (max-width: 480px) {
+  .event_container {
+    .event_introImg > img {
+      height: 15rem;
+      width: 90vw;
+      object-fit: cover;
+    }
+    .event_preface {
+      margin: 3rem 0 3rem 0;
 
-        > p {
-          font-size: 1.4rem;
-          line-height: 1.5rem;
-        }
+      > p {
+        font-size: 1.4rem;
+        line-height: 1.5rem;
       }
     }
   }
+}
 
-  @media screen and (max-width:400px) {
-    .event_container {
-      .event_introImg > img {
-        height: 13rem;
-        width: 90vw;
-        object-fit: cover;
+@media screen and (max-width: 400px) {
+  .event_container {
+    margin-top: .3rem;
+    &:before {
+      top: 4.2rem;
+    }
+    &::after {
+      top: 4.2rem;
+    }
+    .burgerHeader {
+      height: 4rem;
+      &:before {
+        top: 4.45rem;
       }
-      .event_preface {
-        margin: 2rem 0 2rem 0;
+      .event_burger_icon {
+        margin-bottom: 11px;
+      height: 2.8em;
+      width: 2.8em;
+      }
+    }
+    .event_introImg > img {
+      height: 13rem;
+      width: 90vw;
+      object-fit: cover;
+    }
+    .event_preface {
+      margin: 2rem 0 2rem 0;
 
-        > p {
-          font-size: 1.35rem;
-          line-height: 1.4rem;
-        }
+      > p {
+        font-size: 1.35rem;
+        line-height: 1.4rem;
       }
     }
   }
+}
 
-  @media screen and (max-width:360px) {
-    .event_container {
-      .event_preface {
-        > p {
-          font-size: 1.35rem;
-          line-height: 1.3rem;
-        }
+@media screen and (max-width: 360px) {
+  .event_container {
+    .event_preface {
+      > p {
+        font-size: 1.35rem;
+        line-height: 1.3rem;
       }
     }
   }
+}
