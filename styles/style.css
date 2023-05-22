@@ -1667,7 +1667,7 @@ body::-webkit-scrollbar {
   }
 }
 .vision_container {
-  height: 95vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1740,7 +1740,7 @@ body::-webkit-scrollbar {
     font-size: 4.7rem;
   }
   .vision_container > p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin: 1.1rem 0;
   }
 }
@@ -1749,10 +1749,10 @@ body::-webkit-scrollbar {
     width: 97%;
   }
   .vision_container > h1 {
-    font-size: 4rem;
+    font-size: 4.2rem;
   }
   .vision_container > p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 1.4rem 0;
   }
 }
@@ -2677,6 +2677,12 @@ body::-webkit-scrollbar {
   margin: auto;
 }
 
+@media screen and (max-width: 800px) {
+  .events {
+    max-width: 100%;
+    padding: 0rem 0rem;
+  }
+}
 .event_container {
   color: aliceblue;
   display: flex;
@@ -2808,9 +2814,148 @@ body::-webkit-scrollbar {
 .event_container .event_preface > p {
   font-size: 3rem;
   text-align: center;
-  line-height: 4rem;
+  line-height: 3.5rem;
 }
 
+@media screen and (max-width: 1300px) {
+  .event_container .event_preface {
+    margin: 9rem 0 9rem 0;
+  }
+  .event_container .event_preface > p {
+    font-size: 2.7rem;
+    line-height: 3rem;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .event_container .event_introImg > img {
+    margin: 8rem 0 8rem 0;
+    height: 35rem;
+    width: 90vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .event_container .event_preface {
+    margin: 8rem 0 8rem 0;
+  }
+  .event_container .event_preface > p {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .event_container .event_introImg > img {
+    margin: 8rem 0 7rem 0;
+    height: 32rem;
+    width: 90vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .event_container .event_preface {
+    margin: 7rem 0 7rem 0;
+  }
+  .event_container .event_preface > p {
+    font-size: 2.1rem;
+    line-height: 2.5rem;
+  }
+}
+@media screen and (max-width: 870px) {
+  .event_container .event_introImg > img {
+    margin: 8rem 0 6rem 0;
+    height: 27rem;
+    width: 90vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .event_container .event_preface {
+    margin: 6rem 0 6rem 0;
+    width: 90%;
+  }
+  .event_container .event_preface > p {
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .event_container .event_introImg > img {
+    margin: 8rem 0 5rem 0;
+    height: 24rem;
+    width: 90vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .event_container .event_preface {
+    margin: 5rem 0 5rem 0;
+  }
+  .event_container .event_preface > p {
+    font-size: 1.8rem;
+    line-height: 1.9rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .event_container .event_introImg > img {
+    height: 20rem;
+    width: 90vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .event_container .event_preface {
+    width: 93%;
+  }
+  .event_container .event_preface > p {
+    font-size: 1.6rem;
+    line-height: 1.7rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .event_container .event_introImg > img {
+    height: 18rem;
+    width: 90vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .event_container .event_preface {
+    margin: 4rem 0 4rem 0;
+  }
+  .event_container .event_preface > p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .event_container .event_introImg > img {
+    height: 15rem;
+    width: 90vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .event_container .event_preface {
+    margin: 3rem 0 3rem 0;
+  }
+  .event_container .event_preface > p {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .event_container .event_introImg > img {
+    height: 13rem;
+    width: 90vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .event_container .event_preface {
+    margin: 2rem 0 2rem 0;
+  }
+  .event_container .event_preface > p {
+    font-size: 1.35rem;
+    line-height: 1.4rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .event_container .event_preface > p {
+    font-size: 1.35rem;
+    line-height: 1.3rem;
+  }
+}
 .event_section {
   display: grid;
   grid-template-columns: 1.3fr 3fr 1.3fr;

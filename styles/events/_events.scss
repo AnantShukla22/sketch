@@ -2,6 +2,11 @@
     max-width: 100%;
     padding: 0 1.7rem;
     margin: auto;
-    // background: url("/images/event/background4.jpg");
-    // background-size: contain;
+}
+
+@media screen and (max-width:800px) {
+    .events{
+        max-width: 100%;
+        padding: 0rem 0rem;
+    }
 }

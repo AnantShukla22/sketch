@@ -47,7 +47,7 @@ const EventPreface = () => {
           As the 2022 sports calendar rolled on, fansa hailed new heroes,
           saluted the latest champs and bid farewell to GOATs (and evendfsa
           welcomed a couple back). But no matter the season, our greeting was
-          clear: we cheered on each moment that <br /> highlighted our year.
+          clear: we cheered on each moment that highlighted our year.
         </p>
       </div>
     </div>

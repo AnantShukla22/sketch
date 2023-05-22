@@ -6,7 +6,7 @@
 }
 
 .vision_container {
-  height: 95vh;
+  height: 100vh;
   @include center();
   width: 80%;
   margin: auto;
@@ -81,13 +81,11 @@
 @media screen and (max-width:650px) {
   .vision_container {
     width: 95%;
-
     & > h1 {
       font-size: 4.7rem;
     }
-  
     & > p {
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       margin: 1.1rem 0;
     }
   }
@@ -98,11 +96,11 @@
   .vision_container {
     width: 97%;
     & > h1 {
-      font-size: 4rem;
+      font-size: 4.2rem;
     }
   
     & > p {
-      font-size: 1.2rem;
+      font-size: 1rem;
       margin: 1.4rem 0;
     }
   }
