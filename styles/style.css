@@ -3235,7 +3235,7 @@ body::-webkit-scrollbar {
     }
   }
   .event_burgerMenu > ul > li {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
 }
 @media screen and (max-width: 400px) {
@@ -3255,10 +3255,10 @@ body::-webkit-scrollbar {
       right: -5.2rem;
     }
     to {
-      right: -2rem;
+      right: -3rem;
     }
   }
   .event_burgerMenu > ul > li {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
