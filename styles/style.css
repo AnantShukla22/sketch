@@ -286,7 +286,7 @@ body::-webkit-scrollbar {
 }
 @media screen and (max-width: 1150px) {
   .statistics_container {
-    min-height: 80vh;
+    min-height: 75vh;
   }
   .statistics_container .statistics_content h1 {
     font-size: 3.7rem;
@@ -322,7 +322,7 @@ body::-webkit-scrollbar {
 }
 @media screen and (max-width: 950px) {
   .statistics_container {
-    min-height: 80vh;
+    min-height: 70vh;
     margin-bottom: 3rem;
   }
   .statistics_container .statistics_content p {
@@ -956,7 +956,7 @@ body::-webkit-scrollbar {
 }
 @media screen and (max-width: 850px) {
   .accordian_container {
-    min-height: 75vh;
+    min-height: 65vh;
   }
 }
 @media screen and (max-width: 740px) {
@@ -1671,6 +1671,9 @@ body::-webkit-scrollbar {
   }
 }
 @media screen and (max-width: 700px) {
+  .about_whoweare {
+    min-height: 50vh;
+  }
   .about_whoweare > h1 {
     font-size: 4.8rem;
     line-height: 5rem;
