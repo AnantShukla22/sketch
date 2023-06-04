@@ -80,6 +80,7 @@
 }
 @media screen and (max-width:650px) {
   .vision_container {
+    min-height: 60vh;
     width: 95%;
     & > h1 {
       font-size: 4.7rem;

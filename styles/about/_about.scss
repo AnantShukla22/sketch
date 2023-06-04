@@ -81,6 +81,7 @@
   .about_container {
     .carousel_container {
       min-height: 80vh;
+      margin-bottom: 0rem;
       margin: auto;
       & > h1 {
         font-size: 3.5rem;
@@ -116,7 +117,9 @@
 }
 @media screen and (max-width: 570px) {
   .about_container {
+
     .carousel_container {
+      min-height: 60vh;
       margin: auto;
       & > h1 {
         font-size: 3rem;

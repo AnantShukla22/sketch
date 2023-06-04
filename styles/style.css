@@ -1492,6 +1492,7 @@ body::-webkit-scrollbar {
 @media screen and (max-width: 760px) {
   .about_container .carousel_container {
     min-height: 80vh;
+    margin-bottom: 0rem;
     margin: auto;
   }
   .about_container .carousel_container > h1 {
@@ -1524,6 +1525,7 @@ body::-webkit-scrollbar {
 }
 @media screen and (max-width: 570px) {
   .about_container .carousel_container {
+    min-height: 60vh;
     margin: auto;
   }
   .about_container .carousel_container > h1 {
@@ -1739,6 +1741,7 @@ body::-webkit-scrollbar {
 }
 @media screen and (max-width: 650px) {
   .vision_container {
+    min-height: 60vh;
     width: 95%;
   }
   .vision_container > h1 {
@@ -1925,6 +1928,9 @@ body::-webkit-scrollbar {
 @media screen and (max-width: 800px) {
   .triple_container {
     margin-bottom: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .triple_container .triple_content {
     padding-right: 2rem;
