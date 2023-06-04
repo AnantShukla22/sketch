@@ -561,7 +561,7 @@ body::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 10rem 0;
+  margin: 5rem 0 10rem 0;
 }
 .domain_container > h1 {
   font-size: 4.5rem;
@@ -700,6 +700,9 @@ body::-webkit-scrollbar {
   }
 }
 @media screen and (max-width: 850px) {
+  .domain_container {
+    margin: 1rem 0 7rem 0;
+  }
   .domain_container > h1 {
     font-size: 3.2rem;
     margin-bottom: 2rem;
@@ -1488,6 +1491,7 @@ body::-webkit-scrollbar {
 }
 @media screen and (max-width: 760px) {
   .about_container .carousel_container {
+    min-height: 80vh;
     margin: auto;
   }
   .about_container .carousel_container > h1 {
@@ -1667,7 +1671,7 @@ body::-webkit-scrollbar {
   }
 }
 .vision_container {
-  height: 100vh;
+  min-height: calc(100vh - 4.4rem);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1687,6 +1691,7 @@ body::-webkit-scrollbar {
   -moz-text-fill-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
+  word-spacing: -1.1rem;
 }
 .vision_container > p {
   font-size: 1.9rem;
@@ -1855,6 +1860,9 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 1250px) {
+  .triple_container {
+    min-height: 80vh;
+  }
   .triple_container .triple_img > img {
     height: 20rem;
     width: 20rem;
@@ -1886,6 +1894,10 @@ body::-webkit-scrollbar {
   }
 }
 @media screen and (max-width: 930px) {
+  .triple_container {
+    min-height: 70vh;
+    margin-bottom: 3rem;
+  }
   .triple_container .triple_content {
     padding-right: 2rem;
   }
@@ -1911,6 +1923,9 @@ body::-webkit-scrollbar {
   }
 }
 @media screen and (max-width: 800px) {
+  .triple_container {
+    margin-bottom: 0rem;
+  }
   .triple_container .triple_content {
     padding-right: 2rem;
   }
@@ -2384,15 +2399,11 @@ body::-webkit-scrollbar {
   }
 }
 .header_container {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   justify-content: space-between;
-  height: 4.4rem;
+  min-height: 4.4rem;
   box-shadow: 0 0 2rem gray inset;
   border-radius: 0 0 10rem 10rem;
   padding: 0 4em;
@@ -2819,7 +2830,7 @@ body::-webkit-scrollbar {
 
 @media screen and (max-width: 1300px) {
   .event_container .event_preface {
-    margin: 9rem 0 9rem 0;
+    margin: 8rem 0 8rem 0;
   }
   .event_container .event_preface > p {
     font-size: 2.7rem;
@@ -2828,7 +2839,7 @@ body::-webkit-scrollbar {
 }
 @media screen and (max-width: 1180px) {
   .event_container .event_introImg > img {
-    margin: 8rem 0 8rem 0;
+    margin: 7rem 0 7rem 0;
     height: 35rem;
     width: 90vw;
     -o-object-fit: cover;
@@ -2844,7 +2855,7 @@ body::-webkit-scrollbar {
 }
 @media screen and (max-width: 1000px) {
   .event_container .event_introImg > img {
-    margin: 8rem 0 7rem 0;
+    margin: 6rem 0 6rem 0;
     height: 32rem;
     width: 90vw;
     -o-object-fit: cover;
@@ -2860,7 +2871,7 @@ body::-webkit-scrollbar {
 }
 @media screen and (max-width: 870px) {
   .event_container .event_introImg > img {
-    margin: 8rem 0 6rem 0;
+    margin: 5rem 0 5rem 0;
     height: 27rem;
     width: 90vw;
     -o-object-fit: cover;
@@ -2895,7 +2906,7 @@ body::-webkit-scrollbar {
 }
 @media screen and (max-width: 700px) {
   .event_container .event_introImg > img {
-    margin: 8rem 0 5rem 0;
+    margin: 4rem 0 4rem 0;
     height: 24rem;
     width: 90vw;
     -o-object-fit: cover;
@@ -3248,7 +3259,7 @@ body::-webkit-scrollbar {
     top: -1rem;
     right: -3rem;
     margin-right: 7rem;
-    gap: 1rem;
+    gap: 0.7rem;
   }
   @keyframes animate {
     from {

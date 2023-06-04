@@ -7,7 +7,7 @@
 
 .domain_container {
   @include center();
-  margin: 10rem 0;
+  margin: 5rem 0 10rem 0;
   & > h1 {
     font-size: 4.5rem;
     margin-bottom: 3rem;
@@ -132,6 +132,8 @@
 }
 @media screen and (max-width: 850px) {
   .domain_container {
+    margin: 1rem 0 7rem 0;
+
     & > h1 {
       font-size: 3.2rem;
       margin-bottom: 2rem;

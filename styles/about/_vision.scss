@@ -6,7 +6,7 @@
 }
 
 .vision_container {
-  height: 100vh;
+  min-height: calc(100vh - 4.4rem);
   @include center();
   width: 80%;
   margin: auto;
@@ -22,6 +22,7 @@
     -moz-text-fill-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
+    word-spacing: -1.1rem;
   }
 
   & > p {
@@ -66,7 +67,6 @@
 @media screen and (max-width:850px) {
   .vision_container {
     width: 93%;
-
     & > h1 {
       font-size: 5.3rem;
     }
