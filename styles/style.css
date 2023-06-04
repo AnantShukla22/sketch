@@ -1928,9 +1928,7 @@ body::-webkit-scrollbar {
 @media screen and (max-width: 800px) {
   .triple_container {
     margin-bottom: 0rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
   .triple_container .triple_content {
     padding-right: 2rem;

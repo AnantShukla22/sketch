@@ -183,7 +183,7 @@
 @media screen and (max-width:800px) {
   .triple_container {
     margin-bottom: 0rem;
-    @include center();
+    align-items: flex-start;
     .triple_content {
       padding-right: 2rem;
     }
