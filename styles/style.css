@@ -1673,6 +1673,7 @@ body::-webkit-scrollbar {
 @media screen and (max-width: 700px) {
   .about_whoweare {
     min-height: 50vh;
+    margin-bottom: 3rem;
   }
   .about_whoweare > h1 {
     font-size: 4.8rem;
