@@ -6,7 +6,7 @@
 
 .contact_container {
   @include center();
-  min-height: 100vh;
+  min-height: 90vh;
   gap: 7rem;
   color: var(--font-color-first);
 
@@ -140,7 +140,7 @@
 @media screen and (max-width: 1200px) {
   .contact_container {
     gap: 4rem;
-
+    min-height: 80vh;
     .contact_info {
       padding: 2rem 3rem;
       height: 24rem;
@@ -231,7 +231,8 @@
 @media screen and (max-width: 1000px) {
   .contact_container {
     gap: 3rem;
-
+    min-height: 70vh;
+    margin-bottom: 3rem;
     .contact_info {
       width: 38rem;
     }
@@ -304,6 +305,7 @@
 
 @media screen and (max-width: 600px) {
   .contact_container {
+    min-height: 60vh;
     .contact_info {
       padding: 2rem 3rem;
       height: 20rem;
@@ -348,6 +350,8 @@
 }
 @media screen and (max-width: 515px) {
   .contact_container {
+    min-height: 55vh;
+
     .contact_info {
       height: 18rem;
       width: 27rem;
@@ -385,6 +389,8 @@
 
 @media screen and (max-width: 470px) {
   .contact_container {
+    min-height: 45vh;
+
     .contact_info {
       height: 17rem;
       width: 23rem;

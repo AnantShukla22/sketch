@@ -8,8 +8,7 @@
   width: 80%;
   margin: auto;
   .landing_container {
-    margin-top: 2rem;
-    min-height: 100vh;
+    min-height: calc(100vh - 4.4rem);
     @include center;
     flex-direction: column;
     gap: 3rem;
@@ -83,7 +82,7 @@
   @media screen and (max-width:650px) {
     #home{
       .landing_container {
-        margin-top: 0;
+        min-height: 100vh;
         gap: 2rem;
         .img_container {
           > img {

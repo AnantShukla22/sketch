@@ -5,7 +5,6 @@
 }
 
 .accordian_container {
-  // if any problem with responsive dirsctly amke it with padding
   min-height: 100vh;
   @include center();
   flex-direction: column;
@@ -48,8 +47,10 @@
   }
 }
 
+
 @media screen and (max-width:1250px) {
   .accordian_container {
+    min-height: 80vh;
     & > h1 {
       font-size: 3.1rem;
       margin-bottom: 4.5rem;
@@ -61,15 +62,24 @@
             font-size: 1.8rem;
           }
         }
-        .answer {
-        }
       }
     }
   }
 }
-
+@media screen and (max-width:1150px) {
+  .accordian_container {
+    min-height: 70vh;
+  }
+}
+@media screen and (max-width:1050px) {
+  .accordian_container {
+    min-height: 65vh;
+  }
+}
 @media screen and (max-width:940px) {
   .accordian_container {
+    min-height: 60vh;
+    margin-bottom: 2rem;
     & > h1 {
       font-size: 3rem;
       margin-bottom: 3.5rem;
@@ -88,9 +98,14 @@
     }
   }
 }
-
+@media screen and (max-width:850px) {
+  .accordian_container {
+    min-height: 60vh;
+  }
+}
 @media screen and (max-width:740px) {
   .accordian_container {
+    min-height: 30vh;
     & > h1 {
       line-height: 3rem;
       font-size: 2.8rem;
