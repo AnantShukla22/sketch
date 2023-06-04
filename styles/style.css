@@ -562,6 +562,75 @@ body::-webkit-scrollbar {
     font-size: 1.2rem;
   }
 }
+@media screen and (max-width: 335px) {
+  .statistics_container .statistics_detail {
+    gap: 1.5rem;
+  }
+  .statistics_container .statistics_detail .detail_1 {
+    margin: 0;
+  }
+  .statistics_container .statistics_detail .detail_1 .detail_icon {
+    display: none;
+  }
+  .statistics_container .statistics_detail .detail_1 .detail_category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .statistics_container .statistics_detail .detail_1 .detail_category h1 {
+    font-size: 1.9rem;
+  }
+  .statistics_container .statistics_detail .detail_1 .detail_category h1 span {
+    display: flex;
+  }
+  .statistics_container .statistics_detail .detail_1 .detail_category h6 {
+    display: flex;
+    font-size: 1rem;
+  }
+  .statistics_container .statistics_detail .detail_2 {
+    margin: 0;
+  }
+  .statistics_container .statistics_detail .detail_2 .detail_icon {
+    display: none;
+  }
+  .statistics_container .statistics_detail .detail_2 .detail_category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .statistics_container .statistics_detail .detail_2 .detail_category h1 {
+    font-size: 1.9rem;
+  }
+  .statistics_container .statistics_detail .detail_2 .detail_category h1 span {
+    display: flex;
+  }
+  .statistics_container .statistics_detail .detail_2 .detail_category h6 {
+    display: flex;
+    font-size: 1rem;
+  }
+  .statistics_container .statistics_detail .detail_3 {
+    margin: 0;
+  }
+  .statistics_container .statistics_detail .detail_3 .detail_icon {
+    display: none;
+  }
+  .statistics_container .statistics_detail .detail_3 .detail_category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .statistics_container .statistics_detail .detail_3 .detail_category h1 {
+    font-size: 1.9rem;
+  }
+  .statistics_container .statistics_detail .detail_3 .detail_category h6 {
+    display: flex;
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+}
 .domain_container {
   display: flex;
   justify-content: center;
@@ -1673,7 +1742,7 @@ body::-webkit-scrollbar {
 @media screen and (max-width: 700px) {
   .about_whoweare {
     min-height: 50vh;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
   }
   .about_whoweare > h1 {
     font-size: 4.8rem;
