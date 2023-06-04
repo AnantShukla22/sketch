@@ -2938,7 +2938,7 @@ body::-webkit-scrollbar {
   font-size: 3rem;
   text-align: center;
   line-height: 3.5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 @media screen and (max-width: 1300px) {
@@ -3405,7 +3405,7 @@ body::-webkit-scrollbar {
 }
 @media screen and (max-width: 450px) {
   .event_section .event_section_left .event_section_left_resp > h1 {
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     white-space: nowrap;
     word-spacing: -0.3rem;
   }
@@ -3413,7 +3413,7 @@ body::-webkit-scrollbar {
     display: none;
   }
   .event_section .para_res > p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 .event_year_container {
