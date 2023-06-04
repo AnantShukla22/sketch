@@ -2938,7 +2938,7 @@ body::-webkit-scrollbar {
   font-size: 3rem;
   text-align: center;
   line-height: 3.5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 @media screen and (max-width: 1300px) {
@@ -3243,7 +3243,7 @@ body::-webkit-scrollbar {
     align-items: center;
     width: 85%;
     margin: auto;
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
   }
   .event_section .event_section_left {
     width: 100%;
@@ -3427,7 +3427,7 @@ body::-webkit-scrollbar {
   font-size: 21vw;
 }
 .event_year_container .marqueee {
-  margin-bottom: 7rem;
+  margin-bottom: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
