@@ -1928,6 +1928,7 @@ body::-webkit-scrollbar {
 @media screen and (max-width: 800px) {
   .triple_container {
     margin-bottom: 0rem;
+    min-height: 60vh;
     align-items: flex-start;
   }
   .triple_container .triple_content {
@@ -1940,6 +1941,9 @@ body::-webkit-scrollbar {
   }
 }
 @media screen and (max-width: 520px) {
+  .triple_container {
+    min-height: 50vh;
+  }
   .triple_container .triple_content {
     padding-right: 0rem;
   }

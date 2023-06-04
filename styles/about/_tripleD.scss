@@ -183,6 +183,7 @@
 @media screen and (max-width:800px) {
   .triple_container {
     margin-bottom: 0rem;
+    min-height: 60vh;
     align-items: flex-start;
     .triple_content {
       padding-right: 2rem;
@@ -199,6 +200,8 @@
 
 @media screen and (max-width:520px) {
   .triple_container {
+    min-height: 50vh;
+
     .triple_content {
       padding-right: 0rem;
       .triple_wrapper {
