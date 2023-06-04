@@ -13,21 +13,28 @@ const EventSection = ({
 }: any) => {
   return (
     <div className="event_section">
-      {/* make it flex in responsive */}
+      {/* hide this heading at 1100px */}
       <div className="event_section_left">
-        {/* display under width 700 */}
-        {/* <div className="event_section_left_resp">
+        <div className="event_section_left_main">
+          <h1>{eventName}</h1>
+          <p>{para1}</p>
+          <p>{para3}</p>
+        </div>
+
+        {/* display under width 1100 */}
+        <div className="event_section_left_resp">
           <h1>{eventName}</h1>
           <div className="event_dates">
             <span className="event_date">{date}</span>
             <span className="event_month">{month}</span>
           </div>
-        </div> */}
-        {/* hide this heading at 700px */}
-        <h1>{eventName}</h1>
-        <p>{para1}</p>
-        <p>{para3}</p>
+        </div>
       </div>
+
+      <div className="para_res">
+        <p>{para1}</p><p>{para3}</p>
+      </div>
+
       <div className="event_section_mid">
         {/* make this  flex row in responsive*/}
         <Image src={img1} alt="" />

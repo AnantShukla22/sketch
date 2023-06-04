@@ -2806,18 +2806,6 @@ body::-webkit-scrollbar {
   border: 2.5px solid rgb(0, 0, 0);
 }
 
-.events {
-  max-width: 100%;
-  padding: 0 1.7rem;
-  margin: auto;
-}
-
-@media screen and (max-width: 800px) {
-  .events {
-    max-width: 100%;
-    padding: 0rem 0rem;
-  }
-}
 .event_container {
   color: aliceblue;
   display: flex;
@@ -2950,6 +2938,7 @@ body::-webkit-scrollbar {
   font-size: 3rem;
   text-align: center;
   line-height: 3.5rem;
+  margin-bottom: 4rem;
 }
 
 @media screen and (max-width: 1300px) {
@@ -3176,6 +3165,10 @@ body::-webkit-scrollbar {
   width: 95%;
   color: white;
   margin: auto;
+  margin-bottom: 7rem;
+}
+.event_section .para_res {
+  display: none;
 }
 .event_section .event_section_left {
   display: flex;
@@ -3185,13 +3178,13 @@ body::-webkit-scrollbar {
   justify-content: flex-start;
   align-items: flex-start;
 }
-.event_section .event_section_left > h1 {
+.event_section .event_section_left .event_section_left_main > h1 {
   font-size: 3.5vw;
   margin-bottom: 3vw;
   font-weight: 300;
   color: var(--event-first-color);
 }
-.event_section .event_section_left > :nth-child(2) {
+.event_section .event_section_left .event_section_left_main > :nth-child(2) {
   margin-bottom: 50vw;
 }
 .event_section .event_section_mid {
@@ -3242,6 +3235,187 @@ body::-webkit-scrollbar {
   text-align: end;
 }
 
+@media screen and (max-width: 1100px) {
+  .event_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 8rem;
+  }
+  .event_section .event_section_left {
+    width: 100%;
+  }
+  .event_section .event_section_left .event_section_left_main {
+    display: none;
+  }
+  .event_section .event_section_left .event_section_left_resp {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .event_section .event_section_left .event_section_left_resp > h1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: var(--event-first-color);
+  }
+  .event_section .event_section_left .event_section_left_resp > :nth-child(2) {
+    margin-bottom: 0;
+  }
+  .event_section .event_section_left .event_section_left_resp .event_dates {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 0.5rem;
+    letter-spacing: -2px;
+    margin-bottom: 0;
+  }
+  .event_section .event_section_left .event_section_left_resp .event_dates .event_date {
+    font-size: 6rem;
+    line-height: 4rem;
+    color: var(--event-second-color);
+  }
+  .event_section .event_section_left .event_section_left_resp .event_dates .event_month {
+    font-size: 1.8rem;
+    color: var(--event-first-color);
+    line-height: 1.3rem;
+  }
+  .event_section .para_res {
+    margin: 3rem 0;
+    display: block;
+  }
+  .event_section .para_res > p {
+    font-size: 1.4rem;
+  }
+  .event_section .event_section_mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+  .event_section .event_section_mid > img {
+    height: 49vw;
+    width: 68vw;
+  }
+  .event_section .event_section_right {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .event_section {
+    width: 90%;
+  }
+  .event_section .event_section_left .event_section_left_resp > h1 {
+    font-size: 3rem;
+  }
+  .event_section .event_section_left .event_section_left_resp .event_dates .event_date {
+    font-size: 5.4rem;
+    line-height: 3rem;
+  }
+  .event_section .event_section_left .event_section_left_resp .event_dates .event_month {
+    font-size: 1.6rem;
+    line-height: 1.1rem;
+  }
+  .event_section .para_res {
+    margin: 2rem 0 5rem 0;
+  }
+  .event_section .para_res > p {
+    font-size: 1.3rem;
+  }
+  .event_section .event_section_mid > img {
+    height: 52vw;
+    width: 75vw;
+  }
+}
+@media screen and (max-width: 800px) {
+  .event_section {
+    width: 95%;
+  }
+  .event_section .event_section_left .event_section_left_resp > h1 {
+    font-size: 3.2rem;
+  }
+  .event_section .event_section_left .event_section_left_resp .event_dates .event_date {
+    font-size: 5rem;
+    line-height: 3rem;
+    margin-right: -0.3rem;
+  }
+  .event_section .event_section_left .event_section_left_resp .event_dates .event_month {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.1rem;
+  }
+  .event_section .para_res {
+    margin: 2rem 0 3rem 0;
+  }
+  .event_section .para_res > p {
+    font-size: 1.3rem;
+  }
+  .event_section .event_section_mid > img {
+    height: 52vw;
+    width: 85vw;
+  }
+}
+@media screen and (max-width: 650px) {
+  .event_section {
+    width: 95%;
+  }
+  .event_section .event_section_left .event_section_left_resp > h1 {
+    font-size: 2.9rem;
+  }
+  .event_section .event_section_left .event_section_left_resp .event_dates .event_date {
+    font-size: 4.5rem;
+    line-height: 3rem;
+    margin-right: -0.3rem;
+  }
+  .event_section .event_section_left .event_section_left_resp .event_dates .event_month {
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.1rem;
+  }
+  .event_section .para_res {
+    margin: 2rem 0 3rem 0;
+  }
+  .event_section .para_res > p {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .event_section .event_section_left .event_section_left_resp > h1 {
+    font-size: 2.6rem;
+  }
+  .event_section .event_section_left .event_section_left_resp .event_dates .event_date {
+    font-size: 4rem;
+    line-height: 2.8rem;
+  }
+  .event_section .event_section_left .event_section_left_resp .event_dates .event_month {
+    font-size: 1.1rem;
+  }
+  .event_section .para_res > p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .event_section .event_section_left .event_section_left_resp > h1 {
+    font-size: 2.7rem;
+    white-space: nowrap;
+    word-spacing: -0.3rem;
+  }
+  .event_section .event_section_left .event_section_left_resp .event_dates {
+    display: none;
+  }
+  .event_section .para_res > p {
+    font-size: 1rem;
+  }
+}
 .event_year_container {
   display: flex;
   justify-content: center;
@@ -3251,7 +3425,6 @@ body::-webkit-scrollbar {
 }
 .event_year_container .event_year {
   font-size: 21vw;
-  margin: 5rem 0 3rem 0;
 }
 .event_year_container .marqueee {
   margin-bottom: 7rem;
