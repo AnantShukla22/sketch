@@ -6,7 +6,7 @@
 
 .statistics_container {
   overflow: hidden;
-  min-height: 80vh;
+  min-height: 90vh;
   display: grid;
   align-items: center;
   grid-template-columns: 1.6fr 1fr;
@@ -126,7 +126,7 @@
 
 @media screen and (max-width: 1150px) {
   .statistics_container {
-    min-height: 70vh;
+    min-height: 80vh;
     .statistics_content {
       h1 {
         font-size: 3.7rem;
@@ -180,7 +180,7 @@
 
 @media screen and (max-width: 950px) {
   .statistics_container {
-    min-height: 60vh;
+    min-height: 80vh;
     margin-bottom: 3rem;
     .statistics_content {
       p {
@@ -373,8 +373,6 @@
 
 @media screen and (max-width: 375px) {
   .statistics_container {
-    .statistics_content {
-    }
     .statistics_detail {
       
       gap: 1.5rem;

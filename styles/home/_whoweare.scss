@@ -7,7 +7,7 @@
 
 .about_whoweare {
   @include center();
-  min-height: 85vh;
+  min-height: 90vh;
   color: var(--secondary-color);
   & > h1 {
     @include center();
@@ -38,7 +38,7 @@
 }
 @media screen and (max-width: 1150px) {
   .about_whoweare {
-    min-height: 70vh;
+    min-height: 80vh;
     & > h1 {
       font-size: 6rem;
       line-height: 6rem;

@@ -50,7 +50,7 @@
 
 @media screen and (max-width:1250px) {
   .accordian_container {
-    min-height: 80vh;
+    min-height: 85vh;
     & > h1 {
       font-size: 3.1rem;
       margin-bottom: 4.5rem;
@@ -68,17 +68,17 @@
 }
 @media screen and (max-width:1150px) {
   .accordian_container {
-    min-height: 70vh;
+    min-height:80vh;
   }
 }
 @media screen and (max-width:1050px) {
   .accordian_container {
-    min-height: 65vh;
+    min-height: 75vh;
   }
 }
 @media screen and (max-width:940px) {
   .accordian_container {
-    min-height: 60vh;
+    min-height: 70vh;
     margin-bottom: 2rem;
     & > h1 {
       font-size: 3rem;
@@ -100,12 +100,12 @@
 }
 @media screen and (max-width:850px) {
   .accordian_container {
-    min-height: 60vh;
+    min-height: 75vh;
   }
 }
 @media screen and (max-width:740px) {
   .accordian_container {
-    min-height: 30vh;
+    // min-height: 0vh;
     & > h1 {
       line-height: 3rem;
       font-size: 2.8rem;

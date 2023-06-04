@@ -172,7 +172,7 @@ body::-webkit-scrollbar {
 }
 .statistics_container {
   overflow: hidden;
-  min-height: 80vh;
+  min-height: 90vh;
   display: grid;
   align-items: center;
   grid-template-columns: 1.6fr 1fr;
@@ -286,7 +286,7 @@ body::-webkit-scrollbar {
 }
 @media screen and (max-width: 1150px) {
   .statistics_container {
-    min-height: 70vh;
+    min-height: 80vh;
   }
   .statistics_container .statistics_content h1 {
     font-size: 3.7rem;
@@ -322,7 +322,7 @@ body::-webkit-scrollbar {
 }
 @media screen and (max-width: 950px) {
   .statistics_container {
-    min-height: 60vh;
+    min-height: 80vh;
     margin-bottom: 3rem;
   }
   .statistics_container .statistics_content p {
@@ -918,7 +918,7 @@ body::-webkit-scrollbar {
 
 @media screen and (max-width: 1250px) {
   .accordian_container {
-    min-height: 80vh;
+    min-height: 85vh;
   }
   .accordian_container > h1 {
     font-size: 3.1rem;
@@ -930,17 +930,17 @@ body::-webkit-scrollbar {
 }
 @media screen and (max-width: 1150px) {
   .accordian_container {
-    min-height: 70vh;
+    min-height: 80vh;
   }
 }
 @media screen and (max-width: 1050px) {
   .accordian_container {
-    min-height: 65vh;
+    min-height: 75vh;
   }
 }
 @media screen and (max-width: 940px) {
   .accordian_container {
-    min-height: 60vh;
+    min-height: 70vh;
     margin-bottom: 2rem;
   }
   .accordian_container > h1 {
@@ -956,13 +956,10 @@ body::-webkit-scrollbar {
 }
 @media screen and (max-width: 850px) {
   .accordian_container {
-    min-height: 60vh;
+    min-height: 75vh;
   }
 }
 @media screen and (max-width: 740px) {
-  .accordian_container {
-    min-height: 30vh;
-  }
   .accordian_container > h1 {
     line-height: 3rem;
     font-size: 2.8rem;
@@ -987,7 +984,7 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 90vh;
+  min-height: 100vh;
   gap: 7rem;
   color: var(--font-color-first);
 }
@@ -1123,7 +1120,7 @@ body::-webkit-scrollbar {
 @media screen and (max-width: 1200px) {
   .contact_container {
     gap: 4rem;
-    min-height: 80vh;
+    min-height: 90vh;
   }
   .contact_container .contact_info {
     padding: 2rem 3rem;
@@ -1208,7 +1205,7 @@ body::-webkit-scrollbar {
 @media screen and (max-width: 1000px) {
   .contact_container {
     gap: 3rem;
-    min-height: 70vh;
+    min-height: 85vh;
     margin-bottom: 3rem;
   }
   .contact_container .contact_info {
@@ -1278,7 +1275,7 @@ body::-webkit-scrollbar {
 }
 @media screen and (max-width: 600px) {
   .contact_container {
-    min-height: 60vh;
+    min-height: 75vh;
   }
   .contact_container .contact_info {
     padding: 2rem 3rem;
@@ -1327,7 +1324,7 @@ body::-webkit-scrollbar {
 }
 @media screen and (max-width: 515px) {
   .contact_container {
-    min-height: 55vh;
+    min-height: 65vh;
   }
   .contact_container .contact_info {
     height: 18rem;
@@ -1365,7 +1362,7 @@ body::-webkit-scrollbar {
 }
 @media screen and (max-width: 470px) {
   .contact_container {
-    min-height: 45vh;
+    min-height: 55vh;
   }
   .contact_container .contact_info {
     height: 17rem;
@@ -1617,7 +1614,7 @@ body::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 85vh;
+  min-height: 90vh;
   color: var(--secondary-color);
 }
 .about_whoweare > h1 {
@@ -1649,7 +1646,7 @@ body::-webkit-scrollbar {
 }
 @media screen and (max-width: 1150px) {
   .about_whoweare {
-    min-height: 70vh;
+    min-height: 80vh;
   }
   .about_whoweare > h1 {
     font-size: 6rem;
