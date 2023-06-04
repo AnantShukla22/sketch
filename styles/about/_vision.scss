@@ -22,7 +22,7 @@
     -moz-text-fill-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
-    word-spacing: -1.1rem;
+    word-spacing: -1rem;
   }
 
   & > p {
@@ -80,7 +80,7 @@
 }
 @media screen and (max-width:650px) {
   .vision_container {
-    min-height: 60vh;
+    min-height: 100vh;
     width: 95%;
     & > h1 {
       font-size: 4.7rem;

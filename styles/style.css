@@ -1693,7 +1693,7 @@ body::-webkit-scrollbar {
   -moz-text-fill-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
-  word-spacing: -1.1rem;
+  word-spacing: -1rem;
 }
 .vision_container > p {
   font-size: 1.9rem;
@@ -1741,7 +1741,7 @@ body::-webkit-scrollbar {
 }
 @media screen and (max-width: 650px) {
   .vision_container {
-    min-height: 60vh;
+    min-height: 100vh;
     width: 95%;
   }
   .vision_container > h1 {
