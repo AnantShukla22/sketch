@@ -956,7 +956,7 @@ body::-webkit-scrollbar {
 }
 @media screen and (max-width: 850px) {
   .accordian_container {
-    min-height: 65vh;
+    min-height: 60vh;
   }
 }
 @media screen and (max-width: 740px) {
