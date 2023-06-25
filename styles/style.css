@@ -1734,6 +1734,7 @@ body::-webkit-scrollbar {
   .about_whoweare > p {
     width: 95%;
     font-size: 1.9rem;
+    margin: 1.5rem 0;
   }
   .about_whoweare > h3 {
     font-size: 1.3rem;
@@ -1786,6 +1787,7 @@ body::-webkit-scrollbar {
   .about_whoweare > p {
     width: 95%;
     font-size: 1.4rem;
+    margin: 1.2rem 0;
   }
 }
 .vision_container {
