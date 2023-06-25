@@ -11,7 +11,7 @@ const TripleD = () => {
       opacity: 1,
       scale: 1,
       transition: {
-        duration: 1,
+        duration: .7,
         delay: 0.3,
       },
     },
@@ -27,8 +27,8 @@ const TripleD = () => {
       opacity: 1,
       scale: 1,
       transition: {
-        duration: 2,
-        delay: 1.3,
+        duration: 1.7,
+        delay: .9,
       },
     },
   };

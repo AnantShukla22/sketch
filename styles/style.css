@@ -5,7 +5,8 @@
 }
 
 body {
-  background-color: black;
+  background-color: rgb(34, 0, 63);
+  background-image: url("../public/images/background/8.jpg");
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
 }
@@ -191,7 +192,7 @@ body::-webkit-scrollbar {
   font-family: var(--heading-font);
 }
 .statistics_container .statistics_content hr {
-  width: 4rem;
+  width: 7rem;
   margin-bottom: 2rem;
   background-color: rgb(214, 188, 157);
 }

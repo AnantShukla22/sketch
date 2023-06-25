@@ -11,7 +11,7 @@ const Footer = () => {
       opacity: 1,
       scale: 1,
       transition: {
-        duration: .7,
+        duration: .4,
         delay: .6,
       },
     },
@@ -20,15 +20,15 @@ const Footer = () => {
       scale: 1,
       transition: {
         duration: .9,
-        delay: .9,
+        delay: 1,
       },
     },
     sketch: {
       opacity: 1,
       scale: 1,
       transition: {
-        duration: 1.2,
-        delay: 1,
+        duration: 1.3,
+        delay: 1.2,
       },
     },
   };

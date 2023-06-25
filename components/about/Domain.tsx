@@ -34,7 +34,7 @@ const Domain = () => {
       scale: 1,
       transition: {
         duration: 1,
-        delay: .8,
+        delay: .6,
       },
     },
   };
