@@ -1040,7 +1040,7 @@ body::-webkit-scrollbar {
     font-size: 1.45rem;
   }
   .accordian_container .accordian_list .accordian .answer {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 650px) {
@@ -3025,6 +3025,25 @@ body::-webkit-scrollbar {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .event_container .event_header .event_heading2:before {
+    top: 3.1vw;
+    left: -2.65rem;
+    border-right: 1.8vw solid rgb(0, 0, 0);
+    border-bottom: 1.8vw solid transparent;
+    border-left: 1.8vw solid rgb(0, 0, 0);
+    background: rgb(65, 146, 217);
+    transform: rotate(90deg);
+  }
+  .event_container .event_header .event_heading2::after {
+    content: "";
+    top: 3.1vw;
+    right: -2.65rem;
+    border-right: 1.7vw solid rgb(0, 0, 0);
+    border-bottom: 1.7vw solid transparent;
+    border-left: 1.7vw solid rgb(0, 0, 0);
+    background: rgb(65, 146, 217);
+    transform: rotate(270deg);
+  }
   .event_container .event_preface {
     margin: 5rem 0 5rem 0;
   }
@@ -3050,6 +3069,9 @@ body::-webkit-scrollbar {
     margin-bottom: 5px;
     height: 3.1em;
     width: 3.1em;
+  }
+  .event_container .event_header .event_heading1 {
+    font-size: 12.5vw;
   }
   .event_container .event_introImg > img {
     height: 20rem;
@@ -3100,6 +3122,25 @@ body::-webkit-scrollbar {
     height: 3em;
     width: 3em;
   }
+  .event_container .event_header .event_heading2:before {
+    top: 3.1vw;
+    left: -2.65rem;
+    border-right: 2.4vw solid rgb(0, 0, 0);
+    border-bottom: 2.4vw solid transparent;
+    border-left: 2.4vw solid rgb(0, 0, 0);
+    background: rgb(65, 146, 217);
+    transform: rotate(90deg);
+  }
+  .event_container .event_header .event_heading2::after {
+    content: "";
+    top: 3.1vw;
+    right: -2.65rem;
+    border-right: 2.3vw solid rgb(0, 0, 0);
+    border-bottom: 2.3vw solid transparent;
+    border-left: 2.3vw solid rgb(0, 0, 0);
+    background: rgb(65, 146, 217);
+    transform: rotate(270deg);
+  }
 }
 @media screen and (max-width: 480px) {
   .event_container .event_introImg > img {
@@ -3119,6 +3160,9 @@ body::-webkit-scrollbar {
 @media screen and (max-width: 400px) {
   .event_container {
     margin-top: 0.3rem;
+  }
+  .event_container .event_header .event_heading1 {
+    word-spacing: 0.5rem;
   }
   .event_container:before {
     top: 4.2rem;
@@ -3149,6 +3193,25 @@ body::-webkit-scrollbar {
   .event_container .event_preface > p {
     font-size: 1.35rem;
     line-height: 1.4rem;
+  }
+  .event_container .event_header .event_heading2:before {
+    top: 3.1vw;
+    left: -2.65rem;
+    border-right: 3vw solid rgb(0, 0, 0);
+    border-bottom: 3vw solid transparent;
+    border-left: 3vw solid rgb(0, 0, 0);
+    background: rgb(65, 146, 217);
+    transform: rotate(90deg);
+  }
+  .event_container .event_header .event_heading2::after {
+    content: "";
+    top: 3.1vw;
+    right: -2.65rem;
+    border-right: 2.1vw solid rgb(0, 0, 0);
+    border-bottom: 2.1vw solid transparent;
+    border-left: 2.1vw solid rgb(0, 0, 0);
+    background: rgb(65, 146, 217);
+    transform: rotate(270deg);
   }
 }
 @media screen and (max-width: 360px) {
@@ -3186,6 +3249,9 @@ body::-webkit-scrollbar {
 }
 .event_section .event_section_left .event_section_left_main > :nth-child(2) {
   margin-bottom: 50vw;
+}
+.event_section .event_section_left .event_section_left_resp {
+  display: none;
 }
 .event_section .event_section_mid {
   display: flex;
@@ -3390,7 +3456,7 @@ body::-webkit-scrollbar {
 }
 @media screen and (max-width: 550px) {
   .event_section .event_section_left .event_section_left_resp > h1 {
-    font-size: 2.6rem;
+    font-size: 2.3rem;
   }
   .event_section .event_section_left .event_section_left_resp .event_dates .event_date {
     font-size: 4rem;
@@ -3405,7 +3471,7 @@ body::-webkit-scrollbar {
 }
 @media screen and (max-width: 450px) {
   .event_section .event_section_left .event_section_left_resp > h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     white-space: nowrap;
     word-spacing: -0.3rem;
   }
@@ -3414,6 +3480,7 @@ body::-webkit-scrollbar {
   }
   .event_section .para_res > p {
     font-size: 0.9rem;
+    margin: 0;
   }
 }
 .event_year_container {

@@ -32,7 +32,8 @@ const EventSection = ({
       </div>
 
       <div className="para_res">
-        <p>{para1}</p><p>{para3}</p>
+        <p>{para1}</p>
+        <p>{para3}</p>
       </div>
 
       <div className="event_section_mid">

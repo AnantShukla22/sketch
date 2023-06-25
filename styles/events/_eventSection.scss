@@ -21,6 +21,7 @@
     @include center();
     justify-content: flex-start;
     align-items: flex-start;
+    
     .event_section_left_main{
       > h1 {
         font-size: 3.5vw;
@@ -33,6 +34,10 @@
         margin-bottom: 50vw;
   
       }
+    }
+    .event_section_left_resp{
+      display: none;
+
     }
   }
   .event_section_mid {
@@ -72,7 +77,6 @@
     }
     > p {
       text-align: end;
-
     }
   }
 }
@@ -264,7 +268,7 @@
     .event_section_left {
       .event_section_left_resp{
         > h1 {
-          font-size: 2.6rem;
+          font-size: 2.3rem;
         }
         .event_dates {
           .event_date {
@@ -290,7 +294,7 @@
     .event_section_left {
       .event_section_left_resp{
         > h1 {
-          font-size: 2.5rem;
+          font-size: 2.2rem;
           white-space: nowrap;
           word-spacing: -.3rem;
         }
@@ -302,6 +306,8 @@
     .para_res{
       >p{
         font-size: .9rem;
+        margin: 0;
+
       }
     }
   }

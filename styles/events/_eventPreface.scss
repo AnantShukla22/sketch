@@ -175,6 +175,7 @@
       width: 90vw;
       object-fit: cover;
     }
+   
     .event_preface {
       margin: 7rem 0 7rem 0;
 
@@ -194,6 +195,7 @@
       width: 90vw;
       object-fit: cover;
     }
+    
     .event_preface {
       margin: 6rem 0 6rem 0;
       width: 90%;
@@ -235,6 +237,30 @@
       width: 90vw;
       object-fit: cover;
     }
+    .event_header {
+      .event_heading2 {
+        &:before {
+          top: 3.1vw;
+          left: -2.65rem;
+          border-right: 1.8vw solid rgb(0, 0, 0);
+          border-bottom: 1.8vw solid transparent;
+          border-left:1.8vw solid rgb(0, 0, 0);
+          background: rgb(65, 146, 217);
+          transform: rotate(90deg);
+        }
+        &::after {
+          content: "";
+          top: 3.1vw;
+          right: -2.65rem;
+          // have to change 1.5vw after 700px
+          border-right: 1.7vw solid rgb(0, 0, 0);
+          border-bottom: 1.7vw solid transparent;
+          border-left: 1.7vw solid rgb(0, 0, 0);
+          background: rgb(65, 146, 217);
+          transform: rotate(270deg);
+        }
+      }
+    }
     .event_preface {
       margin: 5rem 0 5rem 0;
       > p {
@@ -247,6 +273,7 @@
 
 @media screen and (max-width: 600px) {
   .event_container {
+  
     &:before {
       top: 5rem;
     }
@@ -260,8 +287,13 @@
       }
       .event_burger_icon {
         margin-bottom: 5px;
-      height: 3.1em;
-      width: 3.1em;
+        height: 3.1em;
+        width: 3.1em;
+      }
+    }
+    .event_header {
+      .event_heading1 {
+        font-size: 12.5vw;
       }
     }
     .event_introImg > img {
@@ -287,6 +319,7 @@
       width: 90vw;
       object-fit: cover;
     }
+
     .event_preface {
       margin: 4rem 0 4rem 0;
 
@@ -299,7 +332,7 @@
 
 @media screen and (max-width: 500px) {
   .event_container {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     &:before {
       top: 4.5rem;
     }
@@ -313,8 +346,32 @@
       }
       .event_burger_icon {
         margin-bottom: 7px;
-      height: 3em;
-      width: 3em;
+        height: 3em;
+        width: 3em;
+      }
+    }
+    .event_header {
+      .event_heading2 {
+        &:before {
+          top: 3.1vw;
+          left: -2.65rem;
+          border-right: 2.4vw solid rgb(0, 0, 0);
+          border-bottom: 2.4vw solid transparent;
+          border-left:2.4vw solid rgb(0, 0, 0);
+          background: rgb(65, 146, 217);
+          transform: rotate(90deg);
+        }
+        &::after {
+          content: "";
+          top: 3.1vw;
+          right: -2.65rem;
+          // have to change 1.5vw after 700px
+          border-right: 2.3vw solid rgb(0, 0, 0);
+          border-bottom: 2.3vw solid transparent;
+          border-left: 2.3vw solid rgb(0, 0, 0);
+          background: rgb(65, 146, 217);
+          transform: rotate(270deg);
+        }
       }
     }
   }
@@ -340,7 +397,12 @@
 
 @media screen and (max-width: 400px) {
   .event_container {
-    margin-top: .3rem;
+    .event_header {
+      .event_heading1 {
+        word-spacing: 0.5rem;
+      }
+    }
+    margin-top: 0.3rem;
     &:before {
       top: 4.2rem;
     }
@@ -354,8 +416,8 @@
       }
       .event_burger_icon {
         margin-bottom: 11px;
-      height: 2.8em;
-      width: 2.8em;
+        height: 2.8em;
+        width: 2.8em;
       }
     }
     .event_introImg > img {
@@ -369,6 +431,30 @@
       > p {
         font-size: 1.35rem;
         line-height: 1.4rem;
+      }
+    }
+    .event_header {
+      .event_heading2 {
+        &:before {
+          top: 3.1vw;
+          left: -2.65rem;
+          border-right: 3vw solid rgb(0, 0, 0);
+          border-bottom: 3vw solid transparent;
+          border-left:3vw solid rgb(0, 0, 0);
+          background: rgb(65, 146, 217);
+          transform: rotate(90deg);
+        }
+        &::after {
+          content: "";
+          top: 3.1vw;
+          right: -2.65rem;
+          // have to change 1.5vw after 700px
+          border-right: 2.1vw solid rgb(0, 0, 0);
+          border-bottom: 2.1vw solid transparent;
+          border-left: 2.1vw solid rgb(0, 0, 0);
+          background: rgb(65, 146, 217);
+          transform: rotate(270deg);
+        }
       }
     }
   }
