@@ -1941,7 +1941,7 @@ body::-webkit-scrollbar {
   color: var(--tertiary-color);
 }
 .triple_container .triple_content .triple_wrapper .triple_accordian > .topic > .heading {
-  font-size: 2rem;
+  font-size: 2 rem;
   font-family: var(--main-font);
   animation: pulse 1.7s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
@@ -2081,7 +2081,7 @@ body::-webkit-scrollbar {
   }
   .triple_container .triple_content .triple_wrapper .triple_accordian > .topic > p {
     margin-top: 0.8rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 @media screen and (max-width: 400px) {
@@ -2100,7 +2100,6 @@ body::-webkit-scrollbar {
   }
   .triple_container .triple_content .triple_wrapper .triple_accordian > .topic > p {
     margin-top: 0.6rem;
-    font-size: 1rem;
   }
 }
 .swiper_container {
