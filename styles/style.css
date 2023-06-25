@@ -1941,7 +1941,7 @@ body::-webkit-scrollbar {
   color: var(--tertiary-color);
 }
 .triple_container .triple_content .triple_wrapper .triple_accordian > .topic > .heading {
-  font-size: 2 rem;
+  font-size: 2rem;
   font-family: var(--main-font);
   animation: pulse 1.7s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
@@ -1961,7 +1961,7 @@ body::-webkit-scrollbar {
   opacity: 0;
   overflow: hidden;
   margin-top: 1rem;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   transition: all 0.3s ease-in;
   height: 0;
 }
