@@ -1752,6 +1752,7 @@ body::-webkit-scrollbar {
   .about_whoweare > p {
     width: 95%;
     font-size: 1.8rem;
+    font-size: 1.1rem;
   }
   .about_whoweare > h3 {
     font-size: 1.2rem;
@@ -1765,6 +1766,7 @@ body::-webkit-scrollbar {
   .about_whoweare > p {
     width: 95%;
     font-size: 1.6rem;
+    font-size: 1.1rem;
   }
   .about_whoweare > h3 {
     font-size: 1.1rem;
@@ -1777,7 +1779,7 @@ body::-webkit-scrollbar {
   }
   .about_whoweare > p {
     width: 95%;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .about_whoweare > h3 {
     font-size: 1rem;
@@ -1787,7 +1789,7 @@ body::-webkit-scrollbar {
   .about_whoweare > p {
     width: 95%;
     font-size: 1.4rem;
-    margin: 1.2rem 0;
+    margin: 0.8rem 0;
   }
 }
 .vision_container {
