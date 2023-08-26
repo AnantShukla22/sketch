@@ -9,6 +9,7 @@ import "../../node_modules/swiper/swiper.scss";
 import "../../node_modules/swiper/modules/navigation/navigation.scss";
 import "../../node_modules/swiper/modules/pagination/pagination.scss";
 import "../../node_modules/swiper/modules/effect-coverflow/effect-coverflow.scss";
+import { useEffect, useState } from "react";
 
 SwiperCore.use([Navigation, Pagination, EffectCoverflow]);
 
@@ -21,6 +22,33 @@ const Swipers = ({ member, type }: any) => {
   } else {
     info = member.alu;
   }
+
+  interface Size {
+    width: number;
+    height: number;
+  }
+
+  const [size, setSize] = useState<Size>();
+  const [view, setView] = useState(2.4);
+
+  const resizeHanlder = () => {
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    setSize({
+      width: width,
+      height: height,
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", resizeHanlder);
+
+    return () => {
+      window.removeEventListener("resize", resizeHanlder);
+      
+    };
+  }, []);
   return (
     <>
       <Swiper
@@ -29,12 +57,12 @@ const Swipers = ({ member, type }: any) => {
         grabCursor={true}
         centeredSlides={true}
         loop={true}
-        slidesPerView={2.5}
+        slidesPerView={2.4}
         coverflowEffect={{
           rotate: 10,
           stretch: 0,
           depth: 130,
-          modifier: 3,
+          modifier: 2,
           slideShadows: true,
         }}
         pagination={{
